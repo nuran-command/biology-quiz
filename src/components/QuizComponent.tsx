@@ -12,7 +12,7 @@ type Props = {
   question: Question;
   totalQuestions: number;
   currentIndex: number;
-  onAnswer: (isCorrect: boolean) => void;
+  onAnswer: (selectedOption: string, isCorrect: boolean) => void;
 };
 
 export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer }: Props) => {
@@ -26,10 +26,11 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
     const isCorrect = option === question.correctAnswer;
     
     setTimeout(() => {
-      onAnswer(isCorrect);
+      onAnswer(option, isCorrect);
       setSelected(null);
     }, 1000); // 1 second delay to show the selected state
   };
+
 
   return (
     <motion.div 
