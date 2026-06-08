@@ -5,31 +5,64 @@ type Question = {
   id: number;
   question: string;
   options: string[];
-  correctAnswer: string;
+  correctAnswer: string | null;
+  correctAnswers?: string[] | null;
+  isMultipleChoice?: boolean;
 };
 
 type Props = {
   question: Question;
   totalQuestions: number;
   currentIndex: number;
-  onAnswer: (selectedOption: string, isCorrect: boolean) => void;
+  onAnswer: (selectedOptions: string[], isCorrect: boolean) => void;
   onBack: () => void;
 };
 
 export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer, onBack }: Props) => {
-  const [selected, setSelected] = useState<string | null>(null);
+  // For single-choice questions
+  const [selectedSingle, setSelectedSingle] = useState<string | null>(null);
 
-  const handleSelect = (option: string) => {
-    if (selected) return; // Prevent multiple clicks
-    setSelected(option);
+  // For multiple-choice questions
+  const [selectedMulti, setSelectedMulti] = useState<string[]>([]);
+  const [submitted, setSubmitted] = useState(false);
+
+  // Single-choice select logic
+  const handleSelectSingle = (option: string) => {
+    if (selectedSingle) return;
+    setSelectedSingle(option);
     
-    // Check if correct
     const isCorrect = option === question.correctAnswer;
     
     setTimeout(() => {
-      onAnswer(option, isCorrect);
-      setSelected(null);
-    }, 1000); // 1 second delay to show the selected state
+      onAnswer([option], isCorrect);
+      setSelectedSingle(null);
+    }, 1200);
+  };
+
+  // Multiple-choice toggle logic
+  const handleToggleMulti = (option: string) => {
+    if (submitted) return;
+    setSelectedMulti(prev => 
+      prev.includes(option)
+        ? prev.filter(item => item !== option)
+        : [...prev, option]
+    );
+  };
+
+  // Multiple-choice submit logic
+  const handleSubmitMulti = () => {
+    if (selectedMulti.length === 0 || submitted) return;
+    setSubmitted(true);
+
+    const correctList = question.correctAnswers || [];
+    const isCorrect = selectedMulti.length === correctList.length &&
+      selectedMulti.every(opt => correctList.includes(opt));
+
+    setTimeout(() => {
+      onAnswer(selectedMulti, isCorrect);
+      setSelectedMulti([]);
+      setSubmitted(false);
+    }, 1800);
   };
 
   return (
@@ -51,7 +84,13 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
           </svg>
           <span>Артқа қайту</span>
         </button>
+        
         <div className="flex items-center space-x-3 w-full sm:w-auto justify-between sm:justify-end">
+          {question.isMultipleChoice && (
+            <span className="text-xs bg-amber-500/10 text-amber-600 font-extrabold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Көп таңдаулы сұрақ
+            </span>
+          )}
           <span className="text-sm font-semibold text-gray-500 whitespace-nowrap">
             Сұрақ {currentIndex + 1} / {totalQuestions}
           </span>
@@ -68,34 +107,106 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
         {question.question}
       </h2>
 
+      {/* Options List */}
       <div className="space-y-4">
         {question.options.map((option, idx) => {
-          const isSelected = selected === option;
-          const isCorrect = selected && option === question.correctAnswer;
-          const isWrong = isSelected && !isCorrect;
+          if (question.isMultipleChoice) {
+            const isSelected = selectedMulti.includes(option);
+            const isCorrectAnswer = (question.correctAnswers || []).includes(option);
+            
+            let buttonClass = 'border-gray-100 hover:border-primary hover:bg-primary/5 text-gray-700 bg-white';
+            
+            if (submitted) {
+              if (isCorrectAnswer) {
+                buttonClass = 'border-green-500 bg-green-50 text-green-700 font-bold';
+              } else if (isSelected) {
+                buttonClass = 'border-red-500 bg-red-50 text-red-700 font-bold';
+              } else {
+                buttonClass = 'border-gray-50 opacity-40 text-gray-400 bg-white';
+              }
+            } else if (isSelected) {
+              buttonClass = 'border-primary bg-primary/5 text-primary font-bold';
+            }
 
-          return (
-            <button
-              key={idx}
-              onClick={() => handleSelect(option)}
-              disabled={selected !== null}
-              className={`w-full text-left p-4.5 rounded-xl border-2 transition-all cursor-pointer font-medium text-sm sm:text-base ${
-                selected === null 
-                  ? 'border-gray-100 hover:border-primary hover:bg-primary/5 text-gray-700 bg-white' 
-                  : isCorrect 
-                    ? 'border-green-500 bg-green-50 text-green-700 font-bold'
-                    : isWrong
-                      ? 'border-red-500 bg-red-50 text-red-700 font-bold'
-                      : option === question.correctAnswer
-                        ? 'border-green-500 bg-green-50 text-green-700 font-bold' // Highlight correct answer if wrong selected
-                        : 'border-gray-50 opacity-40 text-gray-400 bg-white'
-              }`}
-            >
-              {option}
-            </button>
-          )
+            return (
+              <button
+                key={idx}
+                onClick={() => handleToggleMulti(option)}
+                disabled={submitted}
+                className={`w-full text-left p-4.5 rounded-xl border-2 transition-all cursor-pointer font-medium text-sm sm:text-base flex items-center justify-between ${buttonClass}`}
+              >
+                <div className="flex items-center space-x-3">
+                  <div className={`w-5 h-5 rounded flex items-center justify-center border transition-all flex-shrink-0 ${
+                    isSelected
+                      ? submitted
+                        ? isCorrectAnswer
+                          ? 'bg-green-500 border-green-500 text-white'
+                          : 'bg-red-500 border-red-500 text-white'
+                        : 'bg-primary border-primary text-white'
+                      : submitted && isCorrectAnswer
+                        ? 'bg-green-500 border-green-500 text-white'
+                        : 'border-gray-300 bg-white'
+                  }`}>
+                    {(isSelected || (submitted && isCorrectAnswer)) && (
+                      <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                      </svg>
+                    )}
+                  </div>
+                  <span>{option}</span>
+                </div>
+              </button>
+            );
+          } else {
+            // Single choice questions
+            const isSelected = selectedSingle === option;
+            const isCorrect = selectedSingle && option === question.correctAnswer;
+            const isWrong = isSelected && !isCorrect;
+
+            let buttonClass = 'border-gray-100 hover:border-primary hover:bg-primary/5 text-gray-700 bg-white';
+            
+            if (selectedSingle !== null) {
+              if (isCorrect) {
+                buttonClass = 'border-green-500 bg-green-50 text-green-700 font-bold';
+              } else if (isWrong) {
+                buttonClass = 'border-red-500 bg-red-50 text-red-700 font-bold';
+              } else if (option === question.correctAnswer) {
+                buttonClass = 'border-green-500 bg-green-50 text-green-700 font-bold';
+              } else {
+                buttonClass = 'border-gray-50 opacity-40 text-gray-400 bg-white';
+              }
+            }
+
+            return (
+              <button
+                key={idx}
+                onClick={() => handleSelectSingle(option)}
+                disabled={selectedSingle !== null}
+                className={`w-full text-left p-4.5 rounded-xl border-2 transition-all cursor-pointer font-medium text-sm sm:text-base ${buttonClass}`}
+              >
+                {option}
+              </button>
+            );
+          }
         })}
       </div>
+
+      {/* Submit button for Multiple Choice */}
+      {question.isMultipleChoice && (
+        <div className="mt-8 flex justify-end">
+          <button
+            onClick={handleSubmitMulti}
+            disabled={selectedMulti.length === 0 || submitted}
+            className={`px-8 py-3.5 rounded-full font-bold text-base shadow-md transition-all cursor-pointer ${
+              selectedMulti.length === 0 || submitted
+                ? 'bg-gray-100 text-gray-400 border border-gray-200 shadow-none cursor-not-allowed'
+                : 'bg-primary text-white hover:bg-primary/95 transform hover:scale-[1.02] active:scale-98'
+            }`}
+          >
+            {submitted ? 'Жауап тексерілуде...' : 'Жауап беру'}
+          </button>
+        </div>
+      )}
     </motion.div>
   );
 };

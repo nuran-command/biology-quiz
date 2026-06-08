@@ -1,10 +1,12 @@
 import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 
-export type TestType = 'part1' | 'part2' | 'part3' | 'all';
+export type CategoryType = 'molecular_biology' | 'nutrition_transport';
+export type PartType = 'part1' | 'part2' | 'part3' | 'all';
 
 type Settings = {
-  testType: TestType;
+  category: CategoryType;
+  part: PartType;
   shuffle: boolean;
   limitTo20: boolean;
 };
@@ -14,40 +16,73 @@ type Props = {
 };
 
 export const StartScreen = ({ onStart }: Props) => {
-  const [testType, setTestType] = useState<TestType>('all');
+  const [category, setCategory] = useState<CategoryType>('molecular_biology');
+  const [part, setPart] = useState<PartType>('all');
   const [shuffle, setShuffle] = useState(false);
   const [limitTo20, setLimitTo20] = useState(false);
 
-  const tests = [
+  // Handle changing category (reset part selection to 'all')
+  const handleCategoryChange = (cat: CategoryType) => {
+    setCategory(cat);
+    setPart('all');
+  };
+
+  const molecularBiologyParts = [
     {
-      id: 'part1' as TestType,
+      id: 'part1' as PartType,
       title: '1-бөлім: Су және көмірсулар',
       desc: 'Судың маңызы, моносахаридтер, дисахаридтер және олардың қасиеттері.',
       range: '1 - 50 сұрақтар',
       icon: '💧'
     },
     {
-      id: 'part2' as TestType,
+      id: 'part2' as PartType,
       title: '2-бөлім: Полисахаридтер мен липидтер',
       desc: 'Крахмал, целлюлоза, гликоген, майлар, олардың жіктелуі және энергетикалық құндылығы.',
       range: '51 - 100 сұрақтар',
       icon: '🥑'
     },
     {
-      id: 'part3' as TestType,
+      id: 'part3' as PartType,
       title: '3-бөлім: Нәруыздар мен нуклеин қышқылдары',
       desc: 'Нәруыздардың құрылымы (1-4 деңгейлері), денатурация, ренатурация, ДНҚ және РНҚ құрылымы.',
       range: '101 - 150 сұрақтар',
       icon: '🧬'
     },
     {
-      id: 'all' as TestType,
+      id: 'all' as PartType,
       title: 'Жалпы жинақ (Толық тест)',
       desc: 'Жоғарыдағы барлық 3 бөлімді қамтитын толық көлемді тест жинағы.',
       range: '1 - 150 сұрақтар',
       icon: '📚'
     }
   ];
+
+  const nutritionTransportParts = [
+    {
+      id: 'part1' as PartType,
+      title: '1-бөлім: Қоректену және жасуша құрылымдары',
+      desc: 'Ферменттер, ингибиторлар мен активаторлар, гемоглобин мен миоглобин құрылысы, эритроциттер мен капиллярлар.',
+      range: '1 - 50 сұрақтар',
+      icon: '🥗'
+    },
+    {
+      id: 'part2' as PartType,
+      title: '2-бөлім: Заттардың тасымалдануы',
+      desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, антипорт, унипорт, қарапайым және жеңілдетілген диффузия.',
+      range: '51 - 100 сұрақтар',
+      icon: '🔄'
+    },
+    {
+      id: 'all' as PartType,
+      title: 'Жалпы жинақ (Толық тест)',
+      desc: 'Қоректену және заттардың тасымалдануы бөлімінің барлық 100 сұрағын қамтиды.',
+      range: '1 - 100 сұрақтар',
+      icon: '📚'
+    }
+  ];
+
+  const activeParts = category === 'molecular_biology' ? molecularBiologyParts : nutritionTransportParts;
 
   return (
     <motion.div 
@@ -57,7 +92,7 @@ export const StartScreen = ({ onStart }: Props) => {
       className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-4xl mx-auto p-4"
     >
       <div className="mb-4 text-primary bg-primary/10 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
-        10-сынып • Молекулалық биология және биохимия
+        10-сынып • Биология Тесттері
       </div>
       
       <h1 className="text-4xl md:text-5xl font-black text-text mb-4 text-center leading-tight">
@@ -67,51 +102,102 @@ export const StartScreen = ({ onStart }: Props) => {
         </span>
       </h1>
       
-      <p className="text-base md:text-lg text-gray-600 mb-10 text-center max-w-xl leading-relaxed">
-        Тақырыпты таңдап, біліміңізді тексеріңіз. Әр бөлім сәйкес бағдарламаға сай дұрыс жауаптарымен толықтырылған.
+      <p className="text-base md:text-lg text-gray-600 mb-8 text-center max-w-xl leading-relaxed">
+        Тақырыптық бағытты таңдап, тиісті бөлім бойынша біліміңізді тексеріңіз.
       </p>
 
-      {/* Grid Selection */}
+      {/* Category Tabs */}
+      <h3 className="font-extrabold text-gray-700 text-sm uppercase tracking-wider mb-3 self-start">
+        Тест бағытын таңдаңыз:
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
+        <button
+          onClick={() => handleCategoryChange('molecular_biology')}
+          className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
+            category === 'molecular_biology'
+              ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
+              : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+          }`}
+        >
+          <div className="flex items-center space-x-3 mb-2">
+            <span className="text-2xl">🧬</span>
+            <h4 className="font-bold text-text text-base md:text-lg">
+              Молекулалық биология және биохимия
+            </h4>
+          </div>
+          <p className="text-xs text-gray-500 leading-relaxed">
+            Судың маңызы, көмірсулар, полисахаридтер, липидтер, нәруыздар мен нуклеин қышқылдарының құрылысы мен қасиеттері.
+          </p>
+        </button>
+
+        <button
+          onClick={() => handleCategoryChange('nutrition_transport')}
+          className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
+            category === 'nutrition_transport'
+              ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
+              : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+          }`}
+        >
+          <div className="flex items-center space-x-3 mb-2">
+            <span className="text-2xl">🌱</span>
+            <h4 className="font-bold text-text text-base md:text-lg">
+              Қоректену. Заттардың тасымалдануы
+            </h4>
+          </div>
+          <p className="text-xs text-gray-500 leading-relaxed">
+            Ферменттер белсенділігі, гемоглобин мен миоглобин, эритроциттер, капиллярлар, және мембрана арқылы заттардың тасымалдануы.
+          </p>
+        </button>
+      </div>
+      
+      {/* Parts Grid Selection */}
       <h3 className="font-extrabold text-gray-700 text-sm uppercase tracking-wider mb-4 self-start">
-        Тест тақырыбын таңдаңыз:
+        Тақырыптық бөлімді таңдаңыз:
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
-        {tests.map((test) => {
-          const isSelected = testType === test.id;
-          return (
-            <button
-              key={test.id}
-              onClick={() => setTestType(test.id)}
-              className={`text-left p-5 rounded-2xl border-2 transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden ${
-                isSelected 
-                  ? 'border-primary bg-primary/5 shadow-md shadow-primary/5' 
-                  : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
-              }`}
-            >
-              {isSelected && (
-                <div className="absolute top-0 right-0 w-8 h-8 bg-primary text-white flex items-center justify-center rounded-bl-xl">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                  </svg>
+        <AnimatePresence mode="popLayout">
+          {activeParts.map((item) => {
+            const isSelected = part === item.id;
+            return (
+              <motion.button
+                layout
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{ duration: 0.2 }}
+                key={item.id}
+                onClick={() => setPart(item.id)}
+                className={`text-left p-5 rounded-2xl border-2 transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden ${
+                  isSelected 
+                    ? 'border-primary bg-primary/5 shadow-md shadow-primary/5' 
+                    : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+                }`}
+              >
+                {isSelected && (
+                  <div className="absolute top-0 right-0 w-8 h-8 bg-primary text-white flex items-center justify-center rounded-bl-xl">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                )}
+                <div className="text-3xl p-3 bg-gray-100 rounded-xl flex-shrink-0">
+                  {item.icon}
                 </div>
-              )}
-              <div className="text-3xl p-3 bg-gray-100 rounded-xl flex-shrink-0">
-                {test.icon}
-              </div>
-              <div className="space-y-1">
-                <span className="text-xs font-bold text-primary tracking-wider block uppercase">
-                  {test.range}
-                </span>
-                <h4 className="font-bold text-text text-base md:text-lg pr-6">
-                  {test.title}
-                </h4>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  {test.desc}
-                </p>
-              </div>
-            </button>
-          );
-        })}
+                <div className="space-y-1">
+                  <span className="text-xs font-bold text-primary tracking-wider block uppercase">
+                    {item.range}
+                  </span>
+                  <h4 className="font-bold text-text text-base md:text-lg pr-6">
+                    {item.title}
+                  </h4>
+                  <p className="text-xs text-gray-500 leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </motion.button>
+            );
+          })}
+        </AnimatePresence>
       </div>
 
       {/* Settings & Controls */}
@@ -153,7 +239,7 @@ export const StartScreen = ({ onStart }: Props) => {
         </div>
 
         <button 
-          onClick={() => onStart({ testType, shuffle, limitTo20 })}
+          onClick={() => onStart({ category, part, shuffle, limitTo20 })}
           className="px-8 py-4 bg-primary text-white rounded-full text-lg font-bold shadow-lg hover:bg-primary/95 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
         >
           <span>Тестті Бастау</span>

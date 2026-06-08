@@ -8,7 +8,9 @@
       "C) 55%",
       "D) 90%"
     ],
-    "correctAnswer": "A) 71%"
+    "correctAnswer": "A) 71%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 2,
@@ -19,7 +21,9 @@
       "C) 65%",
       "D) 90%"
     ],
-    "correctAnswer": "C) 65%"
+    "correctAnswer": "C) 65%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 3,
@@ -30,7 +34,9 @@
       "C) Транскрипция",
       "D) Транслокация"
     ],
-    "correctAnswer": "A) Транспирация"
+    "correctAnswer": "A) Транспирация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 4,
@@ -41,7 +47,9 @@
       "C) В. И. Вернадский",
       "D) Ж. Б. Ламарк"
     ],
-    "correctAnswer": "C) В. И. Вернадский"
+    "correctAnswer": "C) В. И. Вернадский",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 5,
@@ -52,7 +60,9 @@
       "C) 75%",
       "D) 90%"
     ],
-    "correctAnswer": "C) 75%"
+    "correctAnswer": "C) 75%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 6,
@@ -63,7 +73,9 @@
       "C) 65%",
       "D) 90%"
     ],
-    "correctAnswer": "B) 50%"
+    "correctAnswer": "B) 50%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 7,
@@ -74,7 +86,9 @@
       "C) 15%",
       "D) 50%"
     ],
-    "correctAnswer": "A) 2%"
+    "correctAnswer": "A) 2%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 8,
@@ -85,7 +99,9 @@
       "C) 65%",
       "D) 90%"
     ],
-    "correctAnswer": "B) 20%"
+    "correctAnswer": "B) 20%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 9,
@@ -96,7 +112,9 @@
       "C) 4",
       "D) 1"
     ],
-    "correctAnswer": "A) 3"
+    "correctAnswer": "A) 3",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 10,
@@ -107,7 +125,9 @@
       "C) Сахароза, лактоза, мальтоза, крахмал",
       "D) Триоза, тетроза, пентоза, гексоза"
     ],
-    "correctAnswer": "D) Триоза, тетроза, пентоза, гексоза"
+    "correctAnswer": "D) Триоза, тетроза, пентоза, гексоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 11,
@@ -118,7 +138,9 @@
       "C) Тетрозалар",
       "D) Пентозалар"
     ],
-    "correctAnswer": "A) Триозалар"
+    "correctAnswer": "A) Триозалар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 12,
@@ -129,7 +151,9 @@
       "C) Пентозалық цикл",
       "D) Фотосинтез"
     ],
-    "correctAnswer": "B) Глицерин альдегиді"
+    "correctAnswer": "B) Глицерин альдегиді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 13,
@@ -140,7 +164,9 @@
       "C) Пентозалық цикл",
       "D) Фотосинтез"
     ],
-    "correctAnswer": "A) Диоксиацетон"
+    "correctAnswer": "A) Диоксиацетон",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 14,
@@ -151,7 +177,9 @@
       "C) Тетрозалар",
       "D) Пентозалар"
     ],
-    "correctAnswer": "A) Триозалар"
+    "correctAnswer": "A) Триозалар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 15,
@@ -162,7 +190,9 @@
       "C) Тетрозалар",
       "D) Пентозалар"
     ],
-    "correctAnswer": "A) Триозалар"
+    "correctAnswer": "A) Триозалар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 16,
@@ -173,7 +203,9 @@
       "C) Тетрозалар",
       "D) Пентозалар"
     ],
-    "correctAnswer": "A) Триозалар"
+    "correctAnswer": "A) Триозалар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 17,
@@ -184,7 +216,9 @@
       "C) Гексоза",
       "D) Галактоза"
     ],
-    "correctAnswer": "A) Ксилоза"
+    "correctAnswer": "A) Ксилоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 18,
@@ -195,7 +229,9 @@
       "C) Рибоза, дезоксирибоза",
       "D) Гексоза, лактоза"
     ],
-    "correctAnswer": "C) Рибоза, дезоксирибоза"
+    "correctAnswer": "C) Рибоза, дезоксирибоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 19,
@@ -206,7 +242,9 @@
       "C) Эритроза",
       "D) Гексоза"
     ],
-    "correctAnswer": "A) Рибоза"
+    "correctAnswer": "A) Рибоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 20,
@@ -217,7 +255,9 @@
       "C) Пентоза",
       "D) Ксилоза"
     ],
-    "correctAnswer": "A) Глюкоза"
+    "correctAnswer": "A) Глюкоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 21,
@@ -228,7 +268,9 @@
       "C) 80–120 мг (3,5–5,6 ммоль/л)",
       "D) 150–200 мг (10–12 ммоль/л)"
     ],
-    "correctAnswer": "C) 80–120 мг (3,5–5,6 ммоль/л)"
+    "correctAnswer": "C) 80–120 мг (3,5–5,6 ммоль/л)",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 22,
@@ -239,7 +281,9 @@
       "C) Мурамин",
       "D) Дезоксирибоза"
     ],
-    "correctAnswer": "C) Мурамин"
+    "correctAnswer": "C) Мурамин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 23,
@@ -250,7 +294,9 @@
       "C) Ксилоза",
       "D) Глюкоза"
     ],
-    "correctAnswer": "A) Триоза"
+    "correctAnswer": "A) Триоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 24,
@@ -261,7 +307,9 @@
       "C) Триоза",
       "D) Ксилоза"
     ],
-    "correctAnswer": "B) D-галактоза"
+    "correctAnswer": "B) D-галактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 25,
@@ -272,7 +320,9 @@
       "C) Триоза",
       "D) Ксилоза"
     ],
-    "correctAnswer": "B) D-галактоза"
+    "correctAnswer": "B) D-галактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 26,
@@ -283,7 +333,9 @@
       "C) D-галактоза",
       "D) D-фруктоза"
     ],
-    "correctAnswer": "D) D-фруктоза"
+    "correctAnswer": "D) D-фруктоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 27,
@@ -294,7 +346,9 @@
       "C) Триоза, тетроза, эритроза",
       "D) Пентоза, ксилоза, рибоза"
     ],
-    "correctAnswer": "A) Сахароза, лактоза, мальтоза"
+    "correctAnswer": "A) Сахароза, лактоза, мальтоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 28,
@@ -305,7 +359,9 @@
       "C) Олигосахаридтер",
       "D) Пентозалық цикл"
     ],
-    "correctAnswer": "C) Олигосахаридтер"
+    "correctAnswer": "C) Олигосахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 29,
@@ -316,7 +372,9 @@
       "C) Сахароза",
       "D) Ксилоза"
     ],
-    "correctAnswer": "C) Сахароза"
+    "correctAnswer": "C) Сахароза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 30,
@@ -327,7 +385,9 @@
       "C) 65%",
       "D) 27%"
     ],
-    "correctAnswer": "B) 20%"
+    "correctAnswer": "B) 20%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 31,
@@ -338,7 +398,9 @@
       "C) 65%",
       "D) 90%"
     ],
-    "correctAnswer": "B) 20%"
+    "correctAnswer": "B) 20%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 32,
@@ -349,7 +411,9 @@
       "C) Глюкоза мен фруктозадан",
       "D) Глюкоза мен ксилозадан"
     ],
-    "correctAnswer": "C) Глюкоза мен фруктозадан"
+    "correctAnswer": "C) Глюкоза мен фруктозадан",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 33,
@@ -360,7 +424,9 @@
       "C) Мальтоза",
       "D) Пентоза"
     ],
-    "correctAnswer": "B) Лактоза"
+    "correctAnswer": "B) Лактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 34,
@@ -371,7 +437,9 @@
       "C) Глюкоза мен фруктозадан",
       "D) Глюкоза мен ксилозадан"
     ],
-    "correctAnswer": "A) Глюкоза мен галактозадан"
+    "correctAnswer": "A) Глюкоза мен галактозадан",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 35,
@@ -382,7 +450,9 @@
       "C) Полисахаридтер",
       "D) Дисахаридтер"
     ],
-    "correctAnswer": "C) Полисахаридтер"
+    "correctAnswer": "C) Полисахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 36,
@@ -393,7 +463,9 @@
       "C) Олигосахаридтер",
       "D) Дисахаридтер"
     ],
-    "correctAnswer": "A) Гомополисахаридтер"
+    "correctAnswer": "A) Гомополисахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 37,
@@ -404,7 +476,9 @@
       "C) Олигосахаридтер",
       "D) Дисахаридтер"
     ],
-    "correctAnswer": "B) Гетерополисахаридтер"
+    "correctAnswer": "B) Гетерополисахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 38,
@@ -415,7 +489,9 @@
       "C) Целлюлоза",
       "D) Хитин"
     ],
-    "correctAnswer": "A) Крахмал"
+    "correctAnswer": "A) Крахмал",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 39,
@@ -426,7 +502,9 @@
       "C) 25%",
       "D) 80%"
     ],
-    "correctAnswer": "A) 75%"
+    "correctAnswer": "A) 75%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 40,
@@ -437,7 +515,9 @@
       "C) 25%",
       "D) 80%"
     ],
-    "correctAnswer": "D) 80%"
+    "correctAnswer": "D) 80%",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 41,
@@ -448,7 +528,9 @@
       "C) 25 %",
       "D) 80 %"
     ],
-    "correctAnswer": "C) 25 %"
+    "correctAnswer": "C) 25 %",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 42,
@@ -459,7 +541,9 @@
       "C) Целлюлоза",
       "D) Хитин"
     ],
-    "correctAnswer": "B) Гликоген"
+    "correctAnswer": "B) Гликоген",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 43,
@@ -470,7 +554,9 @@
       "C) Целлюлоза",
       "D) Хитин"
     ],
-    "correctAnswer": "C) Целлюлоза"
+    "correctAnswer": "C) Целлюлоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 44,
@@ -481,7 +567,9 @@
       "C) Целлюлоза",
       "D) Хитин"
     ],
-    "correctAnswer": "C) Целлюлоза"
+    "correctAnswer": "C) Целлюлоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 45,
@@ -492,7 +580,9 @@
       "C) Бүйрек, асқазан, бірыңғай салалы бұлшықеттерде",
       "D) Бауыр, жүрек, қаңқа бұлшықеттерінде"
     ],
-    "correctAnswer": "D) Бауыр, жүрек, қаңқа бұлшықеттерінде"
+    "correctAnswer": "D) Бауыр, жүрек, қаңқа бұлшықеттерінде",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 46,
@@ -503,7 +593,9 @@
       "C) Целлюлоза",
       "D) Гликоген"
     ],
-    "correctAnswer": "A) Пектиндік заттар"
+    "correctAnswer": "A) Пектиндік заттар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 47,
@@ -514,7 +606,9 @@
       "C) Целлюлоза",
       "D) Пектиндік заттар"
     ],
-    "correctAnswer": "D) Пектиндік заттар"
+    "correctAnswer": "D) Пектиндік заттар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 48,
@@ -525,7 +619,9 @@
       "C) Целлюлоза",
       "D) Гликоген"
     ],
-    "correctAnswer": "A) Пектиндік заттар"
+    "correctAnswer": "A) Пектиндік заттар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 49,
@@ -536,7 +632,9 @@
       "C) Целлюлоза",
       "D) Гликоген"
     ],
-    "correctAnswer": "B) Инулин"
+    "correctAnswer": "B) Инулин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 50,
@@ -547,7 +645,9 @@
       "C) Целлюлоза",
       "D) Гликоген"
     ],
-    "correctAnswer": "B) Инулин"
+    "correctAnswer": "B) Инулин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 51,
@@ -558,7 +658,9 @@
       "C) Хитин",
       "D) Гликоген"
     ],
-    "correctAnswer": "A) Целлюлоза"
+    "correctAnswer": "A) Целлюлоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 52,
@@ -569,7 +671,9 @@
       "C) Моносахаридтер",
       "D) Полисахаридтер"
     ],
-    "correctAnswer": "C) Моносахаридтер"
+    "correctAnswer": "C) Моносахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 53,
@@ -580,7 +684,9 @@
       "C) C₆H₁₀O₅",
       "D) C₈H₁₃O₅"
     ],
-    "correctAnswer": "A) C₆H₁₂O₆"
+    "correctAnswer": "A) C₆H₁₂O₆",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 54,
@@ -591,7 +697,9 @@
       "C) Муреин",
       "D) Целлюлоза"
     ],
-    "correctAnswer": "B) Гликоген"
+    "correctAnswer": "B) Гликоген",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 55,
@@ -602,7 +710,9 @@
       "C) Кетоз",
       "D) Гемофилия"
     ],
-    "correctAnswer": "B) Диабет ауруы"
+    "correctAnswer": "B) Диабет ауруы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 56,
@@ -613,7 +723,9 @@
       "C) 2–3 %",
       "D) 0,12 %"
     ],
-    "correctAnswer": "D) 0,12 %"
+    "correctAnswer": "D) 0,12 %",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 57,
@@ -624,7 +736,9 @@
       "C) Сахароза",
       "D) Мальтоза"
     ],
-    "correctAnswer": "C) Сахароза"
+    "correctAnswer": "C) Сахароза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 58,
@@ -635,7 +749,9 @@
       "C) C₆H₁₀O₅",
       "D) C₈H₁₃O₅"
     ],
-    "correctAnswer": "B) C₁₂H₂₂O₁₁"
+    "correctAnswer": "B) C₁₂H₂₂O₁₁",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 59,
@@ -646,7 +762,9 @@
       "C) Галактоза",
       "D) Мальтоза"
     ],
-    "correctAnswer": "A) Сахароза"
+    "correctAnswer": "A) Сахароза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 60,
@@ -657,7 +775,9 @@
       "C) Галактоза",
       "D) Мальтоза"
     ],
-    "correctAnswer": "B) Лактоза"
+    "correctAnswer": "B) Лактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 61,
@@ -668,7 +788,9 @@
       "C) Галактоза",
       "D) Лактоза"
     ],
-    "correctAnswer": "D) Лактоза"
+    "correctAnswer": "D) Лактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 62,
@@ -679,7 +801,9 @@
       "C) Галактоза",
       "D) Мальтоза"
     ],
-    "correctAnswer": "B) Лактоза"
+    "correctAnswer": "B) Лактоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 63,
@@ -690,7 +814,9 @@
       "C) 10 г/100 мл",
       "D) 15 г/100 мл"
     ],
-    "correctAnswer": "A) 7 г/100 мл"
+    "correctAnswer": "A) 7 г/100 мл",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 64,
@@ -701,7 +827,9 @@
       "C) 10 г/100 мл",
       "D) 15 г/100 мл"
     ],
-    "correctAnswer": "B) 4,5 г/100 мл"
+    "correctAnswer": "B) 4,5 г/100 мл",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 65,
@@ -712,7 +840,9 @@
       "C) Крахмал",
       "D) Целлюлоза"
     ],
-    "correctAnswer": "C) Крахмал"
+    "correctAnswer": "C) Крахмал",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 66,
@@ -723,7 +853,9 @@
       "C) (C₆H₁₀O₅)ₙ",
       "D) C₈H₁₃O₅"
     ],
-    "correctAnswer": "C) (C₆H₁₀O₅)ₙ"
+    "correctAnswer": "C) (C₆H₁₀O₅)ₙ",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 67,
@@ -734,7 +866,9 @@
       "C) C₆H₁₂O₆",
       "D) C₈H₁₃O₅"
     ],
-    "correctAnswer": "A) (C₆H₁₀O₅)ₙ"
+    "correctAnswer": "A) (C₆H₁₀O₅)ₙ",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 68,
@@ -745,7 +879,9 @@
       "C) Крахмал",
       "D) Целлюлоза"
     ],
-    "correctAnswer": "C) Крахмал"
+    "correctAnswer": "C) Крахмал",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 69,
@@ -756,7 +892,9 @@
       "C) 38,9 кДж",
       "D) 16,8 кДж"
     ],
-    "correctAnswer": "B) 17,6 кДж"
+    "correctAnswer": "B) 17,6 кДж",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 70,
@@ -767,7 +905,9 @@
       "C) Крахмал",
       "D) Целлюлоза"
     ],
-    "correctAnswer": "D) Целлюлоза"
+    "correctAnswer": "D) Целлюлоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 71,
@@ -778,7 +918,9 @@
       "C) Крахмал",
       "D) Целлюлоза"
     ],
-    "correctAnswer": "B) Хитин"
+    "correctAnswer": "B) Хитин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 72,
@@ -789,7 +931,9 @@
       "C) Тәтті",
       "D) Кіші өлшемге айналу"
     ],
-    "correctAnswer": "D) Кіші өлшемге айналу"
+    "correctAnswer": "D) Кіші өлшемге айналу",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 73,
@@ -800,7 +944,9 @@
       "C) Чаргафф және Уотсон",
       "D) Мендель және Морган"
     ],
-    "correctAnswer": "B) Бенедикт және Фелинг"
+    "correctAnswer": "B) Бенедикт және Фелинг",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 74,
@@ -811,7 +957,9 @@
       "C) Глюкоза, фруктоза",
       "D) Целлюлоза, муреин"
     ],
-    "correctAnswer": "C) Глюкоза, фруктоза"
+    "correctAnswer": "C) Глюкоза, фруктоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 75,
@@ -822,7 +970,9 @@
       "C) Глюкоза, муреин",
       "D) Целлюлоза, фруктоза"
     ],
-    "correctAnswer": "A) Пентоза, ксилоза"
+    "correctAnswer": "A) Пентоза, ксилоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 76,
@@ -833,7 +983,9 @@
       "C) Полисахаридтер",
       "D) Глюкоза"
     ],
-    "correctAnswer": "C) Полисахаридтер"
+    "correctAnswer": "C) Полисахаридтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 77,
@@ -844,7 +996,9 @@
       "C) Де Дюв",
       "D) Броун"
     ],
-    "correctAnswer": "B) Шмидт"
+    "correctAnswer": "B) Шмидт",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 78,
@@ -855,7 +1009,9 @@
       "C) 25,1 кДж",
       "D) 18,7 кДж"
     ],
-    "correctAnswer": "B) 39,1 кДж"
+    "correctAnswer": "B) 39,1 кДж",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 79,
@@ -866,7 +1022,9 @@
       "C) Балық майы, өсімдік майы",
       "D) Маргарин, тәттілер"
     ],
-    "correctAnswer": "C) Балық майы, өсімдік майы"
+    "correctAnswer": "C) Балық майы, өсімдік майы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 80,
@@ -877,7 +1035,9 @@
       "C) Олеин, элаидин қышқылы",
       "D) Пальмитин, линол қышқылы"
     ],
-    "correctAnswer": "D) Пальмитин, линол қышқылы"
+    "correctAnswer": "D) Пальмитин, линол қышқылы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 81,
@@ -888,7 +1048,9 @@
       "C) 2 л",
       "D) 11 л"
     ],
-    "correctAnswer": "D) 11 л"
+    "correctAnswer": "D) 11 л",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 82,
@@ -899,7 +1061,9 @@
       "C) Гидрофобтылығы",
       "D) Қаттылығы"
     ],
-    "correctAnswer": "C) Гидрофобтылығы"
+    "correctAnswer": "C) Гидрофобтылығы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 83,
@@ -910,7 +1074,9 @@
       "C) Сүт өнімдері мен етте",
       "D) Маргаринде, майлы тәттілерде"
     ],
-    "correctAnswer": "D) Маргаринде, майлы тәттілерде"
+    "correctAnswer": "D) Маргаринде, майлы тәттілерде",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 84,
@@ -921,7 +1087,9 @@
       "C) PP, B, E",
       "D) K, B12, C"
     ],
-    "correctAnswer": "B) A, E, D"
+    "correctAnswer": "B) A, E, D",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 85,
@@ -932,7 +1100,9 @@
       "C) 25 г",
       "D) 40 г"
     ],
-    "correctAnswer": "D) 40 г"
+    "correctAnswer": "D) 40 г",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 86,
@@ -943,7 +1113,9 @@
       "C) Тамақтану рационын дұрыс құру",
       "D) Калорияны шектен тыс қабылдау"
     ],
-    "correctAnswer": "D) Калорияны шектен тыс қабылдау"
+    "correctAnswer": "D) Калорияны шектен тыс қабылдау",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 87,
@@ -954,7 +1126,9 @@
       "C) Миристин, арахин қышқылы",
       "D) Стеарин, капрон қышқылы"
     ],
-    "correctAnswer": "A) Арахидон, олеин қышқылы"
+    "correctAnswer": "A) Арахидон, олеин қышқылы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 88,
@@ -965,7 +1139,9 @@
       "C) Майлар",
       "D) Нуклеин қышқылдары"
     ],
-    "correctAnswer": "C) Майлар"
+    "correctAnswer": "C) Майлар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 89,
@@ -976,7 +1152,9 @@
       "C) Цетил, стеарил, мелиссил, мирицил",
       "D) Олеин, элаидин, линол, арахидон"
     ],
-    "correctAnswer": "C) Цетил, стеарил, мелиссил, мирицил"
+    "correctAnswer": "C) Цетил, стеарил, мелиссил, мирицил",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 90,
@@ -987,7 +1165,9 @@
       "C) Пальма майы",
       "D) Какао майы"
     ],
-    "correctAnswer": "C) Пальма майы"
+    "correctAnswer": "C) Пальма майы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 91,
@@ -998,7 +1178,9 @@
       "C) өсімдік майлары, триглицеридтер",
       "D) балауыз, олеин"
     ],
-    "correctAnswer": "B) фосфолипидтер, гликолипидтер"
+    "correctAnswer": "B) фосфолипидтер, гликолипидтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 92,
@@ -1009,7 +1191,9 @@
       "C) қаныққан майлар",
       "D) транс-майлар"
     ],
-    "correctAnswer": "D) транс-майлар"
+    "correctAnswer": "D) транс-майлар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 93,
@@ -1020,7 +1204,9 @@
       "C) жартылай қаныққан майлар",
       "D) зиянды майлар"
     ],
-    "correctAnswer": "B) қанықпаған майлар"
+    "correctAnswer": "B) қанықпаған майлар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 94,
@@ -1031,7 +1217,9 @@
       "C) арахин қышқылы, миристин қышқылы",
       "D) каприн қышқылы, эйкозан қышқылы"
     ],
-    "correctAnswer": "A) пальма майы, какао майы"
+    "correctAnswer": "A) пальма майы, какао майы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 95,
@@ -1042,7 +1230,9 @@
       "C) глютелин, гистон",
       "D) актин, миозин"
     ],
-    "correctAnswer": "A) коллаген, эластин"
+    "correctAnswer": "A) коллаген, эластин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 96,
@@ -1053,7 +1243,9 @@
       "C) Шар тәрізді",
       "D) Фибриллярлы"
     ],
-    "correctAnswer": "D) Фибриллярлы"
+    "correctAnswer": "D) Фибриллярлы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 97,
@@ -1064,7 +1256,9 @@
       "C) кератин",
       "D) эластин"
     ],
-    "correctAnswer": "B) фиброин"
+    "correctAnswer": "B) фиброин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 98,
@@ -1075,7 +1269,9 @@
       "C) казеин, инсулин",
       "D) гликоген, фибрин"
     ],
-    "correctAnswer": "A) родопсин, гемоглобин"
+    "correctAnswer": "A) родопсин, гемоглобин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 99,
@@ -1086,7 +1282,9 @@
       "C) 200 нәруыз",
       "D) 10 нәруыз"
     ],
-    "correctAnswer": "D) 10 нәруыз"
+    "correctAnswer": "D) 10 нәруыз",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 100,
@@ -1097,7 +1295,9 @@
       "C) құрылымдық нәруыздар",
       "D) реттеуші нәруыздар"
     ],
-    "correctAnswer": "D) реттеуші нәруыздар"
+    "correctAnswer": "D) реттеуші нәруыздар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 101,
@@ -1108,7 +1308,9 @@
       "C) актин, миозин",
       "D) тромбин, фибриноген"
     ],
-    "correctAnswer": "D) тромбин, фибриноген"
+    "correctAnswer": "D) тромбин, фибриноген",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 102,
@@ -1119,7 +1321,9 @@
       "C) глютелин, гистон",
       "D) актин, миозин"
     ],
-    "correctAnswer": "A) коллаген, эластин"
+    "correctAnswer": "A) коллаген, эластин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 103,
@@ -1130,7 +1334,9 @@
       "C) миозин",
       "D) актин"
     ],
-    "correctAnswer": "B) оксигемоглобин"
+    "correctAnswer": "B) оксигемоглобин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 104,
@@ -1141,7 +1347,9 @@
       "C) эластин",
       "D) кератин"
     ],
-    "correctAnswer": "D) кератин"
+    "correctAnswer": "D) кератин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 105,
@@ -1152,7 +1360,9 @@
       "C) гемоглобин, миоглобин, глобулин",
       "D) кератин, родопсин, эластин"
     ],
-    "correctAnswer": "C) гемоглобин, миоглобин, глобулин"
+    "correctAnswer": "C) гемоглобин, миоглобин, глобулин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 106,
@@ -1163,7 +1373,9 @@
       "C) коллаген, эластин, кератин",
       "D) липопротеидтер, гликопротеидтер, фосфопротеидтер"
     ],
-    "correctAnswer": "D) липопротеидтер, гликопротеидтер, фосфопротеидтер"
+    "correctAnswer": "D) липопротеидтер, гликопротеидтер, фосфопротеидтер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 107,
@@ -1174,7 +1386,9 @@
       "C) цитохром, миоглобин",
       "D) кератин, эластин"
     ],
-    "correctAnswer": "C) цитохром, миоглобин"
+    "correctAnswer": "C) цитохром, миоглобин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 108,
@@ -1185,7 +1399,9 @@
       "C) инсулин, глюкагон",
       "D) кератин, эластин"
     ],
-    "correctAnswer": "C) инсулин, глюкагон"
+    "correctAnswer": "C) инсулин, глюкагон",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 109,
@@ -1196,7 +1412,9 @@
       "C) иммуноглобулиндер, антиденелер",
       "D) инсулин, глюкагон"
     ],
-    "correctAnswer": "C) иммуноглобулиндер, антиденелер"
+    "correctAnswer": "C) иммуноглобулиндер, антиденелер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 110,
@@ -1207,7 +1425,9 @@
       "C) инсулин, глюкагон, гликоген, казеин",
       "D) глютелин, гистон, родопсин, тромбин"
     ],
-    "correctAnswer": "B) эластин, коллаген, кератин, фиброин"
+    "correctAnswer": "B) эластин, коллаген, кератин, фиброин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 111,
@@ -1218,7 +1438,9 @@
       "C) кальций, фосфор",
       "D) мырыш, молибден"
     ],
-    "correctAnswer": "C) кальций, фосфор"
+    "correctAnswer": "C) кальций, фосфор",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 112,
@@ -1229,7 +1451,9 @@
       "C) родопсин",
       "D) гем"
     ],
-    "correctAnswer": "D) гем"
+    "correctAnswer": "D) гем",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 113,
@@ -1240,7 +1464,9 @@
       "C) коллаген, кератин, эластин",
       "D) миоглобин, эластин, альбумин"
     ],
-    "correctAnswer": "C) коллаген, кератин, эластин"
+    "correctAnswer": "C) коллаген, кератин, эластин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 114,
@@ -1251,7 +1477,9 @@
       "C) фиброин",
       "D) гемоглобин"
     ],
-    "correctAnswer": "A) казеин"
+    "correctAnswer": "A) казеин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 115,
@@ -1262,7 +1490,9 @@
       "C) глютелин, гистон",
       "D) коллаген, кератин"
     ],
-    "correctAnswer": "B) актин, миозин"
+    "correctAnswer": "B) актин, миозин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 116,
@@ -1273,7 +1503,9 @@
       "C) кератин, коллаген",
       "D) родопсин, гемоглобин"
     ],
-    "correctAnswer": "A) глютелин, гистон"
+    "correctAnswer": "A) глютелин, гистон",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 117,
@@ -1284,7 +1516,9 @@
       "C) 4",
       "D) 5"
     ],
-    "correctAnswer": "C) 4"
+    "correctAnswer": "C) 4",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 118,
@@ -1295,7 +1529,9 @@
       "C) фосфопротеиндер",
       "D) хромопротеиндер"
     ],
-    "correctAnswer": "A) липопротеиндер"
+    "correctAnswer": "A) липопротеиндер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 119,
@@ -1306,7 +1542,9 @@
       "C) фосфопротеиндер",
       "D) хромопротеиндер"
     ],
-    "correctAnswer": "C) фосфопротеиндер"
+    "correctAnswer": "C) фосфопротеиндер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 120,
@@ -1317,7 +1555,9 @@
       "C) фосфопротеиндер",
       "D) хромопротеиндер"
     ],
-    "correctAnswer": "B) гликопротеиндер"
+    "correctAnswer": "B) гликопротеиндер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 121,
@@ -1328,7 +1568,9 @@
       "C) нағыз гликопротеиндер",
       "D) хромопротеиндер"
     ],
-    "correctAnswer": "C) нағыз гликопротеиндер"
+    "correctAnswer": "C) нағыз гликопротеиндер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 122,
@@ -1339,7 +1581,9 @@
       "C) нағыз гликопротеиндер",
       "D) хромопротеиндер"
     ],
-    "correctAnswer": "B) протеогликандар"
+    "correctAnswer": "B) протеогликандар",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 123,
@@ -1350,7 +1594,9 @@
       "C) резилин",
       "D) кератин"
     ],
-    "correctAnswer": "C) резилин"
+    "correctAnswer": "C) резилин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 124,
@@ -1361,7 +1607,9 @@
       "C) резилин",
       "D) кератин"
     ],
-    "correctAnswer": "A) антифризді"
+    "correctAnswer": "A) антифризді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 125,
@@ -1372,7 +1620,9 @@
       "C) резилин",
       "D) кератин"
     ],
-    "correctAnswer": "B) монеллин"
+    "correctAnswer": "B) монеллин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 126,
@@ -1383,7 +1633,9 @@
       "C) аминқышқылдары",
       "D) глюкоза"
     ],
-    "correctAnswer": "C) аминқышқылдары"
+    "correctAnswer": "C) аминқышқылдары",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 127,
@@ -1394,7 +1646,9 @@
       "C) нәруыздың төртінші реттік құрылымы",
       "D) нәруыздың екінші реттік құрылымы"
     ],
-    "correctAnswer": "A) нәруыздың бірінші реттік құрылымы"
+    "correctAnswer": "A) нәруыздың бірінші реттік құрылымы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 128,
@@ -1405,7 +1659,9 @@
       "C) нәруыздың төртінші реттік құрылымы",
       "D) нәруыздың екінші реттік құрылымы"
     ],
-    "correctAnswer": "A) нәруыздың бірінші реттік құрылымы"
+    "correctAnswer": "A) нәруыздың бірінші реттік құрылымы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 129,
@@ -1416,7 +1672,9 @@
       "C) пептидтік",
       "D) гидрофобтық"
     ],
-    "correctAnswer": "C) пептидтік"
+    "correctAnswer": "C) пептидтік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 130,
@@ -1427,7 +1685,9 @@
       "C) пептидтік",
       "D) гидрофобтық"
     ],
-    "correctAnswer": "C) пептидтік"
+    "correctAnswer": "C) пептидтік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 131,
@@ -1438,7 +1698,9 @@
       "C) Бенедикт реакциясы",
       "D) конденсация реакциясы"
     ],
-    "correctAnswer": "D) конденсация реакциясы"
+    "correctAnswer": "D) конденсация реакциясы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 132,
@@ -1449,7 +1711,9 @@
       "C) нәруыздың төртінші реттік құрылымы",
       "D) нәруыздың екінші реттік құрылымы"
     ],
-    "correctAnswer": "D) нәруыздың екінші реттік құрылымы"
+    "correctAnswer": "D) нәруыздың екінші реттік құрылымы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 133,
@@ -1460,7 +1724,9 @@
       "C) пептидтік",
       "D) гидрофобтық"
     ],
-    "correctAnswer": "A) сутектік"
+    "correctAnswer": "A) сутектік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 134,
@@ -1471,7 +1737,9 @@
       "C) төртінші реттік",
       "D) екінші реттік"
     ],
-    "correctAnswer": "A) бірінші реттік"
+    "correctAnswer": "A) бірінші реттік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 135,
@@ -1482,7 +1750,9 @@
       "C) төртінші реттік құрылым",
       "D) екінші реттік құрылым"
     ],
-    "correctAnswer": "B) үшінші реттік құрылым"
+    "correctAnswer": "B) үшінші реттік құрылым",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 136,
@@ -1493,7 +1763,9 @@
       "C) төртінші реттік",
       "D) екінші реттік"
     ],
-    "correctAnswer": "B) үшінші реттік"
+    "correctAnswer": "B) үшінші реттік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 137,
@@ -1504,7 +1776,9 @@
       "C) төртінші реттік",
       "D) екінші реттік"
     ],
-    "correctAnswer": "C) төртінші реттік"
+    "correctAnswer": "C) төртінші реттік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 138,
@@ -1515,7 +1789,9 @@
       "C) олигомерлі",
       "D) α-амино"
     ],
-    "correctAnswer": "C) олигомерлі"
+    "correctAnswer": "C) олигомерлі",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 139,
@@ -1526,7 +1802,9 @@
       "C) төртінші реттік",
       "D) екінші реттік"
     ],
-    "correctAnswer": "C) төртінші реттік"
+    "correctAnswer": "C) төртінші реттік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 140,
@@ -1537,7 +1815,9 @@
       "C) полипептидтік тізбектің кеңістікте оралма (спираль) тәрізді пішінге ие болуы",
       "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы"
     ],
-    "correctAnswer": "C) полипептидтік тізбектің кеңістікте оралма (спираль) тәрізді пішінге ие болуы"
+    "correctAnswer": "C) полипептидтік тізбектің кеңістікте оралма (спираль) тәрізді пішінге ие болуы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 141,
@@ -1548,7 +1828,9 @@
       "C) полипептидтік тізбектің оралма (спираль) тәрізді пішінге ие болуы",
       "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы"
     ],
-    "correctAnswer": "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы"
+    "correctAnswer": "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 142,
@@ -1559,7 +1841,9 @@
       "C) полипептидтік тізбектің оралма (спираль) тәрізді пішінге ие болуы",
       "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы"
     ],
-    "correctAnswer": "A) polyпептидтік тізбектегі әртүрлі аминқышқылдары қалдықтарының бір-бірімен кезектесіп, пептидтік байланыспен байланысуы"
+    "correctAnswer": "A) polyпептидтік тізбектегі әртүрлі аминқышқылдары қалдықтарының бір-бірімен кезектесіп, пептидтік байланыспен байланысуы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 143,
@@ -1570,7 +1854,9 @@
       "C) полипептидтік тізбектің оралма (спираль) тәрізді пішінге ие болуы",
       "D) шиыршықталған полипептидтік тізбектің кеңістіктегі оралымға айналуы"
     ],
-    "correctAnswer": "B) нәруыздың бөлек полипептидтік тізбектерінен түзілген, бір-бірімен өзара әрекеттесетін суббірліктердің кеңістікте орналасуы"
+    "correctAnswer": "B) нәруыздың бөлек полипептидтік тізбектерінен түзілген, бір-бірімен өзара әрекеттесетін суббірліктердің кеңістікте орналасуы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 144,
@@ -1581,7 +1867,9 @@
       "C) ренатурация",
       "D) денатурация"
     ],
-    "correctAnswer": "D) денатурация"
+    "correctAnswer": "D) денатурация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 145,
@@ -1592,7 +1880,9 @@
       "C) ренатурация",
       "D) денатурация"
     ],
-    "correctAnswer": "D) денатурация"
+    "correctAnswer": "D) денатурация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 146,
@@ -1603,7 +1893,9 @@
       "C) ренатурация",
       "D) денатурация"
     ],
-    "correctAnswer": "C) ренатурация"
+    "correctAnswer": "C) ренатурация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 147,
@@ -1614,7 +1906,9 @@
       "C) көмірсу",
       "D) нәруыз"
     ],
-    "correctAnswer": "A) ДНҚ"
+    "correctAnswer": "A) ДНҚ",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 148,
@@ -1625,7 +1919,9 @@
       "C) Уотсон, Крик",
       "D) Дарвин, Ламарк"
     ],
-    "correctAnswer": "C) Уотсон, Крик"
+    "correctAnswer": "C) Уотсон, Крик",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 149,
@@ -1636,7 +1932,9 @@
       "C) 245 г/моль",
       "D) 100 г/моль"
     ],
-    "correctAnswer": "B) 345 г/моль"
+    "correctAnswer": "B) 345 г/моль",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 150,
@@ -1647,6 +1945,1390 @@
       "C) тимин, цитозин",
       "D) аденин, гуанин"
     ],
-    "correctAnswer": "D) аденин, гуанин"
+    "correctAnswer": "D) аденин, гуанин",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 151,
+    "question": "Ферменттер белсенділігіне әсер етуші заттар",
+    "options": [
+      "А) Эффекторлар",
+      "В) Гормондар",
+      "С) Кардиолипидтер",
+      "D) Димерлер"
+    ],
+    "correctAnswer": "А) Эффекторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 152,
+    "question": "Катализдік процесті тежейтін қосылыстар",
+    "options": [
+      "А) Гормондар",
+      "В) Активаторлар",
+      "С) Дәрумендер",
+      "D) Ингибиторлар"
+    ],
+    "correctAnswer": "D) Ингибиторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 153,
+    "question": "Катализдік процесті жылдамдататын заттар",
+    "options": [
+      "А) Гормондар",
+      "В) Активаторлар",
+      "С) Дәрумендер",
+      "D) Ингибиторлар"
+    ],
+    "correctAnswer": "В) Активаторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 154,
+    "question": "Ересек адамның 100 мл қанындағы гемоглобин мөлшері",
+    "options": [
+      "А) 7–8 г",
+      "В) 30–40 г",
+      "С) 13–16 г",
+      "D) 100–120 г"
+    ],
+    "correctAnswer": "С) 13–16 г",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 155,
+    "question": "Қаңқалық бұлшықет пен жүрек бұлшықетін оттекпен байланыстыратын нәруыз",
+    "options": [
+      "А) Глобин",
+      "В) Гем",
+      "С) Гемоглобин",
+      "D) Миоглобин"
+    ],
+    "correctAnswer": "D) Миоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 156,
+    "question": "9-аптадағы ұрық қанында кездесетін гемоглобин типі",
+    "options": [
+      "A) HbF",
+      "B) HbA",
+      "C) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "C) HbP",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 157,
+    "question": "Аллостериялық нәруыз",
+    "options": [
+      "А) Миоглобин",
+      "В) Йодопсин",
+      "С) Родопсин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 158,
+    "question": "Миоглобиннің конформациясы",
+    "options": [
+      "А) Бірінші реттік",
+      "В) Екінші реттік",
+      "С) Үшінші реттік",
+      "D) Төртінші реттік"
+    ],
+    "correctAnswer": "С) Үшінші реттік",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 159,
+    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені – гемнің қосылысы",
+    "options": [
+      "А) Миоглобин",
+      "В) Гемоглобин",
+      "С) Оксигемоглобин",
+      "D) Дезоксимиоглобин"
+    ],
+    "correctAnswer": "В) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 160,
+    "question": "Ұрықтың құрсақта дамуының алғашқы 7-12 аптасында кезеңінде кездесетін гемоглобин типі",
+    "options": [
+      "A) HbF",
+      "B) HbA",
+      "C) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "C) HbP",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 161,
+    "question": "Гемоглобиннің белсенді немесе простетикалық тобы",
+    "options": [
+      "А) Глобин",
+      "В) Миоглобин",
+      "С) Оксигемоглобин",
+      "D) Гем"
+    ],
+    "correctAnswer": "D) Гем",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 162,
+    "question": "Гемнің нәруызды тасымалдаушы бөлігі",
+    "options": [
+      "А) Глобин",
+      "В) Миоглобин",
+      "С) Оксигемоглобин",
+      "D) Конформация"
+    ],
+    "correctAnswer": "А) Глобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 163,
+    "question": "100 см³ қандағы гемоглобин мөлшері",
+    "options": [
+      "А) 20,6 г",
+      "В) 16,7 г",
+      "С) 25–30 г",
+      "D) 10–11 г"
+    ],
+    "correctAnswer": "В) 16,7 г",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 164,
+    "question": "Ересек адам қанындағы гемоглобин типі",
+    "options": [
+      "А) HbF",
+      "В) HbA",
+      "С) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "В) HbA",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 165,
+    "question": "Ересек адамның гемоглобинінің молекулалық массасы",
+    "options": [
+      "А) 10000–120000",
+      "В) 66000–68000",
+      "С) 25000–30000",
+      "D) 15000–40000"
+    ],
+    "correctAnswer": "В) 66000–68000",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 166,
+    "question": "Адам миоглобині организмдегі оттектің қанша пайызын байланыстыра алады",
+    "options": [
+      "A) 30%",
+      "B) 60%",
+      "C) 14%",
+      "D) 65–80%"
+    ],
+    "correctAnswer": "C) 14%",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 167,
+    "question": "Гем құрамына кіреді",
+    "options": [
+      "А) 1 винил, 2 пропион қышқылы, 6 метил",
+      "В) 2 метил, 1 винил, 1 пропион қышқылы",
+      "С) 4 метил, 2 винил, 2 пропион қышқылы",
+      "D) 3 метил, 1 винил, 1 пропион қышқылы"
+    ],
+    "correctAnswer": "С) 4 метил, 2 винил, 2 пропион қышқылы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 168,
+    "question": "Құрамында оксигемоглобин бар артерия қанының түсі",
+    "options": [
+      "А) Қою қанық түс",
+      "В) Қанық қызыл түс",
+      "С) Қою қызыл",
+      "D) Ашық алқызыл түс"
+    ],
+    "correctAnswer": "D) Ашық алқызыл түс",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 169,
+    "question": "Миоглобиннің нәруызды бөлігі",
+    "options": [
+      "А) Глобин",
+      "В) Оксигемоглобин",
+      "С) Апомиоглобин",
+      "D) Гем"
+    ],
+    "correctAnswer": "С) Апомиоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 170,
+    "question": "Гемоглобиннің конформациясы",
+    "options": [
+      "А) Бірінші реттік",
+      "В) Екінші реттік",
+      "С) Үшінші реттік",
+      "D) Төртінші реттік"
+    ],
+    "correctAnswer": "D) Төртінші реттік",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 171,
+    "question": "Қанға қызыл түс беретін элемент",
+    "options": [
+      "A) Ca",
+      "B) Mg",
+      "C) Fe",
+      "D) K"
+    ],
+    "correctAnswer": "C) Fe",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 172,
+    "question": "Миоглобин қызметі",
+    "options": [
+      "А) Тыныс алу мүшелерінен ұлпаларға оттек тасымалдау",
+      "В) Гемоглобиннің простетикалық тобы",
+      "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
+      "D) Гемнің нәруыз тасымалдаушысы"
+    ],
+    "correctAnswer": "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 173,
+    "question": "Миоглобин қанша аминқышқылынан тұрады",
+    "options": [
+      "А) 153 аминқышқылы",
+      "В) 146 аминқышқылы",
+      "С) 141 аминқышқылы",
+      "D) 120 аминқышқылы"
+    ],
+    "correctAnswer": "А) 153 аминқышқылы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 174,
+    "question": "Оттекті беріп жіберген оксигемоглобин қалай аталады",
+    "options": [
+      "А) Конформация",
+      "В) Тотықсызданған редукцияланған гемоглобин",
+      "С) Глобин",
+      "D) Миоглобин"
+    ],
+    "correctAnswer": "В) Тотықсызданған редукцияланған гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 175,
+    "question": "Тотықсызданған гемоглобині көп веналық қанның түсі",
+    "options": [
+      "А) Алқызыл",
+      "В) Ашық",
+      "С) Қою қызыл",
+      "D) Ашық алқызыл"
+    ],
+    "correctAnswer": "С) Қою қызыл",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 176,
+    "question": "Аллостериялық нәруыз",
+    "options": [
+      "А) Эластин",
+      "В) Кератин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 177,
+    "question": "Суретте қандай нәруыз құрылысы берілген",
+    "options": [
+      "А) Коллаген",
+      "В) Миоглобин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 178,
+    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені - гемнің қосылысы",
+    "options": [
+      "А) Коллаген",
+      "В) Миоглобин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 179,
+    "question": "Миоглобин үшін оттектің диссоциациялану қисығы қандай түрде болады",
+    "options": [
+      "А) Гипербола",
+      "В) Сигмоидті",
+      "С) S-тәрізді",
+      "D) K-тәрізді"
+    ],
+    "correctAnswer": "А) Гипербола",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 180,
+    "question": "Гемоглобин үшін оттектің диссоциациялану қисығы",
+    "options": [
+      "А) Гипербола",
+      "В) Сигмоидті",
+      "С) J-тәрізді",
+      "D) K-тәрізді"
+    ],
+    "correctAnswer": "В) Сигмоидті",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 181,
+    "question": "Берілген ортамен тепе-теңдікте болатын атмосферадағы оттектің парциалды қысымы",
+    "options": [
+      "А) Оттек күші",
+      "В) Бор эффектісі",
+      "С) Кооперативті эффект",
+      "D) Гипербола"
+    ],
+    "correctAnswer": "А) Оттек күші",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 182,
+    "question": "Нәруыздың конформациясы – кристалданғандағы пішінінің өзгеруі",
+    "options": [
+      "А) Оттек күші",
+      "В) Бор эффектісі",
+      "С) Кооперативті эффект",
+      "D) Гипербола"
+    ],
+    "correctAnswer": "С) Кооперативті эффект",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 183,
+    "question": "Қан мен ұлпа сұйықтығы арасында зат алмасуды жүзеге асырады",
+    "options": [
+      "А) Артерия",
+      "В) Вена",
+      "С) Капилляр",
+      "D) Аорта"
+    ],
+    "correctAnswer": "С) Капилляр",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 184,
+    "question": "Капилляр қантамырлары қабырғасының қалыңдығы",
+    "options": [
+      "А) 0,0005 мм",
+      "В) 0,05 мм",
+      "С) 0,5 мм",
+      "D) 0,005 мм"
+    ],
+    "correctAnswer": "D) 0,005 мм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 185,
+    "question": "Ересек адамның барлық капиллярларының ұзындығы",
+    "options": [
+      "А) 10 км",
+      "В) 10 000 км",
+      "С) 100 000 км",
+      "D) 1000 км"
+    ],
+    "correctAnswer": "С) 100 000 км",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 186,
+    "question": "Эукариот жасушаларының өлшемдері",
+    "options": [
+      "А) 145 мкм",
+      "В) 85–90 мкм",
+      "С) 40–50 мкм",
+      "D) 10–20 мкм"
+    ],
+    "correctAnswer": "D) 10–20 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 187,
+    "question": "Ер адамдардың 1 мм³ қанындағы эритроцит саны",
+    "options": [
+      "А) 180–400 мың",
+      "В) 5 000 000 млн",
+      "С) 6–8 мың",
+      "D) 2–3 000 000"
+    ],
+    "correctAnswer": "В) 5 000 000 млн",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 188,
+    "question": "Эритроцитте кездесетін ерекше нәруыз",
+    "options": [
+      "А) Гемоглобин",
+      "В) Миозин",
+      "С) Оссеин",
+      "D) Кератин"
+    ],
+    "correctAnswer": "А) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 189,
+    "question": "Адам эритроцитінің диаметрі",
+    "options": [
+      "А) 2–2,5 мкм",
+      "В) 85–90 мкм",
+      "С) 7–8 мкм",
+      "D) 145 мкм"
+    ],
+    "correctAnswer": "С) 7–8 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 190,
+    "question": "Қанда гемоглобин аз болуы салдарынан туындайтын ауру",
+    "options": [
+      "А) Гемофилия",
+      "В) Анемия",
+      "С) Гиподинамия",
+      "D) Гипертония"
+    ],
+    "correctAnswer": "В) Анемия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 191,
+    "question": "Эритроциттің беттік ауданы",
+    "options": [
+      "А) 2–2,5 мкм²",
+      "В) 85–90 мкм²",
+      "С) 7–8 мкм²",
+      "D) 145 мкм²"
+    ],
+    "correctAnswer": "D) 145 мкм²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 192,
+    "question": "Әйел адамның 1 мм³ қанындағы эритроцит мөлшері",
+    "options": [
+      "А) 6–8 мың",
+      "В) 6–8 000 000",
+      "С) 4 500 000 млн",
+      "D) 180–400 мың"
+    ],
+    "correctAnswer": "С) 4 500 000 млн",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 193,
+    "question": "Эритроциттің қалыңдығы",
+    "options": [
+      "А) 2–2,5 мкм",
+      "В) 85–90 мкм",
+      "С) 7–8 мкм",
+      "D) 145 мкм"
+    ],
+    "correctAnswer": "А) 2–2,5 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 194,
+    "question": "Қандағы эритроцит мөлшерінің өзгеру себебі",
+    "options": [
+      "А) Бір орында отырғанда",
+      "В) Су көп ішкенде",
+      "С) Биікке көтерілгенде",
+      "D) Дене жүктемесі болмағанда"
+    ],
+    "correctAnswer": "С) Биікке көтерілгенде",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 195,
+    "question": "Қай аймақта тіршілік ететін адамдарда сүйек кемігінің өсуіне байланысты эритроцит саны артады",
+    "options": [
+      "А) Салқын аймақта",
+      "В) Жазықта",
+      "С) Биік таулы аймақта",
+      "D) Шөлді аймақта"
+    ],
+    "correctAnswer": "С) Биік таулы аймақта",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 196,
+    "question": "Терең тыныс алғанда өкпе альвеолаларының беттік ауданы",
+    "options": [
+      "А) 4,5–5 м²",
+      "В) 85–90 м²",
+      "С) 100–150 м²",
+      "D) 180–400 м²"
+    ],
+    "correctAnswer": "С) 100–150 м²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 197,
+    "question": "Қанның қызыл түсті жасушасы",
+    "options": [
+      "А) Эритроцит",
+      "В) Лейкоцит",
+      "С) Тромбоцит",
+      "D) Альбумин"
+    ],
+    "correctAnswer": "А) Эритроцит",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 198,
+    "question": "Өкпе альвеолалары қандай қан тамырларымен шырмалған",
+    "options": [
+      "А) Артерия",
+      "В) Вена",
+      "С) Капилляр",
+      "D) Аорта"
+    ],
+    "correctAnswer": "С) Капилляр",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 199,
+    "question": "Эритроциттердің көлемі мен беттік ауданын анықтау маңызды",
+    "options": [
+      "А) Офтальмолог үшін",
+      "В) Травматолог үшін",
+      "С) Физиолог үшін",
+      "D) Эндокринолог үшін"
+    ],
+    "correctAnswer": "С) Физиолог үшін",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 200,
+    "question": "Адам қанындағы барлық эритроциттердің жалпы беттік ауданы",
+    "options": [
+      "А) 1500–2000 м²",
+      "В) 5000 мг",
+      "С) 1000 мг",
+      "D) 3000 м²"
+    ],
+    "correctAnswer": "D) 3000 м²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 201,
+    "question": "Эритроциттің көлемі",
+    "options": [
+      "А) 2–2,5 мкм³",
+      "В) 85–90 мкм³",
+      "С) 7–8 мкм²",
+      "D) 145 мкм²"
+    ],
+    "correctAnswer": "В) 85–90 мкм³",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 202,
+    "question": "Тасымалданатын заттардан айырмашылығы бар интегралды нәруыздар",
+    "options": [
+      "А) Трансляция",
+      "В) Натрий/калий сорғысы",
+      "С) Трансверсия",
+      "D) Траснлоказалар"
+    ],
+    "correctAnswer": "D) Траснлоказалар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 203,
+    "question": "Жасуша ішіндегі және сыртындағы заттар концентрациясының айырмасы",
+    "options": [
+      "А) Диффузия",
+      "В) Концентрация градиенті",
+      "С) Пассивті тасымалдау",
+      "D) Фик теңдеуі"
+    ],
+    "correctAnswer": "В) Концентрация градиенті",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 204,
+    "question": "Екі түрлі заттың бір бағытта тасымалдануы",
+    "options": [
+      "А) Симпорт",
+      "В) Унипорт",
+      "С) Транслоказа",
+      "D) Антипорт"
+    ],
+    "correctAnswer": "А) Симпорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 205,
+    "question": "Конформация өзгерісі лигандпен байланысқан рецепторлар",
+    "options": [
+      "А) Хемосезімтал",
+      "В) Потенциалсезімтал",
+      "С) Механосезімтал",
+      "D) Инактивация"
+    ],
+    "correctAnswer": "А) Хемосезімтал",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 206,
+    "question": "Пассивті тасымалдау",
+    "options": [
+      "А) Протон сорғысы",
+      "В) Натрий/калий сорғысы",
+      "С) Қарапайым диффузия",
+      "D) Кальций сорғысы"
+    ],
+    "correctAnswer": "С) Қарапайым диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 207,
+    "question": "Қарапайым диффузия арқылы өтетін кіші полюссіз молекулалар",
+    "options": [
+      "А) Несепнәр, оттек, су, этанол",
+      "В) Көмірқышқыл газы, аммиак, су, этанол",
+      "С) Оттек, стероидтар, тиреоидты гормондар, май қышқылдары",
+      "D) Май қышқылдары, аммиак, оттек, несепнәр"
+    ],
+    "correctAnswer": "С) Оттек, стероидтар, тиреоидты гормондар, май қышқылдары",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 208,
+    "question": "Мембрана өткізгіштігін сипаттайтын диффузия коэффициенті",
+    "options": [
+      "А) C",
+      "В) K",
+      "С) S",
+      "D) X"
+    ],
+    "correctAnswer": "В) K",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 209,
+    "question": "Энергия жұмсамай градиент бойынша тасымалдану",
+    "options": [
+      "А) Пассивті тасымалдау",
+      "В) Транслоказалар",
+      "С) Қарапайым диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "А) Пассивті тасымалдау",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 210,
+    "question": "Мембрананың екі жағына қатысты зат концентрация айырмасы",
+    "options": [
+      "А) C",
+      "В) K",
+      "С) S",
+      "D) X"
+    ],
+    "correctAnswer": "А) C",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 211,
+    "question": "Алмасу диффузиясы қандай тасымал түріне жатады",
+    "options": [
+      "А) Активті",
+      "В) Белсенді",
+      "С) Пассивті",
+      "D) Қосарлану"
+    ],
+    "correctAnswer": "С) Пассивті",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 212,
+    "question": "Диффузия нүктелері арасындағы арақашықтық",
+    "options": [
+      "А) C",
+      "В) K",
+      "С) S",
+      "D) X"
+    ],
+    "correctAnswer": "D) X",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 213,
+    "question": "Қаннан миға өтетін глюкоза тәрідсі төмен молекулалы заттар арқылы тасмалданады",
+    "options": [
+      "А) Натрий сорғысы",
+      "В) Жеңілдетілген диффузия",
+      "С) Қарапайым диффузия",
+      "D) Протон сорғысы"
+    ],
+    "correctAnswer": "В) Жеңілдетілген диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 214,
+    "question": "Жеткілікті үлкен жылдамдықпен тасымалданатын зарядталмаған полюсті кіші молекулалар",
+    "options": [
+      "А) Аммиак, су, этанол, несепнәр, көмірқышқыл газы",
+      "В) Оттек, май қышқылдары, стероидтер, гормондар, су",
+      "С) Тиреоидты гормондар, этанол, несепнәр, оттек",
+      "D) Көмірқышқыл газы, этанол, стероидтер, май қышқылдары"
+    ],
+    "correctAnswer": "А) Аммиак, су, этанол, несепнәр, көмірқышқыл газы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 215,
+    "question": "Заттың мембрана арқылы нәруызбен тасымалдануымен тасымалдануы",
+    "options": [
+      "А) Симпорт",
+      "В) Унипорт",
+      "С) Транслоказа",
+      "D) Антипорт"
+    ],
+    "correctAnswer": "В) Унипорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 216,
+    "question": "Қарапайым диффузия жылдамдығы анықталады",
+    "options": [
+      "А) Орталығы",
+      "В) Планк теңдеуі",
+      "С) Фик теңдеуі",
+      "D) Ван-дер-Ваальс теңдеуі"
+    ],
+    "correctAnswer": "С) Фик теңдеуі",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 217,
+    "question": "Активті тасымалдау",
+    "options": [
+      "А) Кальций сорғысы",
+      "В) Қарапайым диффузия",
+      "С) Алмасу диффузиясы",
+      "D) Жеңілдетілген диффузия"
+    ],
+    "correctAnswer": "А) Кальций сорғысы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 218,
+    "question": "Тасымалдаушы заттардың қарама-қарсы бағытта тасымалдануы",
+    "options": [
+      "А) Симпорт",
+      "В) Унипорт",
+      "С) Транслоказа",
+      "D) Антипорт"
+    ],
+    "correctAnswer": "D) Антипорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 219,
+    "question": "Жылу тербелісі энергиясы әсерінен әр түрлі ортада зат бөлшектердің бейберекет қозғалысы",
+    "options": [
+      "А) Пассивті тасымалдау",
+      "В) Транслоказалар",
+      "С) Диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "С) Диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 220,
+    "question": "Жасуша мембрананың деполяризация белгілі деңгейге дейін төмендеуі",
+    "options": [
+      "А) Хемосезімтал",
+      "В) Потенциалсезімтал",
+      "С) Механосезімтал",
+      "D) Инактивация"
+    ],
+    "correctAnswer": "В) Потенциалсезімтал",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 221,
+    "question": "Концентрациясы жоғарыдан концентрациясы төменортаға қарай заттардың өтуі",
+    "options": [
+      "А) Пассивті тасымалдау",
+      "В) Траснлоказалар",
+      "С) Қарапайым диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "С) Қарапайым диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 222,
+    "question": "Мембрана деформациясына жауап",
+    "options": [
+      "А) Хемосезімтал",
+      "В) Потенциалсезімтал",
+      "С) Механосезімтал",
+      "D) Инактивация"
+    ],
+    "correctAnswer": "С) Механосезімтал",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 223,
+    "question": "A әрпімен берілген тасымалдану типі",
+    "options": [
+      "А) Симпорт",
+      "В) Антипорт",
+      "С) Унипорт",
+      "D) Транслоказа"
+    ],
+    "correctAnswer": "С) Унипорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 224,
+    "question": "C әрпімен берілген тасымалдану типі",
+    "options": [
+      "А) Симпорт",
+      "В) Антипорт",
+      "С) Унипорт",
+      "D) Транслоказа"
+    ],
+    "correctAnswer": "В) Антипорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 225,
+    "question": "B әрпімен берілген тасымалдану типі",
+    "options": [
+      "А) Симпорт",
+      "В) Антипорт",
+      "С) Унипорт",
+      "D) Транслоказа"
+    ],
+    "correctAnswer": "А) Симпорт",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 226,
+    "question": "Амилаза ингибиторлары ферменттердің жоғары белсенділігіне байланысты қандай ауруларды емдеуге қолданылады",
+    "options": [
+      "А) Кариес",
+      "В) Семіздік",
+      "С) Гемофилия",
+      "D) Диабет",
+      "Е) Мерез (сифилис)",
+      "F) Герпес"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "В) Семіздік",
+      "D) Диабет"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 227,
+    "question": "Ингибиторлар әрекет ету типіне байланысты бөлінеді",
+    "options": [
+      "А) Тікелей емес",
+      "В) Тікелей",
+      "С) Қайтымды",
+      "D) Талшықты",
+      "Е) Қайтымсыз",
+      "F) Кірпікшелі"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "С) Қайтымды",
+      "Е) Қайтымсыз"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 228,
+    "question": "Миоглобинге тән",
+    "options": [
+      "А) Глобин + гемнен тұрады",
+      "В) Гемнің нәруыз тасымалдаушы бөлігі",
+      "С) Қаңқалық бұлшықет пен жүрек бұлшықетінің оттекпен байланыстыратын нәруыз",
+      "D) Гемоглобиннің простетикалық тобы",
+      "Е) Оттек қорын жинақтайды",
+      "F) Құрылымдық жинақтың үшінші деңгейінің  глобулалы нәруызы"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "С) Қаңқалық бұлшықет пен жүрек бұлшықетінің оттекпен байланыстыратын нәруыз",
+      "Е) Оттек қорын жинақтайды",
+      "F) Құрылымдық жинақтың үшінші деңгейінің  глобулалы нәруызы"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 229,
+    "question": "Пассивті тасымалға жатады",
+    "options": [
+      "А) Протон сорғысы",
+      "В) Жеңілдетілген диффузия",
+      "С) Алмасу диффузиясы",
+      "D) Натрий/калий сорғысы",
+      "Е) Қарапайым диффузия",
+      "F) Кальций сорғысы"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "В) Жеңілдетілген диффузия",
+      "С) Алмасу диффузиясы",
+      "Е) Қарапайым диффузия"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 230,
+    "question": "Активті тасымалға жатады",
+    "options": [
+      "А) Протон сорғысы",
+      "В) Жеңілдетілген диффузия",
+      "С) Алмасу диффузиясы",
+      "D) Натрий/калий сорғысы",
+      "Е) Қарапайым диффузия",
+      "F) Кальций сорғысы"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Протон сорғысы",
+      "D) Натрий/калий сорғысы",
+      "F) Кальций сорғысы"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 231,
+    "question": "Жеткілікті үлкен жылдамдықпен диффузияланатын зарядталмаған полюсті кіші молекулалар",
+    "options": [
+      "А) Аммиак",
+      "В) Көмірқышқыл газы",
+      "С) Стероидтер",
+      "D) Оттек",
+      "Е) Этанол",
+      "F) Тіреоидты гормондар"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Аммиак",
+      "В) Көмірқышқыл газы",
+      "Е) Этанол"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 232,
+    "question": "Липидті мембрана арқылы диффузияланатын кіші полюссіз молекулалар",
+    "options": [
+      "А) Аммиак",
+      "В) Көмірқышқыл газы",
+      "С) Стероидтер",
+      "D) Оттек",
+      "Е) Этанол",
+      "F) Тіреоидты гормондар"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "С) Стероидтер",
+      "D) Оттек",
+      "F) Тіреоидты гормондар"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 233,
+    "question": "Селективті өзектер (каналдар) активациялық өзектердің ашылуын тудыратын дабылға  байланысты бөлінеді",
+    "options": [
+      "А) Иондар",
+      "В) Траснлоказалар",
+      "С) Хемосезімтал",
+      "D) Механосезімтал",
+      "Е) Медиаторлар",
+      "F) Потенциалсезімтал"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "С) Хемосезімтал",
+      "D) Механосезімтал",
+      "F) Потенциалсезімтал"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 234,
+    "question": "Қандағы эритроциттердің мөлшері өзгеруі мүмкін",
+    "options": [
+      "А) Организм көп су жоғалтқанда",
+      "В) Барометрлік қысым төмен болғанда",
+      "С) Ұйықтағанда",
+      "D) Су көп ішкенде",
+      "Е) Эмоциялық қозуда",
+      "F) Жазық жерде жүргенде"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Организм көп су жоғалтқанда",
+      "В) Барометрлік қысым төмен болғанда",
+      "Е) Эмоциялық қозуда"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 235,
+    "question": "Гемоглобинге тән құрылымдарды анықтаңыз",
+    "options": [
+      "А) Молекуласы глобин және құрамында темірі бар гем тобынан құралған нәруыздардан тұрады",
+      "В) Аллостериялық нәруыздарға жатады",
+      "С) Қаңқалық және жүрек бұлшықетінде оттекпен байланысады",
+      "D) Төрт полипептидтік тізбектен тұрады",
+      "Е) Оттек қорын жинақтайды",
+      "F) Үшінші реттік құрылымды нәруыз"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Молекуласы глобин және құрамында темірі бар гем тобынан құралған нәруыздардан тұрады",
+      "В) Аллостериялық нәруыздарға жатады",
+      "D) Төрт полипептидтік тізбектен тұрады"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 236,
+    "question": "Капилляр қантамырына тән анықтамаларды белгілеңіз",
+    "options": [
+      "А) Қан мен ұлпа сұйықтығы арасында зат алмасу жүзеге асырады",
+      "В) Оттек қорын жинақтау",
+      "С) Бұлшықетте оттек байланыстыру",
+      "D) Қабырғасы өте жұқа (≈0,005 мм)",
+      "E) Қабырғасы қалың, 3 қабатты",
+      "F) 1 қабаттан тұрады"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Қан мен ұлпа сұйықтығы арасында зат алмасу жүзеге асырады",
+      "D) Қабырғасы өте жұқа (≈0,005 мм)",
+      "F) 1 қабаттан тұрады"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 237,
+    "question": "Эритроцит жасушасына тән құрлымдарды анықтаңыз",
+    "options": [
+      "А) Қызыл қан жасушасы",
+      "В) Ер адамның 1 мм³ қанда 180–400 мың эротроцит болады",
+      "С) Құрамында фибриноген бар",
+      "D) Ер адамның 1 мм³ қанда ~5 000 000 эротроцит болады",
+      "Е) Ядросы бар, ақ жасуша",
+      "F) Екі беті ойыс диск тәрізді"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "А) Қызыл қан жасушасы",
+      "D) Ер адамның 1 мм³ қанда ~5 000 000 эротроцит болады",
+      "F) Екі беті ойыс диск тәрізді"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 238,
+    "question": "Селективті өзектердің ашылып-жабылуы қандай құрылымар арқалы реттеліп отырады",
+    "options": [
+      "А) Аммиак",
+      "В) Гормондар",
+      "С) Азот оксиді",
+      "D) Этанол",
+      "Е) Медиаторлар",
+      "F) Стероидтер"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "В) Гормондар",
+      "Е) Медиаторлар"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 239,
+    "question": "Ұрықтың құрсақта дамуының 7–12 аптасында кездеседі",
+    "options": [
+      "А) HbC",
+      "B) HbD",
+      "C) HbC",
+      "D) HbA",
+      "E) HbF",
+      "F) HbP"
+    ],
+    "correctAnswer": null,
+    "correctAnswers": [
+      "E) HbF",
+      "F) HbP"
+    ],
+    "isMultipleChoice": true
+  },
+  {
+    "id": 240,
+    "question": "Құрамында оксигемоглобин бар артерия қанының түсі",
+    "options": [
+      "А) Ашық алқызыл",
+      "В) Қою қызыл",
+      "С) Көк",
+      "D) Сарғыш",
+      "Е) Түссіз",
+      "F) Сары"
+    ],
+    "correctAnswer": "А) Ашық алқызыл",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 241,
+    "question": "9-аптадағы ұрық қанында кездесетін гемоглобин типі",
+    "options": [
+      "А) HbP",
+      "B) HbD",
+      "C) HbF",
+      "D) HbA"
+    ],
+    "correctAnswer": "C) HbF",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 242,
+    "question": "Ересектердегі гемоглобин типі",
+    "options": [
+      "A) HbP",
+      "B) HbD",
+      "C) HbF",
+      "D) HbA"
+    ],
+    "correctAnswer": "D) HbA",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 243,
+    "question": "Тотықсызданған гемоглобині көп веналық қанның түсі",
+    "options": [
+      "А) Алқызыл",
+      "В) Қою қызыл",
+      "С) Сарғыш",
+      "D) Көк"
+    ],
+    "correctAnswer": "В) Қою қызыл",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 244,
+    "question": "Гемоглобин нәруызының пішіні",
+    "options": [
+      "А) Тетраэдрге жақын",
+      "В) Үшбұрышты",
+      "С) Ромб тәрізді",
+      "D) Шеңбер тәрізді"
+    ],
+    "correctAnswer": "А) Тетраэдрге жақын",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 245,
+    "question": "Гемоглобиннің белсенді (простетикалық) тобы",
+    "options": [
+      "А) Гем",
+      "В) Глобин",
+      "С) Апомиоглобин",
+      "D) Пропион"
+    ],
+    "correctAnswer": "А) Гем",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 246,
+    "question": "Концентрациясы жоғары ортадан концентрациясы төмен ортаға қарай заттардың өтуі",
+    "options": [
+      "А) Жеңілдетілген диффузия",
+      "В) Транслоказалар",
+      "С) Қарапайым диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "С) Қарапайым диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 247,
+    "question": "Жасуша ішіндегі және сыртындағы заттар концентрациясының айырмасы",
+    "options": [
+      "А) Жеңілдетілген диффузия",
+      "В) Транслоказалар",
+      "С) Қарапайым диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "D) Концентрация градиенті",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 248,
+    "question": "Пассивті тасымалдауға жатады",
+    "options": [
+      "А) Жеңілдетілген диффузия, қарапайым диффузия",
+      "В) Натрий/калий сорғысы",
+      "С) Кальций сорғысы",
+      "D) Протон сорғысы"
+    ],
+    "correctAnswer": "А) Жеңілдетілген диффузия, қарапайым диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 249,
+    "question": "Қаннан миға өтетін глюкоза сияқты заттар тасымалданады",
+    "options": [
+      "А) Жеңілдетілген диффузия",
+      "В) Транслоказалар",
+      "С) Қарапайым диффузия",
+      "D) Концентрация градиенті"
+    ],
+    "correctAnswer": "А) Жеңілдетілген диффузия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 250,
+    "question": "Тасымалданатын заттардан ерекшеленетін интегралды нәруыздар",
+    "options": [
+      "А) Кальций сорғысы",
+      "В) Транслоказалар",
+      "С) Натрий сорғысы",
+      "D) Протон сорғысы"
+    ],
+    "correctAnswer": "В) Транслоказалар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
   }
 ]

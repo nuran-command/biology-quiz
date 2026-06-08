@@ -1,27 +1,31 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { StartScreen, type TestType } from './components/StartScreen';
+import { StartScreen, type CategoryType, type PartType } from './components/StartScreen';
 import { QuizComponent } from './components/QuizComponent';
 import { ResultScreen } from './components/ResultScreen';
 import questionsData from './data/questions.json';
 
-type Question = {
+export type Question = {
   id: number;
   question: string;
   options: string[];
-  correctAnswer: string;
+  correctAnswer: string | null;
+  correctAnswers?: string[] | null;
+  isMultipleChoice?: boolean;
 };
 
 export type UserAnswer = {
   questionId: number;
   questionText: string;
-  selectedOption: string;
-  correctOption: string;
+  selectedOptions: string[];
+  correctOptions: string[];
   isCorrect: boolean;
+  isMultipleChoice: boolean;
 };
 
 type Settings = {
-  testType: TestType;
+  category: CategoryType;
+  part: PartType;
   shuffle: boolean;
   limitTo20: boolean;
 };
@@ -45,15 +49,25 @@ function App() {
   const [endTime, setEndTime] = useState<number | null>(null);
 
   const handleStart = (settings: Settings) => {
-    let questionsList = [...questionsData];
+    let questionsList = [...questionsData] as Question[];
     
-    // Filter by test section
-    if (settings.testType === 'part1') {
-      questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 50);
-    } else if (settings.testType === 'part2') {
-      questionsList = questionsList.filter(q => q.id >= 51 && q.id <= 100);
-    } else if (settings.testType === 'part3') {
-      questionsList = questionsList.filter(q => q.id >= 101 && q.id <= 150);
+    // Filter by category and part
+    if (settings.category === 'molecular_biology') {
+      questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 150);
+      if (settings.part === 'part1') {
+        questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 50);
+      } else if (settings.part === 'part2') {
+        questionsList = questionsList.filter(q => q.id >= 51 && q.id <= 100);
+      } else if (settings.part === 'part3') {
+        questionsList = questionsList.filter(q => q.id >= 101 && q.id <= 150);
+      }
+    } else if (settings.category === 'nutrition_transport') {
+      questionsList = questionsList.filter(q => q.id >= 151 && q.id <= 250);
+      if (settings.part === 'part1') {
+        questionsList = questionsList.filter(q => q.id >= 151 && q.id <= 200);
+      } else if (settings.part === 'part2') {
+        questionsList = questionsList.filter(q => q.id >= 201 && q.id <= 250);
+      }
     }
     
     if (settings.shuffle) {
@@ -73,15 +87,18 @@ function App() {
     setGameState('quiz');
   };
 
-  const handleAnswer = (selectedOption: string, isCorrect: boolean) => {
+  const handleAnswer = (selectedOptions: string[], isCorrect: boolean) => {
     const currentQuestion = activeQuestions[currentIndex];
     
     const newAnswer: UserAnswer = {
       questionId: currentQuestion.id,
       questionText: currentQuestion.question,
-      selectedOption,
-      correctOption: currentQuestion.correctAnswer,
-      isCorrect
+      selectedOptions,
+      correctOptions: currentQuestion.isMultipleChoice && currentQuestion.correctAnswers
+        ? currentQuestion.correctAnswers
+        : [currentQuestion.correctAnswer || ''],
+      isCorrect,
+      isMultipleChoice: !!currentQuestion.isMultipleChoice
     };
 
     setAnswers(prev => [...prev, newAnswer]);

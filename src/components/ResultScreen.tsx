@@ -253,12 +253,12 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
                         <div className="px-10 pb-4 pt-2 border-t border-gray-50 text-sm space-y-2.5">
                           <div className={`p-3 rounded-lg ${ans.isCorrect ? 'bg-green-50 text-green-800' : 'bg-red-50 text-red-800'}`}>
                             <span className="font-bold text-xs uppercase tracking-wider block mb-1">Сіздің жауабыңыз:</span>
-                            {ans.selectedOption}
+                            {ans.selectedOptions.join('; ')}
                           </div>
                           {!ans.isCorrect && (
                             <div className="p-3 bg-green-50 text-green-800 rounded-lg">
                               <span className="font-bold text-xs uppercase tracking-wider block mb-1">Дұрыс жауап:</span>
-                              {ans.correctOption}
+                              {ans.correctOptions.join('; ')}
                             </div>
                           )}
                         </div>
