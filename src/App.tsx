@@ -111,6 +111,7 @@ function App() {
             currentIndex={currentIndex}
             totalQuestions={activeQuestions.length}
             onAnswer={handleAnswer}
+            onBack={() => setGameState('start')}
           />
         )}
         
