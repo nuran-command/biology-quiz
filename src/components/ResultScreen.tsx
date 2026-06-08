@@ -228,7 +228,7 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
                         {ans.isCorrect ? '✓' : '✗'}
                       </span>
                       <p className="font-semibold text-text text-sm sm:text-base leading-snug">
-                        {ans.questionId}. {ans.questionText}
+                        {ans.questionText}
                       </p>
                     </div>
                     {/* Arrow Icon */}

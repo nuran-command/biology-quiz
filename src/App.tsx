@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
-import { StartScreen } from './components/StartScreen';
+import { StartScreen, type TestType } from './components/StartScreen';
 import { QuizComponent } from './components/QuizComponent';
 import { ResultScreen } from './components/ResultScreen';
 import questionsData from './data/questions.json';
@@ -21,6 +21,7 @@ export type UserAnswer = {
 };
 
 type Settings = {
+  testType: TestType;
   shuffle: boolean;
   limitTo20: boolean;
 };
@@ -45,6 +46,15 @@ function App() {
 
   const handleStart = (settings: Settings) => {
     let questionsList = [...questionsData];
+    
+    // Filter by test section
+    if (settings.testType === 'part1') {
+      questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 50);
+    } else if (settings.testType === 'part2') {
+      questionsList = questionsList.filter(q => q.id >= 51 && q.id <= 100);
+    } else if (settings.testType === 'part3') {
+      questionsList = questionsList.filter(q => q.id >= 101 && q.id <= 150);
+    }
     
     if (settings.shuffle) {
       questionsList = shuffleArray(questionsList);

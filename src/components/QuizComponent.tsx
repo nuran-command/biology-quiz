@@ -51,7 +51,7 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
       </div>
 
       <h2 className="text-2xl font-semibold text-text mb-8 leading-relaxed">
-        {question.id}. {question.question}
+        {question.question}
       </h2>
 
       <div className="space-y-4">
