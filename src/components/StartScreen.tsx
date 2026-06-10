@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export type CategoryType = 'molecular_biology' | 'nutrition_transport';
-export type PartType = 'part1' | 'part2' | 'part3' | 'part4' | 'all';
+export type PartType = 'part1' | 'part2' | 'part3' | 'part4' | 'part5' | 'all';
 
 type Settings = {
   category: CategoryType;
@@ -53,14 +53,21 @@ export const StartScreen = ({ onStart }: Props) => {
       id: 'part4' as PartType,
       title: '4-бөлім: Қосымша молекулалық биология',
       desc: 'Ақуыз синтезі, РНҚ түрлері, көмірсулар мен нәруыздардың құрылымы мен қызметі (Жаңа сұрақтар).',
-      range: '251 - 299 сұрақтар',
+      range: '201 - 250 сұрақтар',
       icon: '🧪'
+    },
+    {
+      id: 'part5' as PartType,
+      title: '5-бөлім: Тыныс алу',
+      desc: 'АТФ құрылысы, аэробты және анаэробты тыныс алу, гликолиз, Кребс циклі және митохондриялар.',
+      range: '251 - 320 сұрақтар',
+      icon: '🫁'
     },
     {
       id: 'all' as PartType,
       title: 'Жалпы жинақ (Толық тест)',
-      desc: 'Жоғарыдағы барлық 4 бөлімді қамтитын толық көлемді тест жинағы.',
-      range: '1 - 299 сұрақтар',
+      desc: 'Жоғарыдағы барлық 5 бөлімді қамтитын толық көлемді тест жинағы.',
+      range: '1 - 320 сұрақтар',
       icon: '📚'
     }
   ];
@@ -77,14 +84,14 @@ export const StartScreen = ({ onStart }: Props) => {
       id: 'part2' as PartType,
       title: '2-бөлім: Заттардың тасымалдануы',
       desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, антипорт, унипорт, қарапайым және жеңілдетілген диффузия.',
-      range: '51 - 100 сұрақтар',
+      range: '331 - 380 сұрақтар',
       icon: '🔄'
     },
     {
       id: 'all' as PartType,
       title: 'Жалпы жинақ (Толық тест)',
       desc: 'Қоректену және заттардың тасымалдануы бөлімінің барлық 100 сұрағын қамтиды.',
-      range: '1 - 100 сұрақтар',
+      range: '151 - 200 & 331 - 380 сұрақтар',
       icon: '📚'
     }
   ];
