@@ -51,15 +51,16 @@ function App() {
   const handleStart = (settings: Settings) => {
     let questionsList = [...questionsData] as Question[];
     
-    // Filter by category and part
     if (settings.category === 'molecular_biology') {
-      questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 150);
+      questionsList = questionsList.filter(q => (q.id >= 1 && q.id <= 150) || (q.id >= 251 && q.id <= 299));
       if (settings.part === 'part1') {
         questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 50);
       } else if (settings.part === 'part2') {
         questionsList = questionsList.filter(q => q.id >= 51 && q.id <= 100);
       } else if (settings.part === 'part3') {
         questionsList = questionsList.filter(q => q.id >= 101 && q.id <= 150);
+      } else if (settings.part === 'part4') {
+        questionsList = questionsList.filter(q => q.id >= 251 && q.id <= 299);
       }
     } else if (settings.category === 'nutrition_transport') {
       questionsList = questionsList.filter(q => q.id >= 151 && q.id <= 250);

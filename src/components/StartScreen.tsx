@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export type CategoryType = 'molecular_biology' | 'nutrition_transport';
-export type PartType = 'part1' | 'part2' | 'part3' | 'all';
+export type PartType = 'part1' | 'part2' | 'part3' | 'part4' | 'all';
 
 type Settings = {
   category: CategoryType;
@@ -50,10 +50,17 @@ export const StartScreen = ({ onStart }: Props) => {
       icon: '🧬'
     },
     {
+      id: 'part4' as PartType,
+      title: '4-бөлім: Қосымша молекулалық биология',
+      desc: 'Ақуыз синтезі, РНҚ түрлері, көмірсулар мен нәруыздардың құрылымы мен қызметі (Жаңа сұрақтар).',
+      range: '251 - 299 сұрақтар',
+      icon: '🧪'
+    },
+    {
       id: 'all' as PartType,
       title: 'Жалпы жинақ (Толық тест)',
-      desc: 'Жоғарыдағы барлық 3 бөлімді қамтитын толық көлемді тест жинағы.',
-      range: '1 - 150 сұрақтар',
+      desc: 'Жоғарыдағы барлық 4 бөлімді қамтитын толық көлемді тест жинағы.',
+      range: '1 - 299 сұрақтар',
       icon: '📚'
     }
   ];
