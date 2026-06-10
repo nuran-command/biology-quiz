@@ -65,11 +65,15 @@ function App() {
         questionsList = questionsList.filter(q => q.id >= 251 && q.id <= 320);
       }
     } else if (settings.category === 'nutrition_transport') {
-      questionsList = questionsList.filter(q => (q.id >= 151 && q.id <= 200) || (q.id >= 331 && q.id <= 380));
+      questionsList = questionsList.filter(q => (q.id >= 151 && q.id <= 200) || (q.id >= 331 && q.id <= 380) || (q.id >= 401 && q.id <= 490));
       if (settings.part === 'part1') {
         questionsList = questionsList.filter(q => q.id >= 151 && q.id <= 200);
       } else if (settings.part === 'part2') {
         questionsList = questionsList.filter(q => q.id >= 331 && q.id <= 380);
+      } else if (settings.part === 'part3') {
+        questionsList = questionsList.filter(q => q.id >= 401 && q.id <= 445);
+      } else if (settings.part === 'part4') {
+        questionsList = questionsList.filter(q => q.id >= 446 && q.id <= 490);
       }
     }
     
