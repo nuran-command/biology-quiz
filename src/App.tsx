@@ -52,7 +52,14 @@ function App() {
     let questionsList = [...questionsData] as Question[];
     
     if (settings.category === 'molecular_biology') {
-      questionsList = questionsList.filter(q => (q.id >= 1 && q.id <= 150) || (q.id >= 201 && q.id <= 320));
+      questionsList = questionsList.filter(
+        q => (q.id >= 1 && q.id <= 150) || 
+             (q.id >= 201 && q.id <= 320) || 
+             (q.id >= 501 && q.id <= 729) ||
+             (q.id >= 801 && q.id <= 847) ||
+             (q.id >= 901 && q.id <= 962) ||
+             (q.id >= 1001 && q.id <= 1038)
+      );
       if (settings.part === 'part1') {
         questionsList = questionsList.filter(q => q.id >= 1 && q.id <= 50);
       } else if (settings.part === 'part2') {
@@ -63,6 +70,18 @@ function App() {
         questionsList = questionsList.filter(q => q.id >= 201 && q.id <= 250);
       } else if (settings.part === 'part5') {
         questionsList = questionsList.filter(q => q.id >= 251 && q.id <= 320);
+      } else if (settings.part === 'part6') {
+        questionsList = questionsList.filter(q => q.id >= 501 && q.id <= 569);
+      } else if (settings.part === 'part7') {
+        questionsList = questionsList.filter(q => q.id >= 601 && q.id <= 636);
+      } else if (settings.part === 'part8') {
+        questionsList = questionsList.filter(q => q.id >= 701 && q.id <= 729);
+      } else if (settings.part === 'part9') {
+        questionsList = questionsList.filter(q => q.id >= 801 && q.id <= 847);
+      } else if (settings.part === 'part10') {
+        questionsList = questionsList.filter(q => q.id >= 901 && q.id <= 962);
+      } else if (settings.part === 'part11') {
+        questionsList = questionsList.filter(q => q.id >= 1001 && q.id <= 1038);
       }
     } else if (settings.category === 'nutrition_transport') {
       questionsList = questionsList.filter(q => (q.id >= 151 && q.id <= 200) || (q.id >= 331 && q.id <= 380) || (q.id >= 401 && q.id <= 490));
