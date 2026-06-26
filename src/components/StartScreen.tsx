@@ -124,15 +124,15 @@ export const StartScreen = ({ onStart }: Props) => {
   const nutritionTransportParts = [
     {
       id: 'part1' as PartType,
-      title: '1-бөлім: Қоректену және жасуша құрылымдары',
+      title: '3-4 бөлім 1-50',
       desc: 'Ферменттер, ингибиторлар мен активаторлар, гемоглобин мен миоглобин құрылысы, эритроциттер мен капиллярлар.',
       range: '1101 - 1150 сұрақтар',
       icon: '🥗'
     },
     {
       id: 'part2' as PartType,
-      title: '2-бөлім: Заттардың тасымалдануы',
-      desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, антипорт, унипорт, қарапайым және жеңілдетілген диффузия.',
+      title: '3-4 бөлім 50-100',
+      desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
       range: '331 - 380 сұрақтар',
       icon: '🔄'
     },
@@ -218,7 +218,7 @@ export const StartScreen = ({ onStart }: Props) => {
           <div className="flex items-center space-x-3 mb-2">
             <span className="text-2xl">🌱</span>
             <h4 className="font-bold text-text text-base md:text-lg">
-              Қоректену. Заттардың тасымалдануы
+              3–4 бөлім. Қоректену. Заттардың тасымалдануы
             </h4>
           </div>
           <p className="text-xs text-gray-500 leading-relaxed">
