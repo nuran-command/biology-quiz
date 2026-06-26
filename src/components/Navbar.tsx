@@ -1,26 +1,67 @@
-import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
 type Props = {
   onHome: () => void;
 };
 
 const LogoIcon = () => (
-  <svg className="w-8 h-8 text-indigo-600 flex-shrink-0" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M16 3C8.82 3 3 8.82 3 16C3 23.18 8.82 29 16 29C23.18 29 29 23.18 29 16C29 8.82 23.18 3 16 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="opacity-15" />
-    <path d="M9 16C9 12 12.5 9 16 9C19.5 9 23 12 23 16C23 20 19.5 23 16 23C12.5 23 9 20 9 16Z" stroke="url(#logo-grad-1)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-    <path d="M12 12C14 14 18 18 20 20" stroke="url(#logo-grad-2)" strokeWidth="2.5" strokeLinecap="round" />
-    <path d="M20 12C18 14 14 18 12 20" stroke="url(#logo-grad-2)" strokeWidth="2.5" strokeLinecap="round" />
+  <svg
+    className="w-8 h-8 text-indigo-600 shrink-0"
+    viewBox="0 0 32 32"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M16 3C8.82 3 3 8.82 3 16C3 23.18 8.82 29 16 29C23.18 29 29 23.18 29 16C29 8.82 23.18 3 16 3Z"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      className="opacity-15"
+    />
+    <path
+      d="M9 16C9 12 12.5 9 16 9C19.5 9 23 12 23 16C23 20 19.5 23 16 23C12.5 23 9 20 9 16Z"
+      stroke="url(#logo-grad-1)"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 12C14 14 18 18 20 20"
+      stroke="url(#logo-grad-2)"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
+    <path
+      d="M20 12C18 14 14 18 12 20"
+      stroke="url(#logo-grad-2)"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
     <circle cx="12" cy="12" r="1.75" fill="#818CF8" />
     <circle cx="20" cy="12" r="1.75" fill="#C084FC" />
     <circle cx="12" cy="20" r="1.75" fill="#C084FC" />
     <circle cx="20" cy="20" r="1.75" fill="#818CF8" />
     <defs>
-      <linearGradient id="logo-grad-1" x1="9" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id="logo-grad-1"
+        x1="9"
+        y1="9"
+        x2="23"
+        y2="23"
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#6366F1" />
         <stop offset="1" stopColor="#A855F7" />
       </linearGradient>
-      <linearGradient id="logo-grad-2" x1="12" y1="12" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+      <linearGradient
+        id="logo-grad-2"
+        x1="12"
+        y1="12"
+        x2="20"
+        y2="20"
+        gradientUnits="userSpaceOnUse"
+      >
         <stop stopColor="#A855F7" />
         <stop offset="1" stopColor="#6366F1" />
       </linearGradient>
@@ -32,79 +73,85 @@ export const Navbar = ({ onHome }: Props) => {
   const [showSubscription, setShowSubscription] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
-  const [activeTab, setActiveTab] = useState('home');
+  const [activeTab, setActiveTab] = useState("home");
   const [isOpen, setIsOpen] = useState(false);
 
   const tabs = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'help', label: 'Help' }
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "help", label: "Help" },
   ];
 
   const handleTabClick = (tabId: string) => {
     setActiveTab(tabId);
-    if (tabId === 'home') {
+    if (tabId === "home") {
       onHome();
-    } else if (tabId === 'about') {
+    } else if (tabId === "about") {
       setShowAbout(true);
-    } else if (tabId === 'help') {
+    } else if (tabId === "help") {
       setShowHelp(true);
     }
   };
 
   const closeAbout = () => {
     setShowAbout(false);
-    setActiveTab('home');
+    setActiveTab("home");
   };
 
   const closeHelp = () => {
     setShowHelp(false);
-    setActiveTab('home');
+    setActiveTab("home");
   };
 
   const HamburgerIcon = ({ isOpen }: { isOpen: boolean }) => (
-    <svg className="w-5.5 h-5.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <motion.path 
-        animate={isOpen ? { d: "M6 18L18 6" } : { d: "M4 6h16" }} 
+    <svg
+      className="w-5.5 h-5.5"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <motion.path
+        animate={isOpen ? { d: "M6 18L18 6" } : { d: "M4 6h16" }}
         transition={{ duration: 0.2 }}
-        strokeWidth="2.5" 
-        strokeLinecap="round" 
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
-      <motion.path 
-        animate={isOpen ? { opacity: 0 } : { opacity: 1 }} 
+      <motion.path
+        animate={isOpen ? { opacity: 0 } : { opacity: 1 }}
         transition={{ duration: 0.15 }}
-        d="M4 12h16" 
-        strokeWidth="2.5" 
-        strokeLinecap="round" 
+        d="M4 12h16"
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
-      <motion.path 
-        animate={isOpen ? { d: "M6 6l12 12" } : { d: "M4 18h16" }} 
+      <motion.path
+        animate={isOpen ? { d: "M6 6l12 12" } : { d: "M4 18h16" }}
         transition={{ duration: 0.2 }}
-        strokeWidth="2.5" 
-        strokeLinecap="round" 
+        strokeWidth="2.5"
+        strokeLinecap="round"
       />
     </svg>
   );
 
   return (
     <>
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 backdrop-blur-2xl bg-white/45 border border-white/60 rounded-full px-6 md:px-8 py-3 flex items-center justify-between transition-all shadow-[0_12px_40px_rgba(31,38,135,0.08),inset_0_0_12px_rgba(255,255,255,0.4)] hover:shadow-[0_16px_48px_rgba(31,38,135,0.12),inset_0_0_16px_rgba(255,255,255,0.5)]">
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 overflow-visible backdrop-blur-2xl bg-white/45 border border-white/60 rounded-full px-4 sm:px-6 md:px-8 py-3 flex items-center justify-between transition-all shadow-[0_12px_40px_rgba(31,38,135,0.08),inset_0_0_12px_rgba(255,255,255,0.4)] hover:shadow-[0_16px_48px_rgba(31,38,135,0.12),inset_0_0_16px_rgba(255,255,255,0.5)]">
         {/* Logo and Branding */}
-        <div 
+        <div
           onClick={() => {
-            handleTabClick('home');
+            handleTabClick("home");
             setIsOpen(false);
           }}
           className="flex items-center space-x-2.5 cursor-pointer hover:opacity-90 transition-opacity"
         >
           <LogoIcon />
-          <span className="shrikhand-regular text-xl md:text-2xl tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-600">
+          <span className="shrikhand-regular text-xl md:text-2xl tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-600 via-indigo-700 to-purple-600">
             Biomate
           </span>
         </div>
 
         {/* Center Pill Navigation Container - Desktop Only */}
-        <div className="hidden md:flex items-center space-x-1 bg-slate-950/[0.04] p-1 rounded-full border border-slate-950/[0.02]">
+        <div className="hidden md:flex items-center space-x-1 bg-slate-950/4 p-1 rounded-full border border-slate-950/2">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
             return (
@@ -112,14 +159,16 @@ export const Navbar = ({ onHome }: Props) => {
                 key={tab.id}
                 onClick={() => handleTabClick(tab.id)}
                 className={`relative px-6 py-2 text-sm font-extrabold transition-all duration-300 rounded-full cursor-pointer z-10 ${
-                  isActive ? 'text-indigo-600' : 'text-slate-500 hover:text-slate-800'
+                  isActive
+                    ? "text-indigo-600"
+                    : "text-slate-500 hover:text-slate-800"
                 }`}
               >
                 {isActive && (
                   <motion.div
                     layoutId="active-pill"
                     className="absolute inset-0 bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04),0_0_12px_rgba(99,102,241,0.06)] rounded-full -z-10"
-                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
                 <span>{tab.label}</span>
@@ -132,11 +181,21 @@ export const Navbar = ({ onHome }: Props) => {
         <div className="hidden md:block">
           <button
             onClick={() => setShowSubscription(true)}
-            className="px-6 py-2.5 bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-full text-sm font-black border border-white/40 shadow-[0_6px_20px_rgba(99,102,241,0.25),inset_0_2px_10px_rgba(255,255,255,0.3)] hover:shadow-[0_8px_28px_rgba(99,102,241,0.4)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center space-x-1.5 relative overflow-hidden group"
+            className="px-6 py-2.5 bg-linear-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-full text-sm font-black border border-white/40 shadow-[0_6px_20px_rgba(99,102,241,0.25),inset_0_2px_10px_rgba(255,255,255,0.3)] hover:shadow-[0_8px_28px_rgba(99,102,241,0.4)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center space-x-1.5 relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out pointer-events-none"></div>
-            <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/25 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+            <svg
+              className="w-3.5 h-3.5 relative z-10"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+              />
             </svg>
             <span className="relative z-10">Get Subscription</span>
           </button>
@@ -145,7 +204,7 @@ export const Navbar = ({ onHome }: Props) => {
         {/* Mobile Toggle Hamburger Button (Mobile Only) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="flex md:hidden items-center justify-center p-2 rounded-full text-slate-700 hover:bg-slate-950/[0.04] transition-colors cursor-pointer"
+          className="flex md:hidden items-center justify-center p-2 rounded-full text-slate-700 hover:bg-slate-950/4 transition-colors cursor-pointer"
         >
           <HamburgerIcon isOpen={isOpen} />
         </button>
@@ -158,7 +217,7 @@ export const Navbar = ({ onHome }: Props) => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -15, scale: 0.98 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="absolute top-[calc(100%+12px)] left-0 w-full bg-white/45 backdrop-blur-3xl border border-white/60 rounded-3xl p-5 shadow-[0_16px_40px_rgba(31,38,135,0.12),inset_0_0_12px_rgba(255,255,255,0.4)] flex flex-col space-y-4 md:hidden"
+              className="absolute top-[calc(100%+12px)] left-0 w-full max-h-[70vh] overflow-y-auto bg-white/45 backdrop-blur-3xl border border-white/60 rounded-3xl p-5 shadow-[0_16px_40px_rgba(31,38,135,0.12),inset_0_0_12px_rgba(255,255,255,0.4)] flex flex-col space-y-4 md:hidden"
             >
               {/* Navigation Links inside Mobile Panel */}
               <div className="flex flex-col space-y-1">
@@ -172,9 +231,9 @@ export const Navbar = ({ onHome }: Props) => {
                         setIsOpen(false);
                       }}
                       className={`w-full text-left px-5 py-3 text-sm font-extrabold rounded-2xl cursor-pointer transition-all ${
-                        isActive 
-                          ? 'bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04),0_0_12px_rgba(99,102,241,0.06)] text-indigo-600 border border-white/50' 
-                          : 'text-slate-500 hover:text-slate-800 hover:bg-slate-950/[0.02]'
+                        isActive
+                          ? "bg-white shadow-[0_2px_8px_rgba(0,0,0,0.04),0_0_12px_rgba(99,102,241,0.06)] text-indigo-600 border border-white/50"
+                          : "text-slate-500 hover:text-slate-800 hover:bg-slate-950/2"
                       }`}
                     >
                       {tab.label}
@@ -189,11 +248,21 @@ export const Navbar = ({ onHome }: Props) => {
                   setShowSubscription(true);
                   setIsOpen(false);
                 }}
-                className="w-full py-3 bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-2xl text-sm font-black border border-white/40 shadow-[0_6px_20px_rgba(99,102,241,0.25),inset_0_2px_10px_rgba(255,255,255,0.3)] transition-all duration-300 transform active:scale-98 cursor-pointer flex items-center justify-center space-x-1.5 relative overflow-hidden group"
+                className="w-full py-3 bg-linear-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-2xl text-sm font-black border border-white/40 shadow-[0_6px_20px_rgba(99,102,241,0.25),inset_0_2px_10px_rgba(255,255,255,0.3)] transition-all duration-300 transform active:scale-98 cursor-pointer flex items-center justify-center space-x-1.5 relative overflow-hidden group"
               >
-                <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/25 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out pointer-events-none"></div>
-                <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/25 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out pointer-events-none"></div>
+                <svg
+                  className="w-3.5 h-3.5 relative z-10"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2.5}
+                    d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"
+                  />
                 </svg>
                 <span className="relative z-10">Get Subscription</span>
               </button>
@@ -205,7 +274,7 @@ export const Navbar = ({ onHome }: Props) => {
       {/* Subscription Modal */}
       <AnimatePresence>
         {showSubscription && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -219,24 +288,38 @@ export const Navbar = ({ onHome }: Props) => {
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="relative w-full max-w-md bg-white/40 backdrop-blur-3xl border border-white/60 rounded-3xl p-8 shadow-[0_20px_50px_rgba(31,38,135,0.15),inset_0_0_20px_rgba(255,255,255,0.5)] z-10"
             >
-              <button 
+              <button
                 onClick={() => setShowSubscription(false)}
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
-              
+
               <div className="text-center space-y-4">
                 <div className="inline-block p-4 bg-amber-50 rounded-2xl text-3xl">
                   ✨
                 </div>
-                <h3 className="text-2xl font-black text-slate-800">PRO Жазылым</h3>
+                <h3 className="text-2xl font-black text-slate-800">
+                  PRO Жазылым
+                </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Барлық тест сұрақтарына шектеусіз қолжетімділік алыңыз, жарнамасыз дайындалыңыз және егжей-тегжейлі талдауларды қараңыз.
+                  Барлық тест сұрақтарына шектеусіз қолжетімділік алыңыз,
+                  жарнамасыз дайындалыңыз және егжей-тегжейлі талдауларды
+                  қараңыз.
                 </p>
-                
+
                 <div className="bg-white/40 backdrop-blur-md border border-white/60 shadow-sm rounded-2xl p-4 text-left space-y-3">
                   <div className="flex items-center space-x-2 text-sm text-slate-700 font-semibold">
                     <span className="text-emerald-500">✓</span>
@@ -254,9 +337,9 @@ export const Navbar = ({ onHome }: Props) => {
 
                 <button
                   onClick={() => setShowSubscription(false)}
-                  className="w-full py-4 bg-gradient-to-r from-indigo-500/80 to-purple-500/80 backdrop-blur-xl hover:from-indigo-500/90 hover:to-purple-500/90 text-white rounded-2xl font-extrabold border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer mt-2 relative overflow-hidden group"
+                  className="w-full py-4 bg-linear-to-r from-indigo-500/80 to-purple-500/80 backdrop-blur-xl hover:from-indigo-500/90 hover:to-purple-500/90 text-white rounded-2xl font-extrabold border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer mt-2 relative overflow-hidden group"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/30 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
                   Жазылу — 1 490 ₸ / айына
                 </button>
               </div>
@@ -268,7 +351,7 @@ export const Navbar = ({ onHome }: Props) => {
       {/* Help Modal */}
       <AnimatePresence>
         {showHelp && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -282,36 +365,61 @@ export const Navbar = ({ onHome }: Props) => {
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="relative w-full max-w-md bg-white/40 backdrop-blur-3xl border border-white/60 rounded-3xl p-8 shadow-[0_20px_50px_rgba(31,38,135,0.15),inset_0_0_20px_rgba(255,255,255,0.5)] z-10"
             >
-              <button 
+              <button
                 onClick={closeHelp}
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
-              
+
               <div className="text-center space-y-4">
                 <div className="inline-block p-4 bg-indigo-50 rounded-2xl text-3xl">
                   ❓
                 </div>
-                <h3 className="text-2xl font-black text-slate-800">Көмек & Нұсқаулық</h3>
+                <h3 className="text-2xl font-black text-slate-800">
+                  Көмек & Нұсқаулық
+                </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  Бұл платформа биология және биохимия пәндері бойынша тест тапсырып, өз біліміңізді жетілдіруге көмектеседі.
+                  Бұл платформа биология және биохимия пәндері бойынша тест
+                  тапсырып, өз біліміңізді жетілдіруге көмектеседі.
                 </p>
-                
+
                 <div className="text-left space-y-3 bg-white/40 backdrop-blur-md border border-white/60 shadow-sm rounded-2xl p-4 text-xs text-slate-800">
-                  <p>1. <strong>Бағытты таңдаңыз:</strong> Басты беттен өзіңізге қажетті биология бөлімін таңдаңыз.</p>
-                  <p>2. <strong>Бөлімді таңдаңыз:</strong> Сұрақтар санын және тиісті тақырыпты таңдаңыз.</p>
-                  <p>3. <strong>Параметрлер:</strong> Қаласаңыз сұрақтарды араластыру немесе 20 сұрақпен шектеу мүмкіндігін қосыңыз.</p>
-                  <p>4. <strong>Нәтиже:</strong> Тест соңында әр сұрақты талдап, дұрыс және қате жауаптарыңызды салыстыра аласыз.</p>
+                  <p>
+                    1. <strong>Бағытты таңдаңыз:</strong> Басты беттен өзіңізге
+                    қажетті биология бөлімін таңдаңыз.
+                  </p>
+                  <p>
+                    2. <strong>Бөлімді таңдаңыз:</strong> Сұрақтар санын және
+                    тиісті тақырыпты таңдаңыз.
+                  </p>
+                  <p>
+                    3. <strong>Параметрлер:</strong> Қаласаңыз сұрақтарды
+                    араластыру немесе 20 сұрақпен шектеу мүмкіндігін қосыңыз.
+                  </p>
+                  <p>
+                    4. <strong>Нәтиже:</strong> Тест соңында әр сұрақты талдап,
+                    дұрыс және қате жауаптарыңызды салыстыра аласыз.
+                  </p>
                 </div>
 
                 <button
                   onClick={closeHelp}
-                  className="w-full py-3.5 bg-gradient-to-r from-slate-700/80 to-slate-800/80 backdrop-blur-xl text-white rounded-2xl font-bold border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.2),inset_0_2px_10px_rgba(255,255,255,0.2)] transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer relative overflow-hidden group"
+                  className="w-full py-3.5 bg-linear-to-r from-slate-700/80 to-slate-800/80 backdrop-blur-xl text-white rounded-2xl font-bold border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.2),inset_0_2px_10px_rgba(255,255,255,0.2)] transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer relative overflow-hidden group"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
                   Түсінікті
                 </button>
               </div>
@@ -323,7 +431,7 @@ export const Navbar = ({ onHome }: Props) => {
       {/* About Modal */}
       <AnimatePresence>
         {showAbout && (
-          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+          <div className="fixed inset-0 z-100 flex items-center justify-center p-4">
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -337,24 +445,38 @@ export const Navbar = ({ onHome }: Props) => {
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
               className="relative w-full max-w-md bg-white/40 backdrop-blur-3xl border border-white/60 rounded-3xl p-8 shadow-[0_20px_50px_rgba(31,38,135,0.15),inset_0_0_20px_rgba(255,255,255,0.5)] z-10"
             >
-              <button 
+              <button
                 onClick={closeAbout}
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
-              
+
               <div className="text-center space-y-4">
                 <div className="inline-block p-3.5 bg-indigo-50/80 rounded-2xl">
                   <LogoIcon />
                 </div>
-                <h3 className="text-2xl font-black text-slate-800">About Biomate</h3>
+                <h3 className="text-2xl font-black text-slate-800">
+                  About Biomate
+                </h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
-                  <strong>Biomate</strong> is a modern biological & biochemical learning and self-assessment assistant designed to help students master complex life science concepts.
+                  <strong>Biomate</strong> is a modern biological & biochemical
+                  learning and self-assessment assistant designed to help
+                  students master complex life science concepts.
                 </p>
-                
+
                 <div className="bg-white/40 backdrop-blur-md border border-white/60 shadow-sm rounded-2xl p-4 text-left space-y-3">
                   <div className="flex items-center space-x-3 text-sm text-slate-700 font-semibold">
                     <span className="text-indigo-500 text-lg">🧬</span>
@@ -366,15 +488,17 @@ export const Navbar = ({ onHome }: Props) => {
                   </div>
                   <div className="flex items-center space-x-3 text-sm text-slate-700 font-semibold">
                     <span className="text-indigo-500 text-lg">⚡</span>
-                    <span>Zero Ads for focused study & learning environments</span>
+                    <span>
+                      Zero Ads for focused study & learning environments
+                    </span>
                   </div>
                 </div>
 
                 <button
                   onClick={closeAbout}
-                  className="w-full py-3.5 bg-gradient-to-r from-indigo-500/80 to-purple-500/80 backdrop-blur-xl text-white rounded-2xl font-bold border border-white/30 shadow-[0_8px_32px_rgba(99,102,241,0.2),inset_0_2px_10px_rgba(255,255,255,0.2)] transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer relative overflow-hidden group"
+                  className="w-full py-3.5 bg-linear-to-r from-indigo-500/80 to-purple-500/80 backdrop-blur-xl text-white rounded-2xl font-bold border border-white/30 shadow-[0_8px_32px_rgba(99,102,241,0.2),inset_0_2px_10px_rgba(255,255,255,0.2)] transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer relative overflow-hidden group"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+                  <div className="absolute inset-0 bg-linear-to-r from-white/0 via-white/20 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out"></div>
                   Close
                 </button>
               </div>
