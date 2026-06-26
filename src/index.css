@@ -7,7 +7,9 @@
   --color-surface: #FFFFFF;
   --color-text: #1F2937;
   --color-error: #EF4444;
-  --font-sans: "Inter", sans-serif;
+  --font-sans: "Alice", serif;
+  --font-alice: "Alice", serif;
+  --font-marck: "Marck Script", cursive;
 }
 
 @layer base {
@@ -19,4 +21,16 @@
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
   }
+}
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.marck-script-regular {
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

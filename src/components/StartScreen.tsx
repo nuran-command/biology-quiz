@@ -259,7 +259,7 @@ export const StartScreen = ({ onStart }: Props) => {
       
       <h1 className="text-4xl md:text-5xl font-black text-text mb-4 text-center leading-tight">
         Биология және Биохимия <br />
-        <span className="text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+        <span className="font-marck text-5xl md:text-6xl text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-normal">
           Интерактивті Тесттер
         </span>
       </h1>
