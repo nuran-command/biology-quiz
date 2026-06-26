@@ -7,6 +7,7 @@ import { ResultScreen } from './components/ResultScreen';
 import { Navbar } from './components/Navbar';
 import { allQuestions as questionsData } from './data/questions';
 import lottieBg from './assets/bg1.json';
+import bgVideo from './assets/bg3.mp4';
 
 // Handle CommonJS/ESM interop mismatch for Lottie
 const LottiePlayer = (Lottie as any).default || Lottie;
@@ -154,14 +155,27 @@ function App() {
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
       <Navbar onHome={() => setGameState('start')} />
       
-      {/* Global Background Lottie Player */}
-      <div className="fixed inset-0 w-screen h-screen pointer-events-none flex items-center justify-center overflow-hidden -z-10">
-        <LottiePlayer 
-          animationData={lottieBg} 
-          loop={true} 
-          className="w-full h-full object-cover opacity-[0.2]"
-        />
-      </div>
+      {/* Background Media */}
+      {gameState === 'start' ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="fixed inset-0 w-full h-full object-cover -z-10 opacity-[0.22] pointer-events-none"
+        >
+          <source src={bgVideo} type="video/mp4" />
+        </video>
+      ) : (
+        /* Global Background Lottie Player for other pages */
+        <div className="fixed inset-0 w-screen h-screen pointer-events-none flex items-center justify-center overflow-hidden -z-10">
+          <LottiePlayer 
+            animationData={lottieBg} 
+            loop={true} 
+            className="w-full h-full object-cover opacity-[0.2]"
+          />
+        </div>
+      )}
       
       <div className="relative z-10 w-full flex flex-col items-center justify-center">
         <AnimatePresence mode="wait">

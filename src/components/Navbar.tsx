@@ -70,7 +70,7 @@ export const Navbar = ({ onHome }: Props) => {
           className="flex items-center space-x-2.5 cursor-pointer hover:opacity-90 transition-opacity"
         >
           <LogoIcon />
-          <span className="font-sans font-black text-lg md:text-xl tracking-wide text-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-slate-800 to-slate-900">
+          <span className="shrikhand-regular text-xl md:text-2xl tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-indigo-700 to-purple-600">
             Biomate
           </span>
         </div>
