@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import { StartScreen, type CategoryType, type PartType } from './components/StartScreen';
 import { QuizComponent } from './components/QuizComponent';
 import { ResultScreen } from './components/ResultScreen';
-import questionsData from './data/questions.json';
+import { allQuestions as questionsData } from './data/questions';
 
 export type Question = {
   id: number;

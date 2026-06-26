@@ -1,0 +1,672 @@
+[
+  {
+    "id": 801,
+    "question": "Организмнің бойындағы түрлі белгілер мен қасиеттердің сыртқы орта факторларының әсерінен жаңа белгі, қасиеттерге ие болуы:",
+    "options": [
+      "A) Тұқымқуалаушылық",
+      "B) Өзгергіштік",
+      "C) Реакция мөлшері",
+      "D) Гомеостаз"
+    ],
+    "correctAnswer": "B) Өзгергіштік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 802,
+    "question": "Тұқым қуаламайтын өзгергіштікке жатады:",
+    "options": [
+      "A) Генотиптік",
+      "B) Комбинативтік",
+      "C) Модификациялық",
+      "D) Мутациялық"
+    ],
+    "correctAnswer": "C) Модификациялық",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 803,
+    "question": "Организм белгілерінің сыртқы орта жағдайына байланысты өзгеруі:",
+    "options": [
+      "A) Генотиптік",
+      "B) Комбинативтік",
+      "C) Модификациялық",
+      "D) Мутациялық"
+    ],
+    "correctAnswer": "C) Модификациялық",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 804,
+    "question": "Модификациялық өзгергіштік қандай әдіспен зерттеледі:",
+    "options": [
+      "A) Генеалогиялық әдіс",
+      "B) Гибридологиялық әдіс",
+      "C) Цитогенетикалық әдіс",
+      "D) Статистикалық әдіс"
+    ],
+    "correctAnswer": "D) Статистикалық әдіс",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 805,
+    "question": "Кішісінен үлкеніне қарай бір қатарға орналастыру – белгі дамуының жеке көрінісі:",
+    "options": [
+      "A) Вариация қатары немесе түрлену қатары",
+      "B) Вариациялық қисық",
+      "C) Модификациялық өзгергіштік",
+      "D) Реакция нормасы"
+    ],
+    "correctAnswer": "A) Вариация қатары немесе түрлену қатары",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 806,
+    "question": "Организмнің түрліше белгілер мен қасиеттерінің сыртқы орта жағдайларына байланысты белгілі бір шамада өзгере алу қабілеті:",
+    "options": [
+      "A) Модификациялық өзгергіштік",
+      "B) Тұқым қуалайтын өзгергіштік",
+      "C) Вариация қатары",
+      "D) Реакция мөлшері"
+    ],
+    "correctAnswer": "D) Реакция мөлшері",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 807,
+    "question": "Жебе жапырақ өсімдігінің судың бетінде өсетін жапырағының пішіні:",
+    "options": [
+      "A) Жебе тәрізді",
+      "B) Бүйрек тәрізді",
+      "C) Таспа тәрізді",
+      "D) Ине тәрізді"
+    ],
+    "correctAnswer": "A) Жебе тәрізді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 808,
+    "question": "Жебе жапырақтың су бетінде қалқып жүретін жапырағының пішіні:",
+    "options": [
+      "A) Жебе тәрізді",
+      "B) Бүйрек тәрізді",
+      "C) Таспа тәрізді",
+      "D) Ине тәрізді"
+    ],
+    "correctAnswer": "B) Бүйрек тәрізді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 809,
+    "question": "Жебежапырақтың су түбінде өсетін жапырағының пішіні:",
+    "options": [
+      "A) Жебе тәрізді",
+      "B) Бүйрек тәрізді",
+      "C) Таспа тәрізді",
+      "D) Ине тәрізді"
+    ],
+    "correctAnswer": "C) Таспа тәрізді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 810,
+    "question": "Организмдерде белгілердің дамуын анықтайтын басты фактор:",
+    "options": [
+      "A) Фенотип",
+      "B) Генотип",
+      "C) Модификация",
+      "D) Вариация"
+    ],
+    "correctAnswer": "B) Генотип",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 811,
+    "question": "Генотиптің өзгеруіне байланыссыз, сыртқы орта әсерінен организм фенотипіндегі белгілердин өзгеруі:",
+    "options": [
+      "A) Мутация",
+      "B) Генотип",
+      "C) Модификация",
+      "D) Комбинативтік"
+    ],
+    "correctAnswer": "C) Модификация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 812,
+    "question": "Ұзаққа созылған модификациялық өзгергіштік біртіндеп мутациялық өзгергіштікке айналуы мүмкін деп айтқан ғалым:",
+    "options": [
+      "A) Х. Г. де Фриз",
+      "B) Н. И. Вавилов",
+      "C) Т. Морган",
+      "D) И. И. Мечников"
+    ],
+    "correctAnswer": "A) Х. Г. де Фриз",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 813,
+    "question": "Бір ғана қарама-қарсы белгілер бойынша будандастыру:",
+    "options": [
+      "A) Талдаушы будандастыру",
+      "B) Дигибридті",
+      "C) Моногибридті",
+      "D) Полигибридті"
+    ],
+    "correctAnswer": "C) Моногибридті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 814,
+    "question": "И. Г. Мендельдің І заңы:",
+    "options": [
+      "A) Біркелкілік заңы",
+      "B) Белгілердің ажырау заңы",
+      "C) Тәуелсіз тұқым қуалау",
+      "D) Толық емес доминанттылық"
+    ],
+    "correctAnswer": "A) Біркелкілік заңы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 815,
+    "question": "Доминантты ген:",
+    "options": [
+      "A) a",
+      "B) A",
+      "C) aa",
+      "D) Aa"
+    ],
+    "correctAnswer": "B) A",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 816,
+    "question": "Рецессивті ген:",
+    "options": [
+      "A) a",
+      "B) A",
+      "C) AA",
+      "D) Aa"
+    ],
+    "correctAnswer": "A) a",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 817,
+    "question": "Асбұршақтың хромосома саны:",
+    "options": [
+      "A) 196",
+      "B) 8",
+      "C) 14",
+      "D) 48"
+    ],
+    "correctAnswer": "C) 14",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 818,
+    "question": "Фенотиптері ұқсас өсімдіктер мен жануарлардың генотиптерін анықтау мақсатында жүргізіледі:",
+    "options": [
+      "A) Моногибридті будандастыру",
+      "B) Дигибридті будандастыру",
+      "C) Полигибридті будандастыру",
+      "D) Талдаушы будандастыру"
+    ],
+    "correctAnswer": "D) Талдаушы будандастыру",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 819,
+    "question": "И. Г. Мендельдің ІІ заңы:",
+    "options": [
+      "A) Біркелкілік заңы",
+      "B) Белгілердің ажырау заңы",
+      "C) Тәуелсіз тұқым қуалау",
+      "D) Толық емес доминанттылық"
+    ],
+    "correctAnswer": "B) Белгілердің ажырау заңы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 820,
+    "question": "Бірінші ұрпақ будан белгілерінің аралық сипатта болуы:",
+    "options": [
+      "A) Толық доминанттылық",
+      "B) Белгілердің ажырауы",
+      "C) Кодоминанттылық",
+      "D) Толық емес доминанттылық"
+    ],
+    "correctAnswer": "D) Толық емес доминанттылық",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 821,
+    "question": "Генотипі белгісіз дара рецессивті белгісі бар гомозиготалы дарамен будандастырылады:",
+    "options": [
+      "A) Толық доминанттылық",
+      "B) Талдаушы будандастыру",
+      "C) Кодоминанттылық",
+      "D) Толық емес доминанттылық"
+    ],
+    "correctAnswer": "B) Талдаушы будандастыру",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 822,
+    "question": "Екі жұп қарама-қарсы белгілері бар дараларды будандастыруды атайды:",
+    "options": [
+      "A) Моногибридті будандастыру",
+      "B) Дигибридті будандастыру",
+      "C) Полигибридті будандастыру",
+      "D) Талдаушы будандастыру"
+    ],
+    "correctAnswer": "B) Дигибридті будандастыру",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 823,
+    "question": "AaBb генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) Aa, aB, aa",
+      "B) AB, Ab, aB, ab",
+      "C) Ab, aa, aBc",
+      "D) AA, AB"
+    ],
+    "correctAnswer": "B) AB, Ab, aB, ab",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 824,
+    "question": "Дигетерозиготалы генотип:",
+    "options": [
+      "A) AaBb",
+      "B) AABB",
+      "C) aabb",
+      "D) AaBB"
+    ],
+    "correctAnswer": "A) AaBb",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 825,
+    "question": "Доминантты дигомозиготалы генотип:",
+    "options": [
+      "A) AaBb",
+      "B) AABB",
+      "C) aabb",
+      "D) AaBB"
+    ],
+    "correctAnswer": "B) AABB",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 826,
+    "question": "Рецессивті дигомозиготалы генотип:",
+    "options": [
+      "A) AaBb",
+      "B) AABB",
+      "C) aabb",
+      "D) AaBB"
+    ],
+    "correctAnswer": "C) aabb",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 827,
+    "question": "Дигибридті будандастырудағы ажырау қатынасы:",
+    "options": [
+      "A) 12:3:2:1",
+      "B) 1:2:1",
+      "C) 2:1:1",
+      "D) 9:3:3:1"
+    ],
+    "correctAnswer": "D) 9:3:3:1",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 828,
+    "question": "AABB генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) AB",
+      "B) Aa, Bb",
+      "C) ab",
+      "D) Aa"
+    ],
+    "correctAnswer": "A) AB",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 829,
+    "question": "AaBB генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) AB, aB",
+      "B) Aa, Bb",
+      "C) ab",
+      "D) AB"
+    ],
+    "correctAnswer": "A) AB, aB",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 830,
+    "question": "aaBB генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) aB",
+      "B) Bb",
+      "C) ab",
+      "D) AB"
+    ],
+    "correctAnswer": "A) aB",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 831,
+    "question": "AABb генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) aB, AA",
+      "B) aa, ab",
+      "C) ab, AB",
+      "D) AB, Ab"
+    ],
+    "correctAnswer": "D) AB, Ab",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 832,
+    "question": "aabb генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) aB",
+      "B) Bb",
+      "C) ab",
+      "D) AB"
+    ],
+    "correctAnswer": "C) ab",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 833,
+    "question": "Aabb генотипінен түзілетін гаметалар:",
+    "options": [
+      "A) ab, AA",
+      "B) AB, aa",
+      "C) ab, AB",
+      "D) Ab, ab"
+    ],
+    "correctAnswer": "D) Ab, ab",
+    "isMultipleChoice": false,
+    "correctAnswers": null
+  },
+  {
+    "id": 834,
+    "question": "Тұқым қуалайтын өзгергіштікке жатады:",
+    "options": [
+      "A) Модификациялық",
+      "B) Мутациялық",
+      "C) Фенотиптік",
+      "D) Комбинативтік",
+      "E) Фенотип",
+      "F) Онтогенез"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "B) Мутациялық",
+      "D) Комбинативтік"
+    ]
+  },
+  {
+    "id": 835,
+    "question": "Модификациялық өзгергіштікке тән:",
+    "options": [
+      "A) Тез және көп өзгереді",
+      "B) Гендер өзгереді",
+      "C) Генотип өзгереді",
+      "D) Тұқым қуаламайды",
+      "E) Тұқым қуалайды",
+      "F) Фермент белсенділігіне әсер етеді"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "D) Тұқым қуаламайды"
+    ]
+  },
+  {
+    "id": 836,
+    "question": "Реакция мөлшері кең болатын сандық белгілер:",
+    "options": [
+      "A) Көздің түсі",
+      "B) Дәннің массасы",
+      "C) Ірі қараның еттілігі",
+      "D) Бойдың биіктігі",
+      "E) Адам алақанының өрнегі",
+      "F) Өсімдік гүлінің түсі"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "B) Дәннің массасы",
+      "C) Ірі қараның еттілігі",
+      "D) Бойдың биіктігі"
+    ]
+  },
+  {
+    "id": 837,
+    "question": "Реакция мөлшері тар болатын сапалық белгілер:",
+    "options": [
+      "A) Көздің түсі",
+      "B) Дәннің массасы",
+      "C) Ірі қараның еттілігі",
+      "D) Бойдың биіктігі",
+      "E) Адам алақанының өрнегі",
+      "F) Өсімдік гүлінің түсі"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "A) Көздің түсі",
+      "E) Адам алақанының өрнегі",
+      "F) Өсімдік гүлінің түсі"
+    ]
+  },
+  {
+    "id": 838,
+    "question": "Аллельді емес гендердің өзра әрекеттесуіне жатады:",
+    "options": [
+      "A) Толымсыз доминанттылық",
+      "B) Полимерия",
+      "C) Толымды доминанттылық",
+      "D) Эпистаз",
+      "E) Комплементарлық",
+      "F) Кодоминанттылық"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "B) Полимерия",
+      "D) Эпистаз",
+      "E) Комплементарлық"
+    ]
+  },
+  {
+    "id": 839,
+    "question": "Аллельді гендердің өзара әрекеттесуіне жатады:",
+    "options": [
+      "A) Толымсыз доминанттылық",
+      "B) Полимерия",
+      "C) Толымды доминанттылық",
+      "D) Эпистаз",
+      "E) Комплементарлық",
+      "F) Кодоминанттылық"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "A) Толымсыз доминанттылық",
+      "C) Толымды доминанттылық",
+      "F) Кодоминанттылық"
+    ]
+  },
+  {
+    "id": 840,
+    "question": "AaBb генотипінен түзілетін гаметалар (бірнеше дұрыс жауап):",
+    "options": [
+      "A) AB",
+      "B) Aa",
+      "C) ab",
+      "D) AA",
+      "E) Ab",
+      "F) BB"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "A) AB",
+      "C) ab",
+      "E) Ab"
+    ]
+  },
+  {
+    "id": 841,
+    "question": "AaBbCc генотипінен неше гамета түзіледі:",
+    "options": [
+      "A) 5",
+      "B) 10",
+      "C) 8",
+      "D) 6",
+      "E) 4",
+      "F) 2"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "C) 8"
+    ]
+  },
+  {
+    "id": 842,
+    "question": "Екі жұп қарама-қарсы белгілері бар дараларды будандастыру:",
+    "options": [
+      "A) Дигибридті будандастыру",
+      "B) Моногибридті будандастыру",
+      "C) Полигибридті будандастыру",
+      "D) Тіркесіп тұқым қуалау"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "A) Дигибридті будандастыру"
+    ]
+  },
+  {
+    "id": 843,
+    "question": "Дигибридті будандастыру кезінде F₁-де шығатын генотип:",
+    "options": [
+      "A) AABB",
+      "B) AaBb",
+      "C) aabb",
+      "D) AAbb"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "B) AaBb"
+    ]
+  },
+  {
+    "id": 844,
+    "question": "Дигибридті будандастыру кезінде шыққан жасыл, тегіс генотипті тап:",
+    "options": [
+      "A) AABB",
+      "B) AaBb",
+      "C) aaBb",
+      "D) Aabb"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "C) aaBb"
+    ]
+  },
+  {
+    "id": 845,
+    "question": "Жасыл, бұдыр генотипті тап:",
+    "options": [
+      "A) AABB",
+      "B) AaBb",
+      "C) aabb",
+      "D) Aabb"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "C) aabb"
+    ]
+  },
+  {
+    "id": 846,
+    "question": "F₂-дегі дигибридті будандастыру кезіндегі фенотиптік қатынас:",
+    "options": [
+      "A) 1:2:1",
+      "B) 9:3:3:1",
+      "C) 2:1:2",
+      "D) 4:2:4:1"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "B) 9:3:3:1"
+    ]
+  },
+  {
+    "id": 847,
+    "question": "Модификациялық өзгергіштікке тән:",
+    "options": [
+      "A) Орта әсерінен фенотип өзгереді",
+      "B) Генотиптік өзгеріс",
+      "C) Генотип өзгермейді",
+      "D) Тұқым қуалайды",
+      "E) Бейімделуге көмектеседі",
+      "F) Генотип өзгереді"
+    ],
+    "correctAnswer": null,
+    "isMultipleChoice": true,
+    "correctAnswers": [
+      "A) Орта әсерінен фенотип өзгереді",
+      "C) Генотип өзгермейді",
+      "E) Бейімделуге көмектеседі"
+    ]
+  }
+]
