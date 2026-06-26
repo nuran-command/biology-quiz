@@ -1,29 +1,179 @@
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 type Props = {
   onHome: () => void;
   showHomeBtn: boolean;
 };
 
 export const Navbar = ({ onHome, showHomeBtn }: Props) => {
+  const [showSubscription, setShowSubscription] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
+
   return (
-    <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.1)] px-6 py-4 flex items-center justify-between">
-      <div className="flex items-center space-x-2">
-        <span className="text-xl">🧬</span>
-        <span className="font-sans font-bold text-base md:text-lg tracking-wider text-white">
-          Биология & Биохимия
-        </span>
-      </div>
-      
-      {showHomeBtn && (
-        <button
+    <>
+      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/90 border-b border-slate-200/50 shadow-[0_4px_25px_rgba(0,0,0,0.03)] px-8 md:px-12 py-5.5 md:py-6 flex items-center justify-between transition-all">
+        {/* Logo */}
+        <div 
           onClick={onHome}
-          className="flex items-center space-x-1.5 px-4 py-2 rounded-full text-xs md:text-sm font-semibold text-white/80 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-white/20 transition-all hover:scale-[1.02] active:scale-98 cursor-pointer"
+          className="flex items-center space-x-2.5 cursor-pointer hover:opacity-90 transition-opacity"
         >
-          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-          </svg>
-          <span>Басты бет</span>
-        </button>
-      )}
-    </header>
+          <span className="text-2xl animate-pulse">🧬</span>
+          <span className="font-sans font-black text-lg md:text-xl tracking-wide text-slate-800">
+            Биология & Биохимия
+          </span>
+        </div>
+        
+        {/* Navigation Links */}
+        <nav className="flex items-center space-x-6 md:space-x-8">
+          {showHomeBtn && (
+            <button
+              onClick={onHome}
+              className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors cursor-pointer"
+            >
+              Басты бет
+            </button>
+          )}
+          
+          <button
+            onClick={() => setShowSubscription(true)}
+            className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors cursor-pointer flex items-center space-x-1"
+          >
+            <span>Жазылым</span>
+            <span className="text-[10px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded-full font-black uppercase tracking-wider scale-90">
+              PRO
+            </span>
+          </button>
+          
+          <button
+            onClick={() => setShowHelp(true)}
+            className="text-sm font-bold text-slate-600 hover:text-indigo-600 transition-colors cursor-pointer"
+          >
+            Көмек
+          </button>
+        </nav>
+      </header>
+
+      {/* Subscription Modal */}
+      <AnimatePresence>
+        {showSubscription && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowSubscription(false)}
+              className="absolute inset-0 bg-slate-900/30 backdrop-blur-sm"
+            />
+            {/* Modal Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="relative w-full max-w-md bg-white/95 backdrop-blur-xl border border-slate-100 rounded-3xl p-8 shadow-2xl z-10"
+            >
+              <button 
+                onClick={() => setShowSubscription(false)}
+                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              <div className="text-center space-y-4">
+                <div className="inline-block p-4 bg-amber-50 rounded-2xl text-3xl">
+                  ✨
+                </div>
+                <h3 className="text-2xl font-black text-slate-800">PRO Жазылым</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Барлық тест сұрақтарына шектеусіз қолжетімділік алыңыз, жарнамасыз дайындалыңыз және егжей-тегжейлі талдауларды қараңыз.
+                </p>
+                
+                <div className="bg-slate-50 border border-slate-100 rounded-2xl p-4 text-left space-y-3">
+                  <div className="flex items-center space-x-2 text-sm text-slate-700 font-semibold">
+                    <span className="text-emerald-500">✓</span>
+                    <span>1000+ тест сұрағы және жауаптары</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm text-slate-700 font-semibold">
+                    <span className="text-emerald-500">✓</span>
+                    <span>ҰБТ-ға дайындалуға арналған арнайы сұрақтар</span>
+                  </div>
+                  <div className="flex items-center space-x-2 text-sm text-slate-700 font-semibold">
+                    <span className="text-emerald-500">✓</span>
+                    <span>Тақырыптық бөлімдер мен кезеңдерді таңдау</span>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => setShowSubscription(false)}
+                  className="w-full py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full font-bold shadow-lg shadow-indigo-600/20 hover:shadow-indigo-500/30 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer mt-2"
+                >
+                  Жазылу — 1 490 ₸ / айына
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
+      {/* Help Modal */}
+      <AnimatePresence>
+        {showHelp && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowHelp(false)}
+              className="absolute inset-0 bg-slate-900/30 backdrop-blur-sm"
+            />
+            {/* Modal Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 20 }}
+              className="relative w-full max-w-md bg-white/95 backdrop-blur-xl border border-slate-100 rounded-3xl p-8 shadow-2xl z-10"
+            >
+              <button 
+                onClick={() => setShowHelp(false)}
+                className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              
+              <div className="text-center space-y-4">
+                <div className="inline-block p-4 bg-indigo-50 rounded-2xl text-3xl">
+                  ❓
+                </div>
+                <h3 className="text-2xl font-black text-slate-800">Көмек & Нұсқаулық</h3>
+                <p className="text-slate-500 text-sm leading-relaxed">
+                  Бұл платформа биология және биохимия пәндері бойынша тест тапсырып, өз біліміңізді жетілдіруге көмектеседі.
+                </p>
+                
+                <div className="text-left space-y-3 bg-slate-50 border border-slate-100 rounded-2xl p-4 text-xs text-slate-600">
+                  <p>1. <strong>Бағытты таңдаңыз:</strong> Басты беттен өзіңізге қажетті биология бөлімін таңдаңыз.</p>
+                  <p>2. <strong>Бөлімді таңдаңыз:</strong> Сұрақтар санын және тиісті тақырыпты таңдаңыз.</p>
+                  <p>3. <strong>Параметрлер:</strong> Қаласаңыз сұрақтарды араластыру немесе 20 сұрақпен шектеу мүмкіндігін қосыңыз.</p>
+                  <p>4. <strong>Нәтиже:</strong> Тест соңында әр сұрақты талдап, дұрыс және қате жауаптарыңызды салыстыра аласыз.</p>
+                </div>
+
+                <button
+                  onClick={() => setShowHelp(false)}
+                  className="w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-white rounded-full font-bold transition-all cursor-pointer"
+                >
+                  Түсінікті
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+    </>
   );
 };
+

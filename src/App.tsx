@@ -151,14 +151,14 @@ function App() {
   const totalTimeSeconds = startTime && endTime ? Math.round((endTime - startTime) / 1000) : 0;
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-indigo-950 text-white flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
       <Navbar onHome={() => setGameState('start')} showHomeBtn={gameState !== 'start'} />
       {gameState === 'start' && (
         <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
           <LottiePlayer 
             animationData={lottieBg} 
             loop={true} 
-            className="w-full h-full min-w-full min-h-full opacity-20"
+            className="w-full h-full min-w-full min-h-full opacity-[0.08]"
             style={{ objectFit: 'cover' }}
           />
         </div>

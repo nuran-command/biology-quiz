@@ -131,7 +131,7 @@ export const StartScreen = ({ onStart }: Props) => {
       {
         id: 'part2',
         title: '4-бөлім. Заттардың тасымалдануы',
-        desc: 'Мембрана арқылы пассивті және active тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
+        desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
         range: '51 - 100 сұрақтар',
         icon: 'transport'
       },
@@ -253,23 +253,23 @@ export const StartScreen = ({ onStart }: Props) => {
       exit={{ opacity: 0, y: -20 }}
       className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-5xl mx-auto p-4 pt-20"
     >
-      <div className="mb-4 text-indigo-300 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase backdrop-blur-md">
+      <div className="mb-4 text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase">
         10-сынып • Биология Тесттері
       </div>
       
-      <h1 className="text-4xl md:text-5xl font-black text-white mb-4 text-center leading-tight">
+      <h1 className="text-4xl md:text-5xl font-black text-slate-800 mb-4 text-center leading-tight">
         Биология және Биохимия <br />
-        <span className="font-marck text-5xl md:text-6xl text-primary bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent font-normal">
+        <span className="font-marck text-5xl md:text-6xl text-primary bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent font-normal">
           Интерактивті Тесттер
         </span>
       </h1>
       
-      <p className="text-base md:text-lg text-slate-300 mb-8 text-center max-w-xl leading-relaxed">
+      <p className="text-base md:text-lg text-slate-500 mb-8 text-center max-w-xl leading-relaxed">
         Тақырыптық бағытты таңдап, тиісті бөлім бойынша біліміңізді тексеріңіз.
       </p>
 
       {/* Category Tabs */}
-      <h3 className="font-extrabold text-indigo-200 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
+      <h3 className="font-extrabold text-slate-700 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
         Тест бағытын таңдаңыз:
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mb-8">
@@ -281,19 +281,19 @@ export const StartScreen = ({ onStart }: Props) => {
               onClick={() => handleCategoryChange(cat.id)}
               className={`p-5 rounded-2xl border transition-all text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
                 isSelected
-                  ? 'border-indigo-500/40 bg-white/10 shadow-[0_0_25px_rgba(99,102,241,0.2)] backdrop-blur-xl'
-                  : 'border-white/10 bg-slate-950/20 backdrop-blur-md hover:bg-white/5 hover:border-white/20'
+                  ? 'border-indigo-200 bg-indigo-50/70 shadow-[0_4px_20px_rgba(99,102,241,0.06)] backdrop-blur-xl'
+                  : 'border-slate-100 bg-white/60 backdrop-blur-md hover:bg-white/90 hover:border-slate-300 hover:shadow-lg hover:shadow-slate-200/50 shadow-sm'
               }`}
             >
               <div className="flex items-center space-x-3 mb-2">
-                <div className="p-2 bg-white/5 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                <div className="p-2 bg-slate-50 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-slate-100">
                   <SvgIcon name={cat.icon} className="w-8 h-8" />
                 </div>
-                <h4 className="font-bold text-white text-sm md:text-base leading-tight">
+                <h4 className="font-bold text-slate-800 text-sm md:text-base leading-tight">
                   {cat.title}
                 </h4>
               </div>
-              <p className="text-[11px] text-slate-400 leading-relaxed mt-2">
+              <p className="text-[11px] text-slate-500 leading-relaxed mt-2">
                 {cat.desc}
               </p>
             </button>
@@ -302,7 +302,7 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
       
       {/* Parts Grid Selection */}
-      <h3 className="font-extrabold text-indigo-200 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
+      <h3 className="font-extrabold text-slate-700 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
         Тақырыптық бөлімді таңдаңыз:
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
@@ -320,8 +320,8 @@ export const StartScreen = ({ onStart }: Props) => {
                 onClick={() => setPart(item.id)}
                 className={`text-left p-5 rounded-2xl border transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected 
-                    ? 'border-indigo-500/40 bg-white/10 shadow-[0_0_25px_rgba(99,102,241,0.2)] backdrop-blur-xl' 
-                    : 'border-white/5 bg-slate-950/20 backdrop-blur-md hover:bg-white/5 hover:border-white/15'
+                    ? 'border-indigo-200 bg-indigo-50/70 shadow-[0_4px_20px_rgba(99,102,241,0.06)] backdrop-blur-xl' 
+                    : 'border-slate-100 bg-white/60 backdrop-blur-md hover:bg-white/90 hover:border-slate-300 hover:shadow-lg hover:shadow-slate-200/50 shadow-sm'
                 }`}
               >
                 {isSelected && (
@@ -331,17 +331,17 @@ export const StartScreen = ({ onStart }: Props) => {
                     </svg>
                   </div>
                 )}
-                <div className="p-3 bg-white/5 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                <div className="p-3 bg-slate-50 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-slate-100">
                   <SvgIcon name={item.icon} className="w-8 h-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-bold text-indigo-400 tracking-wider block uppercase">
+                  <span className="text-xs font-bold text-indigo-600 tracking-wider block uppercase">
                     {item.range}
                   </span>
-                  <h4 className="font-bold text-white text-base md:text-lg pr-6">
+                  <h4 className="font-bold text-slate-800 text-base md:text-lg pr-6">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-slate-400 leading-relaxed mt-1">
+                  <p className="text-xs text-slate-500 leading-relaxed mt-1">
                     {item.desc}
                   </p>
                 </div>
@@ -352,20 +352,20 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
 
       {/* Settings & Controls */}
-      <div className="w-full bg-slate-950/20 backdrop-blur-xl p-6 rounded-2xl shadow-2xl border border-white/10 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="w-full bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-xl border border-slate-100 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row gap-6">
           <label className="flex items-center space-x-3 cursor-pointer group">
             <input 
               type="checkbox" 
               checked={shuffle}
               onChange={(e) => setShuffle(e.target.checked)}
-              className="w-5 h-5 rounded border-white/20 bg-slate-900/50 text-indigo-500 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
+              className="w-5 h-5 rounded border-slate-300 bg-white text-indigo-600 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
             />
             <div className="flex flex-col">
-              <span className="font-semibold text-white group-hover:text-indigo-300 transition-colors text-sm">
+              <span className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors text-sm">
                 Сұрақтарды араластыру
               </span>
-              <span className="text-[11px] text-slate-400">
+              <span className="text-[11px] text-slate-500">
                 Кездейсоқ ретпен көрсету
               </span>
             </div>
@@ -376,13 +376,13 @@ export const StartScreen = ({ onStart }: Props) => {
               type="checkbox" 
               checked={limitTo20}
               onChange={(e) => setLimitTo20(e.target.checked)}
-              className="w-5 h-5 rounded border-white/20 bg-slate-900/50 text-indigo-500 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
+              className="w-5 h-5 rounded border-slate-300 bg-white text-indigo-600 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
             />
             <div className="flex flex-col">
-              <span className="font-semibold text-white group-hover:text-indigo-300 transition-colors text-sm">
+              <span className="font-semibold text-slate-800 group-hover:text-indigo-600 transition-colors text-sm">
                 Жылдам режим (20 сұрақ)
               </span>
-              <span className="text-[11px] text-slate-400">
+              <span className="text-[11px] text-slate-500">
                 Кездейсоқ 20 сұрақ таңдау
               </span>
             </div>
@@ -391,7 +391,7 @@ export const StartScreen = ({ onStart }: Props) => {
 
         <button 
           onClick={() => onStart({ category, part, shuffle, limitTo20 })}
-          className="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-bold shadow-lg shadow-indigo-600/30 hover:bg-indigo-500 hover:shadow-indigo-500/40 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
+          className="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-bold shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 hover:shadow-indigo-500/30 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
         >
           <span>Тестті Бастау</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
