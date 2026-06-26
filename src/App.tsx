@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Lottie from "lottie-react";
 import {
   StartScreen,
   type CategoryType,
@@ -10,11 +9,7 @@ import { QuizComponent } from "./components/QuizComponent";
 import { ResultScreen } from "./components/ResultScreen";
 import { Navbar } from "./components/Navbar";
 import { allQuestions as questionsData } from "./data/questions";
-import lottieBg from "./assets/bg1.json";
 import bgVideo from "./assets/bg3.mp4";
-
-// Handle CommonJS/ESM interop mismatch for Lottie
-const LottiePlayer = (Lottie as any).default || Lottie;
 
 export type Question = {
   id: number;
@@ -174,32 +169,22 @@ function App() {
       <div className="fixed inset-0 bg-slate-50 -z-20 pointer-events-none" />
 
       {/* Background Media */}
-      {gameState === "start" ? (
-        <>
-          <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.9),rgba(226,232,240,0.95))] z-0 pointer-events-none" />
-          {!videoError && (
-            <video
-              autoPlay
-              loop
-              muted
-              playsInline
-              preload="auto"
-              onError={() => setVideoError(true)}
-              className="fixed inset-0 w-full h-full object-cover z-0 opacity-100 pointer-events-none"
-              src={bgVideo}
-            />
-          )}
-        </>
-      ) : (
-        /* Global Background Lottie Player for other pages */
-        <div className="fixed inset-0 w-screen h-screen pointer-events-none flex items-center justify-center overflow-hidden z-0">
-          <LottiePlayer
-            animationData={lottieBg}
-            loop={true}
-            className="w-full h-full object-cover opacity-[0.2]"
+      <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+        {!videoError && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="auto"
+            onError={() => setVideoError(true)}
+            className="absolute inset-0 w-full h-full object-cover opacity-100"
+            src={bgVideo}
           />
-        </div>
-      )}
+        )}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.88),rgba(226,232,240,0.92))] mix-blend-screen" />
+        {videoError && <div className="absolute inset-0 bg-slate-950/70" />}
+      </div>
 
       <div className="relative z-10 w-full flex flex-col items-center justify-center">
         <AnimatePresence mode="wait">

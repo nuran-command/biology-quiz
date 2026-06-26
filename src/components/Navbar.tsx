@@ -135,7 +135,7 @@ export const Navbar = ({ onHome }: Props) => {
 
   return (
     <>
-      <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 overflow-visible backdrop-blur-2xl bg-white/45 border border-white/60 rounded-full px-4 sm:px-6 md:px-8 py-3 flex items-center justify-between transition-all shadow-[0_12px_40px_rgba(31,38,135,0.08),inset_0_0_12px_rgba(255,255,255,0.4)] hover:shadow-[0_16px_48px_rgba(31,38,135,0.12),inset_0_0_16px_rgba(255,255,255,0.5)]">
+      <header className="fixed top-4 left-1/2 -translate-x-1/2 w-[92%] max-w-7xl z-50 overflow-visible backdrop-blur-2xl bg-white/20 border border-white/40 rounded-full px-4 sm:px-6 md:px-8 py-3 flex items-center justify-between transition-all shadow-[0_20px_80px_rgba(0,0,0,0.12),inset_0_0_10px_rgba(255,255,255,0.4)] hover:shadow-[0_24px_90px_rgba(0,0,0,0.16),inset_0_0_14px_rgba(255,255,255,0.45)]">
         {/* Logo and Branding */}
         <div
           onClick={() => {
@@ -217,7 +217,7 @@ export const Navbar = ({ onHome }: Props) => {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: -15, scale: 0.98 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="absolute top-[calc(100%+12px)] left-0 w-full max-h-[70vh] overflow-y-auto bg-white/45 backdrop-blur-3xl border border-white/60 rounded-3xl p-5 shadow-[0_16px_40px_rgba(31,38,135,0.12),inset_0_0_12px_rgba(255,255,255,0.4)] flex flex-col space-y-4 md:hidden"
+              className="absolute top-[calc(100%+12px)] left-0 w-full max-h-[70vh] overflow-y-auto bg-white/20 backdrop-blur-3xl border border-white/40 rounded-3xl p-5 shadow-[0_24px_80px_rgba(0,0,0,0.14),inset_0_0_12px_rgba(255,255,255,0.4)] flex flex-col space-y-4 md:hidden"
             >
               {/* Navigation Links inside Mobile Panel */}
               <div className="flex flex-col space-y-1">
