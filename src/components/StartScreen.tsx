@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { SvgIcon } from "./SvgIcon";
 
 export type CategoryType =
   | "chapter1"
@@ -295,7 +294,7 @@ export const StartScreen = ({ onStart }: Props) => {
                 <div className="p-2 bg-slate-50/60 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-white/40 flex items-center justify-center">
                   {/* Flaticon icon via CDN — class pattern: uicons uicons-{name} (falls back to SvgIcon) */}
                   <i
-                    className={`uicons uicons-${cat.icon} text-xl text-indigo-600`}
+                    className={`fi-sr-${cat.icon} text-xl text-indigo-600`}
                     aria-hidden
                   />
                 </div>
@@ -331,7 +330,7 @@ export const StartScreen = ({ onStart }: Props) => {
                 className={`text-left p-5 rounded-2xl border transition-all transform will-change-transform flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected
                     ? "border-indigo-300/70 bg-indigo-50/60 shadow-[0_8px_32px_rgba(99,102,241,0.15),inset_0_2px_15px_rgba(255,255,255,0.5)] backdrop-blur-2xl"
-                    : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:scale-102 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]"
+                    : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:scale-105 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]"
                 }`}
               >
                 {isSelected && (
@@ -353,7 +352,7 @@ export const StartScreen = ({ onStart }: Props) => {
                 )}
                 <div className="p-3 bg-slate-50/60 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-white/40">
                   <i
-                    className={`uicons uicons-${item.icon} text-xl text-indigo-600`}
+                    className={`fi-sr-${item.icon} text-xl text-indigo-600`}
                     aria-hidden
                   />
                 </div>

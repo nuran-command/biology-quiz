@@ -136,7 +136,7 @@ export const ResultScreen = ({
         <div className="bg-white/40 border border-white/60 backdrop-blur-2xl rounded-3xl p-6 flex flex-col justify-center space-y-4 shadow-[0_16px_60px_rgba(0,0,0,0.1),inset_0_0_12px_rgba(255,255,255,0.35)] hover:shadow-[0_18px_70px_rgba(0,0,0,0.12),inset_0_0_15px_rgba(255,255,255,0.4)] transition-all">
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-xl">
-              <i className="uicons uicons-check text-2xl" aria-hidden />
+              <i className="fi-sr-check text-2xl" aria-hidden />
             </div>
             <div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
@@ -148,7 +148,7 @@ export const ResultScreen = ({
 
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-rose-50 text-rose-600 border border-rose-100 rounded-xl">
-              <i className="uicons uicons-times text-2xl" aria-hidden />
+              <i className="fi-sr-times text-2xl" aria-hidden />
             </div>
             <div>
               <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">
@@ -164,7 +164,7 @@ export const ResultScreen = ({
         {/* Time Spent Card */}
         <div className="bg-white/40 border border-white/60 backdrop-blur-2xl rounded-3xl p-6 flex flex-col items-center justify-center text-center shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.1),inset_0_0_15px_rgba(255,255,255,0.4)] transition-all">
           <div className="p-4 bg-blue-50 text-blue-600 border border-blue-100 rounded-2xl mb-3">
-            <i className="uicons uicons-clock text-2xl" aria-hidden />
+            <i className="fi-sr-clock text-2xl" aria-hidden />
           </div>
           <p className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-1">
             Жұмсалған уақыт
@@ -263,7 +263,7 @@ export const ResultScreen = ({
                     </div>
                     {/* Arrow Icon */}
                     <i
-                      className={`uicons uicons-angle-down w-5 h-5 text-slate-400 flex-shrink-0 transition-transform ${isExpanded ? "transform rotate-180" : ""}`}
+                      className={`fi-sr-angle-down w-5 h-5 text-slate-400 flex-shrink-0 transition-transform ${isExpanded ? "transform rotate-180" : ""}`}
                       aria-hidden
                     />
                   </button>
@@ -313,10 +313,7 @@ export const ResultScreen = ({
           className="px-8 py-4 bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-2xl text-lg font-black border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_15px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.01] active:scale-99 cursor-pointer flex items-center space-x-2 relative overflow-hidden group"
         >
           <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out pointer-events-none"></div>
-          <i
-            className="uicons uicons-refresh w-5 h-5 relative z-10"
-            aria-hidden
-          />
+          <i className="fi-sr-refresh w-5 h-5 relative z-10" aria-hidden />
           <span className="relative z-10">Қайтадан тапсыру</span>
         </button>
       </div>

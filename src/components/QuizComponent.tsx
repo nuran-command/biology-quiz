@@ -86,10 +86,7 @@ export const QuizComponent = ({
           onClick={onBack}
           className="flex items-center space-x-1.5 text-sm font-extrabold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer self-start"
         >
-          <i
-            className="uicons uicons-angle-left text-lg text-slate-600"
-            aria-hidden
-          />
+          <i className="fi-sr-angle-left text-lg text-slate-600" aria-hidden />
           <span>Артқа қайту</span>
         </button>
 
@@ -168,7 +165,7 @@ export const QuizComponent = ({
                   >
                     {(isSelected || (submitted && isCorrectAnswer)) && (
                       <i
-                        className="uicons uicons-check text-[14px] text-white"
+                        className="fi-sr-check text-[14px] text-white"
                         aria-hidden
                       />
                     )}
