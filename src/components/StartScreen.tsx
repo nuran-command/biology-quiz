@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export type CategoryType = 'molecular_biology' | 'nutrition_transport';
-export type PartType = 'part1' | 'part2' | 'part3' | 'part4' | 'part5' | 'part6' | 'part7' | 'part8' | 'part9' | 'part10' | 'part11' | 'part12' | 'all';
+export type CategoryType = 'chapter1' | 'chapter3_4' | 'chapter5' | 'chapter6' | 'chapter7' | 'chapter8';
+export type PartType = 'part1' | 'part2' | 'part3' | 'part4' | 'part5' | 'all';
 
 type Settings = {
   category: CategoryType;
@@ -15,8 +15,16 @@ type Props = {
   onStart: (settings: Settings) => void;
 };
 
+type PartItem = {
+  id: PartType;
+  title: string;
+  desc: string;
+  range: string;
+  icon: string;
+};
+
 export const StartScreen = ({ onStart }: Props) => {
-  const [category, setCategory] = useState<CategoryType>('molecular_biology');
+  const [category, setCategory] = useState<CategoryType>('chapter1');
   const [part, setPart] = useState<PartType>('all');
   const [shuffle, setShuffle] = useState(false);
   const [limitTo20, setLimitTo20] = useState(false);
@@ -27,146 +35,222 @@ export const StartScreen = ({ onStart }: Props) => {
     setPart('all');
   };
 
-  const molecularBiologyParts = [
+  const categories = [
     {
-      id: 'part1' as PartType,
-      title: '1 бөлім 1-50',
-      desc: 'Судың маңызы, моносахаридтер, дисахаридтер және олардың қасиеттері.',
-      range: '1 - 50 сұрақтар',
-      icon: '💧'
-    },
-    {
-      id: 'part2' as PartType,
-      title: '1 бөлім 50-100',
-      desc: 'Крахмал, целлюлоза, гликоген, майлар, олардың жіктелуі және энергетикалық құндылығы.',
-      range: '51 - 100 сұрақтар',
-      icon: '🥑'
-    },
-    {
-      id: 'part3' as PartType,
-      title: '1 бөлім 100-150',
-      desc: 'Нәруыздар мен нуклеин қышқылдарының құрылымы (1-4 деңгейлері), денатурация, ренатурация, ДНҚ және РНҚ құрылымы.',
-      range: '101 - 150 сұрақтар',
+      id: 'chapter1' as CategoryType,
+      title: '1-бөлім. Молекулалық биология және биохимия',
+      desc: 'Судың маңызы, көмірсулар, полисахаридтер, липидтер, нәруыздар мен нуклеин қышқылдарының құрылысы мен қасиеттері.',
       icon: '🧬'
     },
     {
-      id: 'part4' as PartType,
-      title: '1 бөлім 150-200',
-      desc: 'ДНҚ мен РНҚ молекулалық құрылымы, репликация гипотезалары мен модельдері, РНҚ түрлері.',
-      range: '151 - 200 сұрақтар',
-      icon: '🧬'
+      id: 'chapter3_4' as CategoryType,
+      title: '3–4 бөлім. Қоректену және Заттардың тасымалдануы',
+      desc: 'Ферменттер белсенділігі, гемоглобин мен миоглобин, эритроциттер, капиллярлар, және мембрана арқылы заттардың тасымалдануы.',
+      icon: '🌱'
     },
     {
-      id: 'part5' as PartType,
-      title: '1 бөлім 200-250',
-      desc: 'Ақуыз синтезі, РНҚ түрлері, көмірсулар мен нәруыздардың құрылымы мен қызметі (Жаңа сұрақтар).',
-      range: '201 - 250 сұрақтар',
-      icon: '🧪'
-    },
-    {
-      id: 'part6' as PartType,
-      title: '5-бөлім: Тыныс алу',
+      id: 'chapter5' as CategoryType,
+      title: '5-бөлім. Тыныс алу',
       desc: 'АТФ құрылысы, аэробты және анаэробты тыныс алу, гликолиз, Кребс циклі және митохондриялар.',
-      range: '251 - 320 сұрақтар',
       icon: '🫁'
     },
     {
-      id: 'part7' as PartType,
-      title: '7.1-бөлім: Жасушалық цикл және көбею',
-      desc: 'Митоз, мейоз фазалары, гаметогенез кезеңдері, өсімдіктердегі қосарлы ұрықтану және көбею.',
-      range: '501 - 569 сұрақтар',
-      icon: '🔄'
-    },
-    {
-      id: 'part8' as PartType,
-      title: '7.2-бөлім: Қатерлі ісік және канцерогенез',
-      desc: 'Қатерлі және қатерсіз ісіктер, канцерогендер, онкогендік вирустар және ісіктің алдын алу.',
-      range: '601 - 636 сұрақтар',
-      icon: '🦠'
-    },
-    {
-      id: 'part9' as PartType,
-      title: '7.3-бөлім: Организмнің қартаюы және геронтология',
-      desc: 'Физиологиялық және ерте қартаю, прогерия синдромдары, қартаю теориялары және геронтология.',
-      range: '701 - 729 сұрақтар',
-      icon: '⏳'
-    },
-    {
-      id: 'part10' as PartType,
-      title: '8.1-бөлім: Тұқымқуалаушылық пен өзгергіштік (Мендель заңдары)',
-      desc: 'Модификациялық өзгергіштік, вариация қатары, Мендельдің І және ІІ заңдары, моногибридті және дигибридті будандастыру.',
-      range: '801 - 847 сұрақтар',
-      icon: '🫘'
-    },
-    {
-      id: 'part11' as PartType,
-      title: '8.2-бөлім: Жыныспен тіркесіп тұқым қуалау және мутациялар',
-      desc: 'Жыныспен тіркескен аурулар (гемофилия, дальтонизм), кроссинговер, гендердің әрекеттесу түрлері және мутация түрлері.',
-      range: '901 - 962 сұрақтар',
-      icon: '🧬'
-    },
-    {
-      id: 'part12' as PartType,
-      title: '8.3-бөлім: Хромосомалық аурулар мен синдромдар',
-      desc: 'Адам қан топтарының тұқым қуалауы, Клайнфельтер, Даун, Патау, Эдвардс және Шерешевский-Тернер синдромдары.',
-      range: '1001 - 1038 сұрақтар',
-      icon: '🏥'
-    },
-    {
-      id: 'all' as PartType,
-      title: 'Жалпы жинақ (Толық тест)',
-      desc: 'Жоғарыдағы барлық бөлімдерді қамтитын толық көлемді тест жинағы.',
-      range: '1 - 320, 501 - 729 & 801 - 1038 сұрақтар',
-      icon: '📚'
-    }
-  ];
-
-  const nutritionTransportParts = [
-    {
-      id: 'part1' as PartType,
-      title: '3-4 бөлім 1-50',
-      desc: 'Ферменттер, ингибиторлар мен активаторлар, гемоглобин мен миоглобин құрылысы, эритроциттер мен капиллярлар.',
-      range: '1101 - 1150 сұрақтар',
-      icon: '🥗'
-    },
-    {
-      id: 'part2' as PartType,
-      title: '3-4 бөлім 50-100',
-      desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
-      range: '331 - 380 сұрақтар',
-      icon: '🔄'
-    },
-    {
-      id: 'part3' as PartType,
-      title: '6.1-бөлім: Бөліп шығару (Сүзгілеу және реттелу)',
-      desc: 'Зәр түзілу механизмі, бүйрек және нефрон құрылысы, сүзу, реабсорбция және су-тұз алмасуының гормондық реттелуі.',
-      range: '401 - 445 сұрақтар',
+      id: 'chapter6' as CategoryType,
+      title: '6-бөлім. Бөліп шығару',
+      desc: 'Зәр түзілу механизмі, нефрон құрылысы, реабсорбция, диализ түрлері және бүйрек трансплантациясы.',
       icon: '🧪'
     },
     {
-      id: 'part4' as PartType,
-      title: '6.2-бөлім: Бөліп шығару (Диализ және трансплантация)',
-      desc: 'Диализ түрлері, бүйрек аурулары, трансплантация және жасанды тазарту әдістері бойынша мәтіндік тапсырмалар.',
-      range: '446 - 490 сұрақтар',
-      icon: '🏥'
+      id: 'chapter7' as CategoryType,
+      title: '7-бөлім. Жасушалық цикл және көбею',
+      desc: 'Митоз, мейоз фазалары, гаметогенез кезеңдері, өсімдіктердегі қосарлы ұрықтану, қатерлі ісіктер және қартаю геронтологиясы.',
+      icon: '🔄'
     },
     {
-      id: 'all' as PartType,
-      title: 'Жалпы жинақ (Толық тест)',
-      desc: 'Қоректену, тасымалдау және бөліп шығару бөлімдерінің барлық сұрақтарын қамтиды.',
-      range: '1101 - 1150, 331 - 380 & 401 - 490 сұрақтар',
-      icon: '📚'
+      id: 'chapter8' as CategoryType,
+      title: '8-бөлім. Тұқымқуалаушылық пен өзгергіштік заңдылықтары',
+      desc: 'Модификациялық өзгергіштік, Мендель заңдары, жыныспен тіркес аурулар, мутация түрлері мен хромосомалық аурулар.',
+      icon: '🫘'
     }
   ];
 
-  const activeParts = category === 'molecular_biology' ? molecularBiologyParts : nutritionTransportParts;
+  const categoryPartsMap: Record<CategoryType, PartItem[]> = {
+    chapter1: [
+      {
+        id: 'part1',
+        title: '1-бөлім 1-50',
+        desc: 'Судың маңызы, моносахаридтер, дисахаридтер және олардың қасиеттері.',
+        range: '1 - 50 сұрақтар',
+        icon: '💧'
+      },
+      {
+        id: 'part2',
+        title: '1-бөлім 50-100',
+        desc: 'Крахмал, целлюлоза, гликоген, майлар, олардың жіктелуі және энергетикалық құндылығы.',
+        range: '51 - 100 сұрақтар',
+        icon: '🥑'
+      },
+      {
+        id: 'part3',
+        title: '1-бөлім 100-150',
+        desc: 'Нәруыздар мен нуклеин қышқылдарының құрылымы (1-4 деңгейлері), денатурация, ренатурация, ДНҚ және РНҚ құрылымы.',
+        range: '101 - 150 сұрақтар',
+        icon: '🧬'
+      },
+      {
+        id: 'part4',
+        title: '1-бөлім 150-200',
+        desc: 'ДНҚ мен РНҚ молекулалық құрылымы, репликация гипотезалары мен модельдері, РНҚ түрлері.',
+        range: '151 - 200 сұрақтар',
+        icon: '🧬'
+      },
+      {
+        id: 'part5',
+        title: '1-бөлім 200-250',
+        desc: 'Ақуыз синтезі, РНҚ түрлері, көмірсулар мен нәруыздардың құрылымы мен қызметі (Жаңа сұрақтар).',
+        range: '201 - 250 сұрақтар',
+        icon: '🧪'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Молекулалық биология және биохимия бөлімінің барлық сұрақтары.',
+        range: '1 - 250 сұрақтар',
+        icon: '📚'
+      }
+    ],
+    chapter3_4: [
+      {
+        id: 'part1',
+        title: '3-бөлім. Қоректену',
+        desc: 'Ферменттер, ингибиторлар мен активаторлар, гемоглобин мен миоглобин құрылысы, эритроциттер мен капиллярлар.',
+        range: '1101 - 1150 сұрақтар',
+        icon: '🥗'
+      },
+      {
+        id: 'part2',
+        title: '4-бөлім. Заттардың тасымалдануы',
+        desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
+        range: '331 - 380 сұрақтар',
+        icon: '🔄'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Қоректену және заттардың тасымалдануы бөлімдерінің барлық сұрақтары.',
+        range: '1101 - 1150 & 331 - 380 сұрақтар',
+        icon: '📚'
+      }
+    ],
+    chapter5: [
+      {
+        id: 'part1',
+        title: '5-бөлім. Тыныс алу',
+        desc: 'АТФ құрылысы, аэробты және анаэробты тыныс алу, гликолиз, Кребс циклі және митохондриялар.',
+        range: '251 - 320 сұрақтар',
+        icon: '🫁'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Тыныс алу бөлімінің барлық сұрақтары.',
+        range: '251 - 320 сұрақтар',
+        icon: '📚'
+      }
+    ],
+    chapter6: [
+      {
+        id: 'part1',
+        title: '6.1-бөлім: Бөліп шығару (Сүзгілеу және реттелу)',
+        desc: 'Зәр түзілу механизмі, бүйрек және нефрон құрылысы, сүзу, реабсорбция және су-тұз алмасуының гормондық реттелуі.',
+        range: '401 - 445 сұрақтар',
+        icon: '🧪'
+      },
+      {
+        id: 'part2',
+        title: '6.2-бөлім: Бөліп шығару (Диализ және трансплантация)',
+        desc: 'Диализ түрлері, бүйрек аурулары, трансплантация және жасанды тазарту әдістері бойынша мәтіндік тапсырмалар.',
+        range: '446 - 490 сұрақтар',
+        icon: '🏥'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Бөліп шығару бөлімінің барлық сұрақтары.',
+        range: '401 - 490 сұрақтар',
+        icon: '📚'
+      }
+    ],
+    chapter7: [
+      {
+        id: 'part1',
+        title: '7.1-бөлім: Жасушалық цикл және көбею',
+        desc: 'Митоз, мейоз фазалары, гаметогенез кезеңдері, өсімдіктердегі қосарлы ұрықтану және көбею.',
+        range: '501 - 569 сұрақтар',
+        icon: '🔄'
+      },
+      {
+        id: 'part2',
+        title: '7.2-бөлім: Қатерлі ісік және канцерогенез',
+        desc: 'Қатерлі және қатерсіз ісіктер, канцерогендер, онкогендік вирустар және ісіктің алдын алу.',
+        range: '601 - 636 сұрақтар',
+        icon: '🦠'
+      },
+      {
+        id: 'part3',
+        title: '7.3-бөлім: Организмнің қартаюы және геронтология',
+        desc: 'Физиологиялық және ерте қартаю, прогерия синдромдары, қартаю теориялары және геронтология.',
+        range: '701 - 729 сұрақтар',
+        icon: '⏳'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Жасушалық цикл және көбею бөлімінің барлық сұрақтары.',
+        range: '501 - 729 сұрақтар',
+        icon: '📚'
+      }
+    ],
+    chapter8: [
+      {
+        id: 'part1',
+        title: '8.1-бөлім: Тұқымқуалаушылық пен өзгергіштік (Мендель заңдары)',
+        desc: 'Модификациялық өзгергіштік, вариация қатары, Мендельдің І және ІІ заңдары, моногибридті және дигибридті будандастыру.',
+        range: '801 - 847 сұрақтар',
+        icon: '🫘'
+      },
+      {
+        id: 'part2',
+        title: '8.2-бөлім: Жыныспен тіркесіп тұқым қуалау және мутациялар',
+        desc: 'Жыныспен тіркескен аурулар (гемофилия, дальтонизм), кроссинговер, гендердің әрекеттесу түрлері және мутация түрлері.',
+        range: '901 - 962 сұрақтар',
+        icon: '🧬'
+      },
+      {
+        id: 'part3',
+        title: '8.3-бөлім: Хромосомалық аурулар мен синдромдар',
+        desc: 'Адам қан топтарының тұқым қуалауы, Клайнфельтер, Даун, Патау, Эдвардс және Шерешевский-Тернер синдромдары.',
+        range: '1001 - 1038 сұрақтар',
+        icon: '🏥'
+      },
+      {
+        id: 'all',
+        title: 'Жалпы жинақ (Толық тест)',
+        desc: 'Тұқымқуалаушылық пен өзгергіштік бөлімінің барлық сұрақтары.',
+        range: '801 - 1038 сұрақтар',
+        icon: '📚'
+      }
+    ]
+  };
+
+  const activeParts = categoryPartsMap[category];
 
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-4xl mx-auto p-4"
+      className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-5xl mx-auto p-4"
     >
       <div className="mb-4 text-primary bg-primary/10 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
         10-сынып • Биология Тесттері
@@ -187,44 +271,31 @@ export const StartScreen = ({ onStart }: Props) => {
       <h3 className="font-extrabold text-gray-700 text-sm uppercase tracking-wider mb-3 self-start">
         Тест бағытын таңдаңыз:
       </h3>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full mb-8">
-        <button
-          onClick={() => handleCategoryChange('molecular_biology')}
-          className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
-            category === 'molecular_biology'
-              ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
-              : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
-          }`}
-        >
-          <div className="flex items-center space-x-3 mb-2">
-            <span className="text-2xl">🧬</span>
-            <h4 className="font-bold text-text text-base md:text-lg">
-              Молекулалық биология және биохимия
-            </h4>
-          </div>
-          <p className="text-xs text-gray-500 leading-relaxed">
-            Судың маңызы, көмірсулар, полисахаридтер, липидтер, нәруыздар мен нуклеин қышқылдарының құрылысы мен қасиеттері.
-          </p>
-        </button>
-
-        <button
-          onClick={() => handleCategoryChange('nutrition_transport')}
-          className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
-            category === 'nutrition_transport'
-              ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
-              : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
-          }`}
-        >
-          <div className="flex items-center space-x-3 mb-2">
-            <span className="text-2xl">🌱</span>
-            <h4 className="font-bold text-text text-base md:text-lg">
-              3–4 бөлім. Қоректену. Заттардың тасымалдануы
-            </h4>
-          </div>
-          <p className="text-xs text-gray-500 leading-relaxed">
-            Ферменттер белсенділігі, гемоглобин мен миоглобин, эритроциттер, капиллярлар, және мембрана арқылы заттардың тасымалдануы.
-          </p>
-        </button>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mb-8">
+        {categories.map((cat) => {
+          const isSelected = category === cat.id;
+          return (
+            <button
+              key={cat.id}
+              onClick={() => handleCategoryChange(cat.id)}
+              className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
+                isSelected
+                  ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
+                  : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+              }`}
+            >
+              <div className="flex items-center space-x-3 mb-2">
+                <span className="text-2xl">{cat.icon}</span>
+                <h4 className="font-bold text-text text-sm md:text-base leading-tight">
+                  {cat.title}
+                </h4>
+              </div>
+              <p className="text-[11px] text-gray-500 leading-relaxed mt-1">
+                {cat.desc}
+              </p>
+            </button>
+          );
+        })}
       </div>
       
       {/* Parts Grid Selection */}
