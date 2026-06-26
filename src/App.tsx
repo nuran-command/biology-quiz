@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
+import Lottie from 'lottie-react';
 import { StartScreen, type CategoryType, type PartType } from './components/StartScreen';
 import { QuizComponent } from './components/QuizComponent';
 import { ResultScreen } from './components/ResultScreen';
 import { allQuestions as questionsData } from './data/questions';
+import lottieBg from './assets/scene.json';
 
 export type Question = {
   id: number;
@@ -145,7 +147,17 @@ function App() {
   const totalTimeSeconds = startTime && endTime ? Math.round((endTime - startTime) / 1000) : 0;
 
   return (
-    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 py-8">
+    <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden">
+      {gameState === 'start' && (
+        <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
+          <Lottie 
+            animationData={lottieBg} 
+            loop={true} 
+            className="w-full h-full min-w-full min-h-full opacity-25"
+            style={{ objectFit: 'cover' }}
+          />
+        </div>
+      )}
       <AnimatePresence mode="wait">
         {gameState === 'start' && (
           <StartScreen key="start" onStart={handleStart} />
