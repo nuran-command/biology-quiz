@@ -152,7 +152,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
-      <Navbar onHome={() => setGameState('start')} showHomeBtn={gameState !== 'start'} />
+      <Navbar onHome={() => setGameState('start')} />
       
       {/* Global Background Lottie Player */}
       <div className="fixed inset-0 w-screen h-screen pointer-events-none flex items-center justify-center overflow-hidden -z-10">
