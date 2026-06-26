@@ -6,7 +6,7 @@ import { QuizComponent } from './components/QuizComponent';
 import { ResultScreen } from './components/ResultScreen';
 import { Navbar } from './components/Navbar';
 import { allQuestions as questionsData } from './data/questions';
-import lottieBg from './assets/scene.json';
+import lottieBg from './assets/bg1.json';
 
 // Handle CommonJS/ESM interop mismatch for Lottie
 const LottiePlayer = (Lottie as any).default || Lottie;
@@ -153,43 +153,46 @@ function App() {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
       <Navbar onHome={() => setGameState('start')} showHomeBtn={gameState !== 'start'} />
-      {gameState === 'start' && (
-        <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-          <LottiePlayer 
-            animationData={lottieBg} 
-            loop={true} 
-            className="w-full h-full min-w-full min-h-full opacity-[0.08]"
-            style={{ objectFit: 'cover' }}
-          />
-        </div>
-      )}
-      <AnimatePresence mode="wait">
-        {gameState === 'start' && (
-          <StartScreen key="start" onStart={handleStart} />
-        )}
-        
-        {gameState === 'quiz' && activeQuestions.length > 0 && (
-          <QuizComponent 
-            key={`quiz-${currentIndex}`}
-            question={activeQuestions[currentIndex]} 
-            currentIndex={currentIndex}
-            totalQuestions={activeQuestions.length}
-            onAnswer={handleAnswer}
-            onBack={() => setGameState('start')}
-          />
-        )}
-        
-        {gameState === 'result' && (
-          <ResultScreen 
-            key="result"
-            score={score}
-            total={activeQuestions.length}
-            answers={answers}
-            durationSeconds={totalTimeSeconds}
-            onRestart={() => setGameState('start')}
-          />
-        )}
-      </AnimatePresence>
+      
+      {/* Global Background Lottie Player */}
+      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden z-0">
+        <LottiePlayer 
+          animationData={lottieBg} 
+          loop={true} 
+          className="w-full h-full min-w-full min-h-full opacity-[0.08]"
+          style={{ objectFit: 'cover' }}
+        />
+      </div>
+      
+      <div className="relative z-10 w-full flex flex-col items-center justify-center">
+        <AnimatePresence mode="wait">
+          {gameState === 'start' && (
+            <StartScreen key="start" onStart={handleStart} />
+          )}
+          
+          {gameState === 'quiz' && activeQuestions.length > 0 && (
+            <QuizComponent 
+              key={`quiz-${currentIndex}`}
+              question={activeQuestions[currentIndex]} 
+              currentIndex={currentIndex}
+              totalQuestions={activeQuestions.length}
+              onAnswer={handleAnswer}
+              onBack={() => setGameState('start')}
+            />
+          )}
+          
+          {gameState === 'result' && (
+            <ResultScreen 
+              key="result"
+              score={score}
+              total={activeQuestions.length}
+              answers={answers}
+              durationSeconds={totalTimeSeconds}
+              onRestart={() => setGameState('start')}
+            />
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 }

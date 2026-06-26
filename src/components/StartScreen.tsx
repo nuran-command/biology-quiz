@@ -253,7 +253,7 @@ export const StartScreen = ({ onStart }: Props) => {
       exit={{ opacity: 0, y: -20 }}
       className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-5xl mx-auto p-4 pt-20"
     >
-      <div className="mb-4 text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase">
+      <div className="mb-4 text-indigo-600 bg-indigo-50 border border-indigo-100 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase shadow-[0_2px_10px_rgba(99,102,241,0.05)]">
         10-сынып • Биология Тесттері
       </div>
       
@@ -281,12 +281,12 @@ export const StartScreen = ({ onStart }: Props) => {
               onClick={() => handleCategoryChange(cat.id)}
               className={`p-5 rounded-2xl border transition-all text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
                 isSelected
-                  ? 'border-indigo-200 bg-indigo-50/70 shadow-[0_4px_20px_rgba(99,102,241,0.06)] backdrop-blur-xl'
-                  : 'border-slate-100 bg-white/60 backdrop-blur-md hover:bg-white/90 hover:border-slate-300 hover:shadow-lg hover:shadow-slate-200/50 shadow-sm'
+                  ? 'border-indigo-300 bg-indigo-50/80 shadow-[0_8px_32px_rgba(99,102,241,0.12),0_0_25px_rgba(99,102,241,0.18)] backdrop-blur-xl'
+                  : 'border-white/50 bg-white/65 backdrop-blur-xl hover:bg-white/80 hover:border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)]'
               }`}
             >
               <div className="flex items-center space-x-3 mb-2">
-                <div className="p-2 bg-slate-50 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+                <div className="p-2 bg-slate-50/60 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-white/40">
                   <SvgIcon name={cat.icon} className="w-8 h-8" />
                 </div>
                 <h4 className="font-bold text-slate-800 text-sm md:text-base leading-tight">
@@ -320,18 +320,18 @@ export const StartScreen = ({ onStart }: Props) => {
                 onClick={() => setPart(item.id)}
                 className={`text-left p-5 rounded-2xl border transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected 
-                    ? 'border-indigo-200 bg-indigo-50/70 shadow-[0_4px_20px_rgba(99,102,241,0.06)] backdrop-blur-xl' 
-                    : 'border-slate-100 bg-white/60 backdrop-blur-md hover:bg-white/90 hover:border-slate-300 hover:shadow-lg hover:shadow-slate-200/50 shadow-sm'
+                    ? 'border-indigo-300 bg-indigo-50/80 shadow-[0_8px_32px_rgba(99,102,241,0.12),0_0_25px_rgba(99,102,241,0.18)] backdrop-blur-xl' 
+                    : 'border-white/50 bg-white/65 backdrop-blur-xl hover:bg-white/80 hover:border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)]'
                 }`}
               >
                 {isSelected && (
-                  <div className="absolute top-0 right-0 w-8 h-8 bg-indigo-500 text-white flex items-center justify-center rounded-bl-xl">
+                  <div className="absolute top-0 right-0 w-8 h-8 bg-indigo-500 text-white flex items-center justify-center rounded-bl-xl z-10">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                 )}
-                <div className="p-3 bg-slate-50 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-slate-100">
+                <div className="p-3 bg-slate-50/60 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-white/40">
                   <SvgIcon name={item.icon} className="w-8 h-8" />
                 </div>
                 <div className="space-y-1">
@@ -352,7 +352,7 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
 
       {/* Settings & Controls */}
-      <div className="w-full bg-white/60 backdrop-blur-xl p-6 rounded-2xl shadow-xl border border-slate-100 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="w-full bg-white/65 backdrop-blur-xl p-6 rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.03),0_0_20px_rgba(99,102,241,0.04)] border border-white/50 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row gap-6">
           <label className="flex items-center space-x-3 cursor-pointer group">
             <input 
@@ -391,7 +391,7 @@ export const StartScreen = ({ onStart }: Props) => {
 
         <button 
           onClick={() => onStart({ category, part, shuffle, limitTo20 })}
-          className="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-bold shadow-lg shadow-indigo-600/20 hover:bg-indigo-500 hover:shadow-indigo-500/30 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
+          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white rounded-2xl text-lg font-black border border-white/30 shadow-[0_8px_25px_rgba(99,102,241,0.2)] hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
         >
           <span>Тестті Бастау</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

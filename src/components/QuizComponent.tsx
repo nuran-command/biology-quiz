@@ -71,13 +71,13 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
-      className="w-full max-w-3xl mx-auto bg-white/80 backdrop-blur-xl p-6 md:p-8 rounded-3xl shadow-xl border border-slate-200/40 my-4"
+      className="w-full max-w-3xl mx-auto bg-white/70 backdrop-blur-2xl p-6 md:p-8 rounded-3xl border border-white/55 shadow-[0_20px_50px_rgba(0,0,0,0.04),0_0_30px_rgba(99,102,241,0.06)] my-4 relative overflow-hidden"
     >
       {/* Header with Back button and progress */}
-      <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100">
+      <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100/80">
         <button 
           onClick={onBack}
-          className="flex items-center space-x-1.5 text-sm font-bold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer self-start"
+          className="flex items-center space-x-1.5 text-sm font-extrabold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer self-start"
         >
           <svg className="w-4.5 h-4.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -114,18 +114,18 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
             const isSelected = selectedMulti.includes(option);
             const isCorrectAnswer = (question.correctAnswers || []).includes(option);
             
-            let buttonClass = 'border-slate-100 bg-white/60 hover:border-indigo-300 hover:bg-white/95 text-slate-700 shadow-sm hover:shadow hover:shadow-slate-100/50';
+            let buttonClass = 'border-white/60 bg-white/60 hover:bg-white/80 hover:border-indigo-300 text-slate-700 shadow-[0_4px_15px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.06)] transform hover:scale-[1.01] active:scale-[0.99]';
             
             if (submitted) {
               if (isCorrectAnswer) {
-                buttonClass = 'border-emerald-200 bg-emerald-50/80 text-emerald-800 font-bold shadow-sm';
+                buttonClass = 'border-emerald-300/80 bg-emerald-50/80 text-emerald-800 font-bold shadow-[0_6px_20px_rgba(16,185,129,0.12),0_0_15px_rgba(16,185,129,0.15)]';
               } else if (isSelected) {
-                buttonClass = 'border-rose-200 bg-rose-50/80 text-rose-800 font-bold shadow-sm';
+                buttonClass = 'border-rose-300/80 bg-rose-50/80 text-rose-800 font-bold shadow-[0_6px_20px_rgba(244,63,94,0.12),0_0_15px_rgba(244,63,94,0.15)]';
               } else {
                 buttonClass = 'border-slate-100 opacity-40 text-slate-400 bg-transparent';
               }
             } else if (isSelected) {
-              buttonClass = 'border-indigo-300 bg-indigo-50/70 text-indigo-900 font-bold shadow-sm';
+              buttonClass = 'border-indigo-300/80 bg-indigo-50/80 text-indigo-900 font-bold shadow-[0_6px_20px_rgba(99,102,241,0.12),0_0_15px_rgba(99,102,241,0.15)] transform scale-[1.01]';
             }
 
             return (
@@ -163,15 +163,15 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
             const isCorrect = selectedSingle && option === question.correctAnswer;
             const isWrong = isSelected && !isCorrect;
 
-            let buttonClass = 'border-slate-100 bg-white/60 hover:border-indigo-300 hover:bg-white/95 text-slate-700 shadow-sm hover:shadow hover:shadow-slate-100/50';
+            let buttonClass = 'border-white/60 bg-white/60 hover:bg-white/80 hover:border-indigo-300 text-slate-700 shadow-[0_4px_15px_rgba(0,0,0,0.02)] hover:shadow-[0_8px_25px_rgba(99,102,241,0.06)] transform hover:scale-[1.01] active:scale-[0.99]';
             
             if (selectedSingle !== null) {
               if (isCorrect) {
-                buttonClass = 'border-emerald-200 bg-emerald-50/80 text-emerald-800 font-bold shadow-sm';
+                buttonClass = 'border-emerald-300/80 bg-emerald-50/80 text-emerald-800 font-bold shadow-[0_6px_20px_rgba(16,185,129,0.12),0_0_15px_rgba(16,185,129,0.15)]';
               } else if (isWrong) {
-                buttonClass = 'border-rose-200 bg-rose-50/80 text-rose-800 font-bold shadow-sm';
+                buttonClass = 'border-rose-300/80 bg-rose-50/80 text-rose-800 font-bold shadow-[0_6px_20px_rgba(244,63,94,0.12),0_0_15px_rgba(244,63,94,0.15)]';
               } else if (option === question.correctAnswer) {
-                buttonClass = 'border-emerald-200 bg-emerald-50/80 text-emerald-800 font-bold shadow-sm';
+                buttonClass = 'border-emerald-300/80 bg-emerald-50/80 text-emerald-800 font-bold shadow-[0_6px_20px_rgba(16,185,129,0.12),0_0_15px_rgba(16,185,129,0.15)]';
               } else {
                 buttonClass = 'border-slate-100 opacity-40 text-slate-400 bg-transparent';
               }
@@ -197,10 +197,10 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
           <button
             onClick={handleSubmitMulti}
             disabled={selectedMulti.length === 0 || submitted}
-            className={`px-8 py-3.5 rounded-full font-bold text-base shadow-md transition-all cursor-pointer ${
+            className={`px-8 py-3.5 rounded-2xl font-black text-base transition-all duration-300 cursor-pointer ${
               selectedMulti.length === 0 || submitted
-                ? 'bg-slate-100 text-slate-400 border border-slate-200 cursor-not-allowed shadow-none'
-                : 'bg-indigo-600 text-white hover:bg-indigo-500 hover:shadow-indigo-600/20 hover:shadow-lg transform hover:scale-[1.02] active:scale-98'
+                ? 'bg-slate-100/60 text-slate-400 border border-slate-200/50 cursor-not-allowed shadow-none'
+                : 'bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white border border-white/20 shadow-[0_6px_20px_rgba(99,102,241,0.2)] hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transform hover:scale-[1.02] active:scale-98'
             }`}
           >
             {submitted ? 'Жауап тексерілуде...' : 'Жауап беру'}
