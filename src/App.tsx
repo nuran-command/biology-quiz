@@ -152,9 +152,12 @@ function App() {
   const totalTimeSeconds = startTime && endTime ? Math.round((endTime - startTime) / 1000) : 0;
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
+    <div className="min-h-screen text-slate-800 flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden pt-28">
       <Navbar onHome={() => setGameState('start')} />
       
+      {/* Opaque base background layer */}
+      <div className="fixed inset-0 bg-slate-50 -z-20 pointer-events-none" />
+
       {/* Background Media */}
       {gameState === 'start' ? (
         <video
