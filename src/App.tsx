@@ -7,6 +7,9 @@ import { ResultScreen } from './components/ResultScreen';
 import { allQuestions as questionsData } from './data/questions';
 import lottieBg from './assets/scene.json';
 
+// Handle CommonJS/ESM interop mismatch for Lottie
+const LottiePlayer = (Lottie as any).default || Lottie;
+
 export type Question = {
   id: number;
   question: string;
@@ -150,7 +153,7 @@ function App() {
     <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 py-8 relative overflow-x-hidden">
       {gameState === 'start' && (
         <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden">
-          <Lottie 
+          <LottiePlayer 
             animationData={lottieBg} 
             loop={true} 
             className="w-full h-full min-w-full min-h-full opacity-25"
