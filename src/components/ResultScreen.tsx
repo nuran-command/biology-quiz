@@ -71,7 +71,7 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
     <motion.div 
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
-      className="w-full max-w-4xl mx-auto bg-white/70 backdrop-blur-2xl p-6 md:p-10 rounded-3xl border border-white/55 shadow-[0_20px_50px_rgba(0,0,0,0.04),0_0_30px_rgba(99,102,241,0.06)] my-4 pt-20"
+      className="w-full max-w-4xl mx-auto bg-white/40 backdrop-blur-3xl p-6 md:p-10 rounded-3xl border border-white/60 shadow-[0_20px_50px_rgba(31,38,135,0.1),inset_0_0_20px_rgba(255,255,255,0.4)] my-4 pt-20"
     >
       <div className="text-center mb-8">
         <div className="inline-block bg-indigo-50 border border-indigo-100 text-indigo-600 px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold mb-3">
@@ -83,7 +83,7 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
       {/* Stats Section */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
         {/* Circle Progress Card */}
-        <div className="bg-white/65 border border-white/50 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center justify-center shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)] transition-all">
+        <div className="bg-white/40 border border-white/60 backdrop-blur-2xl rounded-3xl p-6 flex flex-col items-center justify-center shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.1),inset_0_0_15px_rgba(255,255,255,0.4)] transition-all">
           <div className="relative w-36 h-36 flex items-center justify-center mb-2">
             <svg className="w-full h-full transform -rotate-90">
               {/* Background Circle */}
@@ -119,7 +119,7 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
         </div>
 
         {/* Breakdown Card */}
-        <div className="bg-white/65 border border-white/50 backdrop-blur-xl rounded-2xl p-6 flex flex-col justify-center space-y-4 shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)] transition-all">
+        <div className="bg-white/40 border border-white/60 backdrop-blur-2xl rounded-3xl p-6 flex flex-col justify-center space-y-4 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.1),inset_0_0_15px_rgba(255,255,255,0.4)] transition-all">
           <div className="flex items-center space-x-3">
             <div className="p-2.5 bg-emerald-50 text-emerald-600 border border-emerald-100 rounded-xl">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -146,7 +146,7 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
         </div>
 
         {/* Time Spent Card */}
-        <div className="bg-white/65 border border-white/50 backdrop-blur-xl rounded-2xl p-6 flex flex-col items-center justify-center text-center shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)] transition-all">
+        <div className="bg-white/40 border border-white/60 backdrop-blur-2xl rounded-3xl p-6 flex flex-col items-center justify-center text-center shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.1),inset_0_0_15px_rgba(255,255,255,0.4)] transition-all">
           <div className="p-4 bg-blue-50 text-blue-600 border border-blue-100 rounded-2xl mb-3">
             <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -276,12 +276,13 @@ export const ResultScreen = ({ score, total, answers, durationSeconds, onRestart
       <div className="flex justify-center pt-6 border-t border-slate-100">
         <button 
           onClick={onRestart}
-          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white rounded-2xl text-lg font-black border border-white/30 shadow-[0_8px_25px_rgba(99,102,241,0.2)] hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] transition-all duration-300 transform hover:scale-[1.01] active:scale-99 cursor-pointer flex items-center space-x-2"
+          className="px-8 py-4 bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-2xl text-lg font-black border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_15px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.01] active:scale-99 cursor-pointer flex items-center space-x-2 relative overflow-hidden group"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out pointer-events-none"></div>
+          <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H17m-6 3a2 2 0 11-4 0 2 2 0 014 0z" />
           </svg>
-          <span>Қайтадан тапсыру</span>
+          <span className="relative z-10">Қайтадан тапсыру</span>
         </button>
       </div>
     </motion.div>

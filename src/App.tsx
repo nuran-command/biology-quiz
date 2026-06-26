@@ -155,12 +155,11 @@ function App() {
       <Navbar onHome={() => setGameState('start')} showHomeBtn={gameState !== 'start'} />
       
       {/* Global Background Lottie Player */}
-      <div className="absolute inset-0 pointer-events-none flex items-center justify-center overflow-hidden z-0">
+      <div className="fixed inset-0 w-screen h-screen pointer-events-none flex items-center justify-center overflow-hidden -z-10">
         <LottiePlayer 
           animationData={lottieBg} 
           loop={true} 
-          className="w-full h-full min-w-full min-h-full opacity-[0.08]"
-          style={{ objectFit: 'cover' }}
+          className="w-full h-full object-cover opacity-[0.2]"
         />
       </div>
       

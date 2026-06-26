@@ -281,8 +281,8 @@ export const StartScreen = ({ onStart }: Props) => {
               onClick={() => handleCategoryChange(cat.id)}
               className={`p-5 rounded-2xl border transition-all text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
                 isSelected
-                  ? 'border-indigo-300 bg-indigo-50/80 shadow-[0_8px_32px_rgba(99,102,241,0.12),0_0_25px_rgba(99,102,241,0.18)] backdrop-blur-xl'
-                  : 'border-white/50 bg-white/65 backdrop-blur-xl hover:bg-white/80 hover:border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)]'
+                  ? 'border-indigo-300/70 bg-indigo-50/60 shadow-[0_8px_32px_rgba(99,102,241,0.15),inset_0_2px_15px_rgba(255,255,255,0.5)] backdrop-blur-2xl'
+                  : 'border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]'
               }`}
             >
               <div className="flex items-center space-x-3 mb-2">
@@ -320,8 +320,8 @@ export const StartScreen = ({ onStart }: Props) => {
                 onClick={() => setPart(item.id)}
                 className={`text-left p-5 rounded-2xl border transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected 
-                    ? 'border-indigo-300 bg-indigo-50/80 shadow-[0_8px_32px_rgba(99,102,241,0.12),0_0_25px_rgba(99,102,241,0.18)] backdrop-blur-xl' 
-                    : 'border-white/50 bg-white/65 backdrop-blur-xl hover:bg-white/80 hover:border-white/80 shadow-[0_8px_30px_rgba(0,0,0,0.02)] hover:shadow-[0_12px_40px_rgba(99,102,241,0.08),0_0_20px_rgba(99,102,241,0.04)]'
+                    ? 'border-indigo-300/70 bg-indigo-50/60 shadow-[0_8px_32px_rgba(99,102,241,0.15),inset_0_2px_15px_rgba(255,255,255,0.5)] backdrop-blur-2xl' 
+                    : 'border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]'
                 }`}
               >
                 {isSelected && (
@@ -352,7 +352,7 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
 
       {/* Settings & Controls */}
-      <div className="w-full bg-white/65 backdrop-blur-xl p-6 rounded-2xl shadow-[0_10px_35px_rgba(0,0,0,0.03),0_0_20px_rgba(99,102,241,0.04)] border border-white/50 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="w-full bg-white/40 backdrop-blur-2xl p-6 rounded-3xl shadow-[0_10px_40px_rgba(31,38,135,0.07),inset_0_0_20px_rgba(255,255,255,0.4)] border border-white/60 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row gap-6">
           <label className="flex items-center space-x-3 cursor-pointer group">
             <input 
@@ -391,10 +391,11 @@ export const StartScreen = ({ onStart }: Props) => {
 
         <button 
           onClick={() => onStart({ category, part, shuffle, limitTo20 })}
-          className="px-8 py-4 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white rounded-2xl text-lg font-black border border-white/30 shadow-[0_8px_25px_rgba(99,102,241,0.2)] hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
+          className="px-8 py-4 bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white rounded-2xl text-lg font-black border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_15px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto relative overflow-hidden group"
         >
-          <span>Тестті Бастау</span>
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
+          <span className="relative z-10">Тестті Бастау</span>
+          <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </button>

@@ -12,7 +12,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-white/70 border-b border-white/50 px-8 md:px-12 py-5.5 md:py-6 flex items-center justify-between transition-all shadow-[0_10px_30px_rgba(0,0,0,0.02),0_0_20px_rgba(99,102,241,0.04)] hover:shadow-[0_12px_35px_rgba(0,0,0,0.03),0_0_25px_rgba(99,102,241,0.06)]">
+      <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-2xl bg-white/40 border-b border-white/60 px-8 md:px-12 py-5.5 md:py-6 flex items-center justify-between transition-all shadow-[0_8px_32px_rgba(31,38,135,0.07)] hover:shadow-[0_12px_40px_rgba(31,38,135,0.1)]">
         {/* Logo */}
         <div 
           onClick={onHome}
@@ -29,7 +29,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
           {showHomeBtn && (
             <button
               onClick={onHome}
-              className="text-xs md:text-sm font-extrabold text-slate-700 hover:text-indigo-600 px-3.5 py-1.5 rounded-full hover:bg-indigo-50/50 hover:shadow-sm border border-transparent hover:border-indigo-100 transition-all cursor-pointer"
+              className="text-xs md:text-sm font-extrabold text-slate-800 hover:text-indigo-700 px-4 py-2 rounded-full bg-white/30 hover:bg-white/50 backdrop-blur-md shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-white/50 transition-all cursor-pointer"
             >
               Басты бет
             </button>
@@ -37,7 +37,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
           
           <button
             onClick={() => setShowSubscription(true)}
-            className="text-xs md:text-sm font-extrabold text-slate-700 hover:text-indigo-600 px-3.5 py-1.5 rounded-full hover:bg-indigo-50/50 hover:shadow-sm border border-transparent hover:border-indigo-100 transition-all cursor-pointer flex items-center space-x-1"
+            className="text-xs md:text-sm font-extrabold text-slate-800 hover:text-indigo-700 px-4 py-2 rounded-full bg-white/30 hover:bg-white/50 backdrop-blur-md shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-white/50 transition-all cursor-pointer flex items-center space-x-1"
           >
             <span>Жазылым</span>
             <span className="text-[9px] bg-amber-100 text-amber-800 px-1.5 py-0.5 rounded-full font-black uppercase tracking-wider scale-90">
@@ -47,7 +47,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
           
           <button
             onClick={() => setShowHelp(true)}
-            className="text-xs md:text-sm font-extrabold text-slate-700 hover:text-indigo-600 px-3.5 py-1.5 rounded-full hover:bg-indigo-50/50 hover:shadow-sm border border-transparent hover:border-indigo-100 transition-all cursor-pointer"
+            className="text-xs md:text-sm font-extrabold text-slate-800 hover:text-indigo-700 px-4 py-2 rounded-full bg-white/30 hover:bg-white/50 backdrop-blur-md shadow-[0_4px_15px_rgba(0,0,0,0.05)] border border-white/50 transition-all cursor-pointer"
           >
             Көмек
           </button>
@@ -71,7 +71,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-md bg-white/75 backdrop-blur-xl border border-white/50 rounded-3xl p-8 shadow-[0_20px_50px_rgba(0,0,0,0.06),0_0_30px_rgba(99,102,241,0.1)] z-10"
+              className="relative w-full max-w-md bg-white/40 backdrop-blur-3xl border border-white/60 rounded-3xl p-8 shadow-[0_20px_50px_rgba(31,38,135,0.15),inset_0_0_20px_rgba(255,255,255,0.5)] z-10"
             >
               <button 
                 onClick={() => setShowSubscription(false)}
@@ -91,7 +91,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
                   Барлық тест сұрақтарына шектеусіз қолжетімділік алыңыз, жарнамасыз дайындалыңыз және егжей-тегжейлі талдауларды қараңыз.
                 </p>
                 
-                <div className="bg-slate-50/50 border border-slate-100 rounded-2xl p-4 text-left space-y-3">
+                <div className="bg-white/40 backdrop-blur-md border border-white/60 shadow-sm rounded-2xl p-4 text-left space-y-3">
                   <div className="flex items-center space-x-2 text-sm text-slate-700 font-semibold">
                     <span className="text-emerald-500">✓</span>
                     <span>1000+ тест сұрағы және жауаптары</span>
@@ -108,8 +108,9 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
 
                 <button
                   onClick={() => setShowSubscription(false)}
-                  className="w-full py-4 bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white rounded-2xl font-extrabold border border-white/20 shadow-[0_8px_25px_rgba(99,102,241,0.2)] hover:shadow-[0_12px_35px_rgba(99,102,241,0.35)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer mt-2"
+                  className="w-full py-4 bg-gradient-to-r from-indigo-500/80 to-purple-500/80 backdrop-blur-xl hover:from-indigo-500/90 hover:to-purple-500/90 text-white rounded-2xl font-extrabold border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_10px_rgba(255,255,255,0.3)] transition-all duration-300 transform hover:scale-[1.02] active:scale-98 cursor-pointer mt-2 relative overflow-hidden group"
                 >
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
                   Жазылу — 1 490 ₸ / айына
                 </button>
               </div>
@@ -135,7 +136,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
               initial={{ opacity: 0, scale: 0.95, y: 20 }}
               animate={{ opacity: 1, scale: 1, y: 0 }}
               exit={{ opacity: 0, scale: 0.95, y: 20 }}
-              className="relative w-full max-w-md bg-white/75 backdrop-blur-xl border border-white/50 rounded-3xl p-8 shadow-[0_20px_50px_rgba(0,0,0,0.06),0_0_30px_rgba(99,102,241,0.1)] z-10"
+              className="relative w-full max-w-md bg-white/40 backdrop-blur-3xl border border-white/60 rounded-3xl p-8 shadow-[0_20px_50px_rgba(31,38,135,0.15),inset_0_0_20px_rgba(255,255,255,0.5)] z-10"
             >
               <button 
                 onClick={() => setShowHelp(false)}
@@ -155,7 +156,7 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
                   Бұл платформа биология және биохимия пәндері бойынша тест тапсырып, өз біліміңізді жетілдіруге көмектеседі.
                 </p>
                 
-                <div className="text-left space-y-3 bg-slate-50/50 border border-slate-100/50 rounded-2xl p-4 text-xs text-slate-600">
+                <div className="text-left space-y-3 bg-white/40 backdrop-blur-md border border-white/60 shadow-sm rounded-2xl p-4 text-xs text-slate-800">
                   <p>1. <strong>Бағытты таңдаңыз:</strong> Басты беттен өзіңізге қажетті биология бөлімін таңдаңыз.</p>
                   <p>2. <strong>Бөлімді таңдаңыз:</strong> Сұрақтар санын және тиісті тақырыпты таңдаңыз.</p>
                   <p>3. <strong>Параметрлер:</strong> Қаласаңыз сұрақтарды араластыру немесе 20 сұрақпен шектеу мүмкіндігін қосыңыз.</p>
@@ -164,8 +165,9 @@ export const Navbar = ({ onHome, showHomeBtn }: Props) => {
 
                 <button
                   onClick={() => setShowHelp(false)}
-                  className="w-full py-3.5 bg-slate-800 hover:bg-slate-700 text-white rounded-2xl font-bold transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer shadow-md hover:shadow-lg"
+                  className="w-full py-3.5 bg-gradient-to-r from-slate-700/80 to-slate-800/80 backdrop-blur-xl text-white rounded-2xl font-bold border border-white/30 shadow-[0_8px_32px_rgba(0,0,0,0.2),inset_0_2px_10px_rgba(255,255,255,0.2)] transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer relative overflow-hidden group"
                 >
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/20 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></div>
                   Түсінікті
                 </button>
               </div>

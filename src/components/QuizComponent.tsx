@@ -71,7 +71,7 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -20 }}
-      className="w-full max-w-3xl mx-auto bg-white/70 backdrop-blur-2xl p-6 md:p-8 rounded-3xl border border-white/55 shadow-[0_20px_50px_rgba(0,0,0,0.04),0_0_30px_rgba(99,102,241,0.06)] my-4 relative overflow-hidden"
+      className="w-full max-w-3xl mx-auto bg-white/40 backdrop-blur-3xl p-6 md:p-8 rounded-3xl border border-white/60 shadow-[0_20px_50px_rgba(31,38,135,0.1),inset_0_0_20px_rgba(255,255,255,0.4)] my-4 relative overflow-hidden"
     >
       {/* Header with Back button and progress */}
       <div className="mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-slate-100/80">
@@ -197,13 +197,14 @@ export const QuizComponent = ({ question, totalQuestions, currentIndex, onAnswer
           <button
             onClick={handleSubmitMulti}
             disabled={selectedMulti.length === 0 || submitted}
-            className={`px-8 py-3.5 rounded-2xl font-black text-base transition-all duration-300 cursor-pointer ${
+            className={`px-8 py-3.5 rounded-2xl font-black text-base transition-all duration-300 cursor-pointer relative overflow-hidden group ${
               selectedMulti.length === 0 || submitted
                 ? 'bg-slate-100/60 text-slate-400 border border-slate-200/50 cursor-not-allowed shadow-none'
-                : 'bg-gradient-to-r from-indigo-500 to-indigo-600 hover:from-indigo-600 hover:to-indigo-700 text-white border border-white/20 shadow-[0_6px_20px_rgba(99,102,241,0.2)] hover:shadow-[0_10px_30px_rgba(99,102,241,0.35)] transform hover:scale-[1.02] active:scale-98'
+                : 'bg-gradient-to-r from-indigo-500/85 to-purple-500/85 backdrop-blur-xl hover:from-indigo-500/95 hover:to-purple-500/95 text-white border border-white/40 shadow-[0_8px_32px_rgba(99,102,241,0.4),inset_0_2px_15px_rgba(255,255,255,0.3)] transform hover:scale-[1.02] active:scale-98'
             }`}
           >
-            {submitted ? 'Жауап тексерілуде...' : 'Жауап беру'}
+            {!(selectedMulti.length === 0 || submitted) && <div className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/30 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out pointer-events-none"></div>}
+            <span className="relative z-10">{submitted ? 'Жауап тексерілуде...' : 'Жауап беру'}</span>
           </button>
         </div>
       )}
