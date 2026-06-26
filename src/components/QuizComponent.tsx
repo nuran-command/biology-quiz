@@ -86,19 +86,10 @@ export const QuizComponent = ({
           onClick={onBack}
           className="flex items-center space-x-1.5 text-sm font-extrabold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer self-start"
         >
-          <svg
-            className="w-4.5 h-4.5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2.5}
-              d="M15 19l-7-7 7-7"
-            />
-          </svg>
+          <i
+            className="uicons uicons-angle-left text-lg text-slate-600"
+            aria-hidden
+          />
           <span>Артқа қайту</span>
         </button>
 
@@ -176,19 +167,10 @@ export const QuizComponent = ({
                     }`}
                   >
                     {(isSelected || (submitted && isCorrectAnswer)) && (
-                      <svg
-                        className="w-3.5 h-3.5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={3}
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
+                      <i
+                        className="uicons uicons-check text-[14px] text-white"
+                        aria-hidden
+                      />
                     )}
                   </div>
                   <span>{option}</span>

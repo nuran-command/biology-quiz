@@ -285,15 +285,19 @@ export const StartScreen = ({ onStart }: Props) => {
             <button
               key={cat.id}
               onClick={() => handleCategoryChange(cat.id)}
-              className={`p-5 rounded-2xl border transition-all text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
+              className={`p-5 rounded-2xl border transition-all transform will-change-transform text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
                 isSelected
                   ? "border-indigo-300/70 bg-indigo-50/60 shadow-[0_18px_60px_rgba(0,0,0,0.12),inset_0_2px_15px_rgba(255,255,255,0.4)] backdrop-blur-2xl"
-                  : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_18px_50px_rgba(0,0,0,0.1),inset_0_0_12px_rgba(255,255,255,0.35)]"
+                  : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 hover:shadow-[0_28px_80px_rgba(0,0,0,0.16)] hover:-translate-y-1 hover:scale-105 shadow-[0_18px_50px_rgba(0,0,0,0.1),inset_0_0_12px_rgba(255,255,255,0.35)]"
               }`}
             >
               <div className="flex items-center space-x-3 mb-2">
-                <div className="p-2 bg-slate-50/60 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-white/40">
-                  <SvgIcon name={cat.icon} className="w-8 h-8" />
+                <div className="p-2 bg-slate-50/60 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-white/40 flex items-center justify-center">
+                  {/* Flaticon icon via CDN — class pattern: uicons uicons-{name} (falls back to SvgIcon) */}
+                  <i
+                    className={`uicons uicons-${cat.icon} text-xl text-indigo-600`}
+                    aria-hidden
+                  />
                 </div>
                 <h4 className="font-bold text-slate-800 text-sm md:text-base leading-tight">
                   {cat.title}
@@ -324,10 +328,10 @@ export const StartScreen = ({ onStart }: Props) => {
                 transition={{ duration: 0.2 }}
                 key={item.id}
                 onClick={() => setPart(item.id)}
-                className={`text-left p-5 rounded-2xl border transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
+                className={`text-left p-5 rounded-2xl border transition-all transform will-change-transform flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected
                     ? "border-indigo-300/70 bg-indigo-50/60 shadow-[0_8px_32px_rgba(99,102,241,0.15),inset_0_2px_15px_rgba(255,255,255,0.5)] backdrop-blur-2xl"
-                    : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]"
+                    : "border-white/60 bg-white/40 backdrop-blur-2xl hover:bg-white/50 hover:border-white/80 hover:shadow-[0_16px_40px_rgba(0,0,0,0.12)] hover:-translate-y-1 hover:scale-102 shadow-[0_8px_30px_rgba(31,38,135,0.05),inset_0_0_10px_rgba(255,255,255,0.3)]"
                 }`}
               >
                 {isSelected && (
@@ -348,7 +352,10 @@ export const StartScreen = ({ onStart }: Props) => {
                   </div>
                 )}
                 <div className="p-3 bg-slate-50/60 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-white/40">
-                  <SvgIcon name={item.icon} className="w-8 h-8" />
+                  <i
+                    className={`uicons uicons-${item.icon} text-xl text-indigo-600`}
+                    aria-hidden
+                  />
                 </div>
                 <div className="space-y-1">
                   <span className="text-xs font-bold text-indigo-600 tracking-wider block uppercase">
