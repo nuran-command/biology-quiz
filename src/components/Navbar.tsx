@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SvgIcon } from "./SvgIcon";
 
 type Props = {
   onHome: () => void;
@@ -293,7 +294,7 @@ export const Navbar = ({ onHome }: Props) => {
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
                 aria-label="Close subscription"
               >
-                <i className="fi-sr-times w-6 h-6" aria-hidden />
+                <SvgIcon name="times" className="w-6 h-6" />
               </button>
 
               <div className="text-center space-y-4">
@@ -359,7 +360,7 @@ export const Navbar = ({ onHome }: Props) => {
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
                 aria-label="Close help"
               >
-                <i className="fi-sr-times w-6 h-6" aria-hidden />
+                <SvgIcon name="times" className="w-6 h-6" />
               </button>
 
               <div className="text-center space-y-4">
@@ -428,7 +429,7 @@ export const Navbar = ({ onHome }: Props) => {
                 className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 cursor-pointer"
                 aria-label="Close about"
               >
-                <i className="fi-sr-times w-6 h-6" aria-hidden />
+                <SvgIcon name="times" className="w-6 h-6" />
               </button>
 
               <div className="text-center space-y-4">

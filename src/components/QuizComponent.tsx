@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { SvgIcon } from "./SvgIcon";
 
 type Question = {
   id: number;
@@ -86,7 +87,7 @@ export const QuizComponent = ({
           onClick={onBack}
           className="flex items-center space-x-1.5 text-sm font-extrabold text-slate-500 hover:text-indigo-600 transition-colors cursor-pointer self-start"
         >
-          <i className="fi-sr-angle-left text-lg text-slate-600" aria-hidden />
+          <SvgIcon name="angle-left" className="w-5 h-5" />
           <span>Артқа қайту</span>
         </button>
 
@@ -164,10 +165,7 @@ export const QuizComponent = ({
                     }`}
                   >
                     {(isSelected || (submitted && isCorrectAnswer)) && (
-                      <i
-                        className="fi-sr-check text-[14px] text-white"
-                        aria-hidden
-                      />
+                      <SvgIcon name="check" className="w-[14px] h-[14px]" />
                     )}
                   </div>
                   <span>{option}</span>

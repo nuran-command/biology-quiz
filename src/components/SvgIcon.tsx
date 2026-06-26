@@ -10,6 +10,12 @@ import {
   Hospital,
   BookOpen,
   ArrowLeftRight,
+  Check,
+  X,
+  Clock,
+  ChevronLeft,
+  ChevronDown,
+  RefreshCw,
 } from "lucide-react";
 
 type Props = {
@@ -140,6 +146,31 @@ export const SvgIcon = ({ name, className = "w-8 h-8" }: Props) => {
           <path d="M15.89 8.11l3.18-3.18m0 0a1 1 0 101.41-1.41 1 1 0 00-1.41 1.41z" />
         </svg>
       );
+      break;
+    case "check":
+      IconComponent = Check;
+      iconColorClass = "text-emerald-600";
+      break;
+    case "times":
+    case "close":
+      IconComponent = X;
+      iconColorClass = "text-rose-600";
+      break;
+    case "clock":
+      IconComponent = Clock;
+      iconColorClass = "text-slate-600";
+      break;
+    case "angle-left":
+      IconComponent = ChevronLeft;
+      iconColorClass = "text-slate-600";
+      break;
+    case "angle-down":
+      IconComponent = ChevronDown;
+      iconColorClass = "text-slate-400";
+      break;
+    case "refresh":
+      IconComponent = RefreshCw;
+      iconColorClass = "text-slate-600";
       break;
     default:
       break;

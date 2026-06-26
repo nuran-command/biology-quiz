@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { SvgIcon } from "./SvgIcon";
 
 export type CategoryType =
   | "chapter1"
@@ -292,11 +293,7 @@ export const StartScreen = ({ onStart }: Props) => {
             >
               <div className="flex items-center space-x-3 mb-2">
                 <div className="p-2 bg-slate-50/60 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300 border border-white/40 flex items-center justify-center">
-                  {/* Flaticon icon via CDN — class pattern: uicons uicons-{name} (falls back to SvgIcon) */}
-                  <i
-                    className={`fi-sr-${cat.icon} text-xl text-indigo-600`}
-                    aria-hidden
-                  />
+                  <SvgIcon name={cat.icon} className="w-6 h-6" />
                 </div>
                 <h4 className="font-bold text-slate-800 text-sm md:text-base leading-tight">
                   {cat.title}
@@ -351,10 +348,7 @@ export const StartScreen = ({ onStart }: Props) => {
                   </div>
                 )}
                 <div className="p-3 bg-slate-50/60 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300 border border-white/40">
-                  <i
-                    className={`fi-sr-${item.icon} text-xl text-indigo-600`}
-                    aria-hidden
-                  />
+                  <SvgIcon name={item.icon} className="w-6 h-6" />
                 </div>
                 <div className="space-y-1">
                   <span className="text-xs font-bold text-indigo-600 tracking-wider block uppercase">
