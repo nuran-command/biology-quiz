@@ -131,7 +131,7 @@ export const StartScreen = ({ onStart }: Props) => {
       {
         id: 'part2',
         title: '4-бөлім. Заттардың тасымалдануы',
-        desc: 'Мембрана арқылы пассивті және активті тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
+        desc: 'Мембрана арқылы пассивті және active тасымалдау, симпорт, antiport, унипорт, қарапайым және жеңілдетілген диффузия.',
         range: '51 - 100 сұрақтар',
         icon: 'transport'
       },
@@ -251,25 +251,25 @@ export const StartScreen = ({ onStart }: Props) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-5xl mx-auto p-4"
+      className="flex flex-col items-center justify-center min-h-[80vh] w-full max-w-5xl mx-auto p-4 pt-20"
     >
-      <div className="mb-4 text-primary bg-primary/10 px-4 py-1.5 rounded-full text-sm font-bold tracking-wider uppercase">
+      <div className="mb-4 text-indigo-300 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs md:text-sm font-bold tracking-wider uppercase backdrop-blur-md">
         10-сынып • Биология Тесттері
       </div>
       
-      <h1 className="text-4xl md:text-5xl font-black text-text mb-4 text-center leading-tight">
+      <h1 className="text-4xl md:text-5xl font-black text-white mb-4 text-center leading-tight">
         Биология және Биохимия <br />
-        <span className="font-marck text-5xl md:text-6xl text-primary bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent font-normal">
+        <span className="font-marck text-5xl md:text-6xl text-primary bg-gradient-to-r from-indigo-300 via-purple-300 to-pink-300 bg-clip-text text-transparent font-normal">
           Интерактивті Тесттер
         </span>
       </h1>
       
-      <p className="text-base md:text-lg text-gray-600 mb-8 text-center max-w-xl leading-relaxed">
+      <p className="text-base md:text-lg text-slate-300 mb-8 text-center max-w-xl leading-relaxed">
         Тақырыптық бағытты таңдап, тиісті бөлім бойынша біліміңізді тексеріңіз.
       </p>
 
       {/* Category Tabs */}
-      <h3 className="font-extrabold text-gray-700 text-sm uppercase tracking-wider mb-3 self-start">
+      <h3 className="font-extrabold text-indigo-200 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
         Тест бағытын таңдаңыз:
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full mb-8">
@@ -279,19 +279,21 @@ export const StartScreen = ({ onStart }: Props) => {
             <button
               key={cat.id}
               onClick={() => handleCategoryChange(cat.id)}
-              className={`p-5 rounded-2xl border-2 transition-all text-left flex flex-col justify-between cursor-pointer ${
+              className={`p-5 rounded-2xl border transition-all text-left flex flex-col justify-between cursor-pointer relative overflow-hidden group ${
                 isSelected
-                  ? 'border-primary bg-primary/5 shadow-sm shadow-primary/5'
-                  : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+                  ? 'border-indigo-500/40 bg-white/10 shadow-[0_0_25px_rgba(99,102,241,0.2)] backdrop-blur-xl'
+                  : 'border-white/10 bg-slate-950/20 backdrop-blur-md hover:bg-white/5 hover:border-white/20'
               }`}
             >
               <div className="flex items-center space-x-3 mb-2">
-                <SvgIcon name={cat.icon} className="w-8 h-8 flex-shrink-0" />
-                <h4 className="font-bold text-text text-sm md:text-base leading-tight">
+                <div className="p-2 bg-white/5 rounded-xl flex-shrink-0 group-hover:scale-105 transition-transform duration-300">
+                  <SvgIcon name={cat.icon} className="w-8 h-8" />
+                </div>
+                <h4 className="font-bold text-white text-sm md:text-base leading-tight">
                   {cat.title}
                 </h4>
               </div>
-              <p className="text-[11px] text-gray-500 leading-relaxed mt-1">
+              <p className="text-[11px] text-slate-400 leading-relaxed mt-2">
                 {cat.desc}
               </p>
             </button>
@@ -300,7 +302,7 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
       
       {/* Parts Grid Selection */}
-      <h3 className="font-extrabold text-gray-700 text-sm uppercase tracking-wider mb-4 self-start">
+      <h3 className="font-extrabold text-indigo-200 text-xs md:text-sm uppercase tracking-wider mb-4 self-start">
         Тақырыптық бөлімді таңдаңыз:
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full mb-8">
@@ -316,30 +318,30 @@ export const StartScreen = ({ onStart }: Props) => {
                 transition={{ duration: 0.2 }}
                 key={item.id}
                 onClick={() => setPart(item.id)}
-                className={`text-left p-5 rounded-2xl border-2 transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden ${
+                className={`text-left p-5 rounded-2xl border transition-all flex items-start space-x-4 cursor-pointer relative overflow-hidden group ${
                   isSelected 
-                    ? 'border-primary bg-primary/5 shadow-md shadow-primary/5' 
-                    : 'border-gray-100 hover:border-gray-300 hover:bg-gray-50/50 bg-white'
+                    ? 'border-indigo-500/40 bg-white/10 shadow-[0_0_25px_rgba(99,102,241,0.2)] backdrop-blur-xl' 
+                    : 'border-white/5 bg-slate-950/20 backdrop-blur-md hover:bg-white/5 hover:border-white/15'
                 }`}
               >
                 {isSelected && (
-                  <div className="absolute top-0 right-0 w-8 h-8 bg-primary text-white flex items-center justify-center rounded-bl-xl">
+                  <div className="absolute top-0 right-0 w-8 h-8 bg-indigo-500 text-white flex items-center justify-center rounded-bl-xl">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                 )}
-                <div className="p-3 bg-gray-50 rounded-xl flex-shrink-0 flex items-center justify-center">
+                <div className="p-3 bg-white/5 rounded-xl flex-shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                   <SvgIcon name={item.icon} className="w-8 h-8" />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-xs font-bold text-primary tracking-wider block uppercase">
+                  <span className="text-xs font-bold text-indigo-400 tracking-wider block uppercase">
                     {item.range}
                   </span>
-                  <h4 className="font-bold text-text text-base md:text-lg pr-6">
+                  <h4 className="font-bold text-white text-base md:text-lg pr-6">
                     {item.title}
                   </h4>
-                  <p className="text-xs text-gray-500 leading-relaxed">
+                  <p className="text-xs text-slate-400 leading-relaxed mt-1">
                     {item.desc}
                   </p>
                 </div>
@@ -350,20 +352,20 @@ export const StartScreen = ({ onStart }: Props) => {
       </div>
 
       {/* Settings & Controls */}
-      <div className="w-full bg-white p-6 rounded-2xl shadow-sm border border-gray-100 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div className="w-full bg-slate-950/20 backdrop-blur-xl p-6 rounded-2xl shadow-2xl border border-white/10 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div className="flex flex-col sm:flex-row gap-6">
           <label className="flex items-center space-x-3 cursor-pointer group">
             <input 
               type="checkbox" 
               checked={shuffle}
               onChange={(e) => setShuffle(e.target.checked)}
-              className="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary focus:ring-offset-2 accent-primary"
+              className="w-5 h-5 rounded border-white/20 bg-slate-900/50 text-indigo-500 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
             />
             <div className="flex flex-col">
-              <span className="font-semibold text-text group-hover:text-primary transition-colors text-sm">
+              <span className="font-semibold text-white group-hover:text-indigo-300 transition-colors text-sm">
                 Сұрақтарды араластыру
               </span>
-              <span className="text-[11px] text-gray-500">
+              <span className="text-[11px] text-slate-400">
                 Кездейсоқ ретпен көрсету
               </span>
             </div>
@@ -374,13 +376,13 @@ export const StartScreen = ({ onStart }: Props) => {
               type="checkbox" 
               checked={limitTo20}
               onChange={(e) => setLimitTo20(e.target.checked)}
-              className="w-5 h-5 rounded border-gray-300 text-primary focus:ring-primary focus:ring-offset-2 accent-primary"
+              className="w-5 h-5 rounded border-white/20 bg-slate-900/50 text-indigo-500 focus:ring-indigo-500 focus:ring-offset-2 accent-indigo-500"
             />
             <div className="flex flex-col">
-              <span className="font-semibold text-text group-hover:text-primary transition-colors text-sm">
+              <span className="font-semibold text-white group-hover:text-indigo-300 transition-colors text-sm">
                 Жылдам режим (20 сұрақ)
               </span>
-              <span className="text-[11px] text-gray-500">
+              <span className="text-[11px] text-slate-400">
                 Кездейсоқ 20 сұрақ таңдау
               </span>
             </div>
@@ -389,7 +391,7 @@ export const StartScreen = ({ onStart }: Props) => {
 
         <button 
           onClick={() => onStart({ category, part, shuffle, limitTo20 })}
-          className="px-8 py-4 bg-primary text-white rounded-full text-lg font-bold shadow-lg hover:bg-primary/95 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
+          className="px-8 py-4 bg-indigo-600 text-white rounded-full text-lg font-bold shadow-lg shadow-indigo-600/30 hover:bg-indigo-500 hover:shadow-indigo-500/40 transition-all transform hover:scale-[1.02] active:scale-98 cursor-pointer flex items-center justify-center space-x-2 w-full md:w-auto"
         >
           <span>Тестті Бастау</span>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
