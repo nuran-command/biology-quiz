@@ -1951,653 +1951,653 @@
   },
   {
     "id": 151,
-    "question": "Ферменттер белсенділігіне әсер етуші заттар",
+    "question": "ДНҚ –ның бір тізбегіндегі нуклеотидтердің реттілігі мынадай АГТ АЦЦ ГАТ АЦТ екінші тізбегі қандай болады?",
     "options": [
-      "А) Эффекторлар",
-      "В) Гормондар",
-      "С) Кардиолипидтер",
-      "D) Димерлер"
+      "A) ТЦА ТГГ ЦТА ТГА",
+      "B) АЦА ТГА ЦТА ТГА",
+      "C) ТГГ ТГГ ЦАА ТАА",
+      "D) ТЦГ ТАТ ЦГА ТГА"
     ],
-    "correctAnswer": "А) Эффекторлар",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) ТЦА ТГГ ЦТА ТГА",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 152,
-    "question": "Катализдік процесті тежейтін қосылыстар",
+    "question": "Орта есеппен бір нәруыз қанша аминқышқылынан тұрады",
     "options": [
-      "А) Гормондар",
-      "В) Активаторлар",
-      "С) Дәрумендер",
-      "D) Ингибиторлар"
+      "A) 20",
+      "B) 200",
+      "C) 400",
+      "D) 345"
     ],
-    "correctAnswer": "D) Ингибиторлар",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) 400",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 153,
-    "question": "Катализдік процесті жылдамдататын заттар",
+    "question": "Екі нуклеотид арасындағы қашықтық",
     "options": [
-      "А) Гормондар",
-      "В) Активаторлар",
-      "С) Дәрумендер",
-      "D) Ингибиторлар"
+      "A) 345 нм",
+      "B) 2,4 нм",
+      "C) 3,4 нм",
+      "D) 0,34 нм"
     ],
-    "correctAnswer": "В) Активаторлар",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "D) 0,34 нм",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 154,
-    "question": "Ересек адамның 100 мл қанындағы гемоглобин мөлшері",
+    "question": "Пневмококктарды зерттеген ғалым",
     "options": [
-      "А) 7–8 г",
-      "В) 30–40 г",
-      "С) 13–16 г",
-      "D) 100–120 г"
+      "A) Фельген",
+      "B) Мишер",
+      "C) Освальд Эвери",
+      "D) Чаргафф"
     ],
-    "correctAnswer": "С) 13–16 г",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) Освальд Эвери",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 155,
-    "question": "Қаңқалық бұлшықет пен жүрек бұлшықетін оттекпен байланыстыратын нәруыз",
+    "question": "ДНҚ ең аз мөлшерде кездесетін жасушалар",
     "options": [
-      "А) Глобин",
-      "В) Гем",
-      "С) Гемоглобин",
-      "D) Миоглобин"
+      "A) ядро",
+      "B) жыныс жасушалары",
+      "C) жұмыртқа жасушасы",
+      "D) миоциттер"
     ],
-    "correctAnswer": "D) Миоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "D) миоциттер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 156,
-    "question": "9-аптадағы ұрық қанында кездесетін гемоглобин типі",
+    "question": "Нуклеин қышқылдарының қанты",
     "options": [
-      "A) HbF",
-      "B) HbA",
-      "C) HbP",
-      "D) HbO"
+      "A) триоза",
+      "B) пентоза",
+      "C) крахмал",
+      "D) целлюлоза"
     ],
-    "correctAnswer": "C) HbP",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) пентоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 157,
-    "question": "Аллостериялық нәруыз",
+    "question": "ДНҚ құрылысын зерттеу барысында, 1924 ж оқшауланатыының локализациясын анықтаған ғалым",
     "options": [
-      "А) Миоглобин",
-      "В) Йодопсин",
-      "С) Родопсин",
-      "D) Гемоглобин"
+      "A) Фельген",
+      "B) Мишер",
+      "C) Эвери",
+      "D) Чаргафф"
     ],
-    "correctAnswer": "D) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) Фельген",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 158,
-    "question": "Миоглобиннің конформациясы",
+    "question": "Гуанин мен цитозин арасындағы байланыс",
     "options": [
-      "А) Бірінші реттік",
-      "В) Екінші реттік",
-      "С) Үшінші реттік",
-      "D) Төртінші реттік"
+      "A) үш сутектік",
+      "B) екі сутектік",
+      "C) фосфодиэфирлік",
+      "D) ковалентті"
     ],
-    "correctAnswer": "С) Үшінші реттік",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) үш сутектік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 159,
-    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені – гемнің қосылысы",
+    "question": "ДНҚ орналасатын жер",
     "options": [
-      "А) Миоглобин",
-      "В) Гемоглобин",
-      "С) Оксигемоглобин",
-      "D) Дезоксимиоглобин"
+      "A) цитоплазма, хлоропласт",
+      "B) ядро, хлоропласт, митохондрия",
+      "C) рибосома, вакуоль",
+      "D) ЭПТ, рибосома"
     ],
-    "correctAnswer": "В) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) ядро, хлоропласт, митохондрия",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 160,
-    "question": "Ұрықтың құрсақта дамуының алғашқы 7-12 аптасында кезеңінде кездесетін гемоглобин типі",
+    "question": "Аденин мен тимин арасындағы байланыс",
     "options": [
-      "A) HbF",
-      "B) HbA",
-      "C) HbP",
-      "D) HbO"
+      "A) үш сутектік",
+      "B) қос сутектік",
+      "C) фосфодиэфирлік",
+      "D) ковалентті"
     ],
-    "correctAnswer": "C) HbP",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) қос сутектік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 161,
-    "question": "Гемоглобиннің белсенді немесе простетикалық тобы",
+    "question": "ДНҚ бір орамында қанша нуклеотид болады?",
     "options": [
-      "А) Глобин",
-      "В) Миоглобин",
-      "С) Оксигемоглобин",
-      "D) Гем"
+      "A) 200",
+      "B) 10",
+      "C) 25",
+      "D) 30"
     ],
-    "correctAnswer": "D) Гем",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) 10",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 162,
-    "question": "Гемнің нәруызды тасымалдаушы бөлігі",
+    "question": "ДНҚ-ның қант бөлігі",
     "options": [
-      "А) Глобин",
-      "В) Миоглобин",
-      "С) Оксигемоглобин",
-      "D) Конформация"
+      "A) рибоза",
+      "B) тетроза",
+      "C) дезоксирибоза",
+      "D) триоза"
     ],
-    "correctAnswer": "А) Глобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) дезоксирибоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 163,
-    "question": "100 см³ қандағы гемоглобин мөлшері",
+    "question": "Нуклеин қышқылдарын алғаш ашқан ғалым",
     "options": [
-      "А) 20,6 г",
-      "В) 16,7 г",
-      "С) 25–30 г",
-      "D) 10–11 г"
+      "A) Фельген",
+      "B) Мишер",
+      "C) Эвери",
+      "D) Чаргафф"
     ],
-    "correctAnswer": "В) 16,7 г",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) Мишер",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 164,
-    "question": "Ересек адам қанындағы гемоглобин типі",
+    "question": "Бір аминқышқылының молекулалық массасы",
     "options": [
-      "А) HbF",
-      "В) HbA",
-      "С) HbP",
-      "D) HbO"
+      "A) 120 г/моль",
+      "B) 345 г/моль",
+      "C) 245 г/моль",
+      "D) 180 г/моль"
     ],
-    "correctAnswer": "В) HbA",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) 120 г/моль",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 165,
-    "question": "Ересек адамның гемоглобинінің молекулалық массасы",
+    "question": "ДНҚ екі еселенуі",
     "options": [
-      "А) 10000–120000",
-      "В) 66000–68000",
-      "С) 25000–30000",
-      "D) 15000–40000"
+      "A) конъюгация",
+      "B) ренатурация",
+      "C) репликация",
+      "D) денатурация"
     ],
-    "correctAnswer": "В) 66000–68000",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) репликация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 166,
-    "question": "Адам миоглобині организмдегі оттектің қанша пайызын байланыстыра алады",
+    "question": "Пиримидинді негіздер",
     "options": [
-      "A) 30%",
-      "B) 60%",
-      "C) 14%",
-      "D) 65–80%"
+      "A) аденин, тимин, урацил",
+      "B) цитозин, тимин, урацил",
+      "C) гуанин, цитозин, аденин",
+      "D) аденин, гуанин, тимин"
     ],
-    "correctAnswer": "C) 14%",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) цитозин, тимин, урацил",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 167,
-    "question": "Гем құрамына кіреді",
+    "question": "ДНҚ нуклеотидтерінің бір-бірімен байланысына әсер ететін күш",
     "options": [
-      "А) 1 винил, 2 пропион қышқылы, 6 метил",
-      "В) 2 метил, 1 винил, 1 пропион қышқылы",
-      "С) 4 метил, 2 винил, 2 пропион қышқылы",
-      "D) 3 метил, 1 винил, 1 пропион қышқылы"
+      "A) Шванн, Шлейден күші",
+      "B) Мезельсон–Сталь күші",
+      "C) Ван-дер-Ваальс күші",
+      "D) Эвери күші"
     ],
-    "correctAnswer": "С) 4 метил, 2 винил, 2 пропион қышқылы",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) Ван-дер-Ваальс күші",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 168,
-    "question": "Құрамында оксигемоглобин бар артерия қанының түсі",
+    "question": "Қос шиыршықты ДНҚ молекуласының құрылымы",
     "options": [
-      "А) Қою қанық түс",
-      "В) Қанық қызыл түс",
-      "С) Қою қызыл",
-      "D) Ашық алқызыл түс"
+      "A) ДНҚ –ның төртінші реттік",
+      "B) ДНҚ –ның үшінші реттік",
+      "C) ДНҚ –ның екінші реттік",
+      "D) ДНҚ –ның бірінші реттік"
     ],
-    "correctAnswer": "D) Ашық алқызыл түс",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) ДНҚ –ның екінші реттік",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 169,
-    "question": "Миоглобиннің нәруызды бөлігі",
+    "question": "ДНҚ репликациясын анықтауда (Escherichia coli) бактериясымен жұмыс жасады?",
     "options": [
-      "А) Глобин",
-      "В) Оксигемоглобин",
-      "С) Апомиоглобин",
-      "D) Гем"
+      "A) Уилкинс, Шванн",
+      "B) Мишер, Фельген",
+      "C) Эвери, Чаргафф",
+      "D) Мезельсон, Сталь"
     ],
-    "correctAnswer": "С) Апомиоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "D) Мезельсон, Сталь",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 170,
-    "question": "Гемоглобиннің конформациясы",
+    "question": "Азотты негіздерге жатады",
     "options": [
-      "А) Бірінші реттік",
-      "В) Екінші реттік",
-      "С) Үшінші реттік",
-      "D) Төртінші реттік"
+      "A) дезоксирибоза",
+      "B) А, Т, Г, Ц",
+      "C) H₃PO₄",
+      "D) пентоза"
     ],
-    "correctAnswer": "D) Төртінші реттік",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) А, Т, Г, Ц",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 171,
-    "question": "Қанға қызыл түс беретін элемент",
+    "question": "Молекулалық биологияның ашылуына ықпал еткен жағдай",
     "options": [
-      "A) Ca",
-      "B) Mg",
-      "C) Fe",
-      "D) K"
+      "A) ферменттердің ашылуы",
+      "B) микроскоптың ашылуы",
+      "C) ДНҚ құрылымының ашылуы",
+      "D) лейкоциттің ашылуы"
     ],
-    "correctAnswer": "C) Fe",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) ДНҚ құрылымының ашылуы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 172,
-    "question": "Миоглобин қызметі",
+    "question": "ДНП қалай түзіледі?",
     "options": [
-      "А) Тыныс алу мүшелерінен ұлпаларға оттек тасымалдау",
-      "В) Гемоглобиннің простетикалық тобы",
-      "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
-      "D) Гемнің нәруыз тасымалдаушысы"
+      "A) ДНҚ альбуминмен байланысу арқылы",
+      "B) ДНҚ протеинмен байланысу арқылы",
+      "C) ДНҚ бөлшектену арқылы",
+      "D) ДНҚ қосарлану арқылы"
     ],
-    "correctAnswer": "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) ДНҚ альбуминмен байланысу арқылы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 173,
-    "question": "Миоглобин қанша аминқышқылынан тұрады",
+    "question": "Пуриндер мен пиримидиндердің теңдігін анықтаған",
     "options": [
-      "А) 153 аминқышқылы",
-      "В) 146 аминқышқылы",
-      "С) 141 аминқышқылы",
-      "D) 120 аминқышқылы"
+      "A) Фельген",
+      "B) Эвери",
+      "C) Чаргафф",
+      "D) Мезельсон"
     ],
-    "correctAnswer": "А) 153 аминқышқылы",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) Чаргафф",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 174,
-    "question": "Оттекті беріп жіберген оксигемоглобин қалай аталады",
+    "question": "Мезельсон–Сталь тәжірибесі",
     "options": [
-      "А) Конформация",
-      "В) Тотықсызданған редукцияланған гемоглобин",
-      "С) Глобин",
-      "D) Миоглобин"
+      "A) пневмококктарды зерттеді",
+      "B) ДНҚ репликациясының жартылай консервативті екендігін дәлелдеді",
+      "C) сутектік байланысты көрсетті",
+      "D) нуклеин қышқылдарын тапты"
     ],
-    "correctAnswer": "В) Тотықсызданған редукцияланған гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) ДНҚ репликациясының жартылай консервативті екендігін дәлелдеді",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 175,
-    "question": "Тотықсызданған гемоглобині көп веналық қанның түсі",
+    "question": "ДНҚ шиыршығының бір орамы",
     "options": [
-      "А) Алқызыл",
-      "В) Ашық",
-      "С) Қою қызыл",
-      "D) Ашық алқызыл"
+      "A) 120°",
+      "B) 270°",
+      "C) 360°",
+      "D) 180°"
     ],
-    "correctAnswer": "С) Қою қызыл",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) 360°",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 176,
-    "question": "Аллостериялық нәруыз",
+    "question": "Комплементарлық принцип",
     "options": [
-      "А) Эластин",
-      "В) Кератин",
-      "С) Фиброин",
-      "D) Гемоглобин"
+      "A) A=T; T=G",
+      "B) A=T; G≡C",
+      "C) T=C; A=G",
+      "D) A=T; G=T"
     ],
-    "correctAnswer": "D) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) A=T; G≡C",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 177,
-    "question": "Суретте қандай нәруыз құрылысы берілген",
+    "question": "Шиыршық тәрізді иілген олинуклеотидтік тізбек",
     "options": [
-      "А) Коллаген",
-      "В) Миоглобин",
-      "С) Фиброин",
-      "D) Гемоглобин"
+      "A) ДНҚ –ның төртінші реттік құрылымы",
+      "B) ДНҚ-ның үшінші реттік құрылымы",
+      "C) ДНҚ-ның екінші реттік құрылымы",
+      "D) ДНҚ-ның бірінші реттік құрылымы"
     ],
-    "correctAnswer": "D) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "D) ДНҚ-ның бірінші реттік құрылымы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 178,
-    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені - гемнің қосылысы",
+    "question": "“Nucleus” латын тілінен аударғанда",
     "options": [
-      "А) Коллаген",
-      "В) Миоглобин",
-      "С) Фиброин",
-      "D) Гемоглобин"
+      "A) хлоропласт",
+      "B) ядро",
+      "C) митохондрия",
+      "D) рибосома"
     ],
-    "correctAnswer": "D) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) ядро",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 179,
-    "question": "Миоглобин үшін оттектің диссоциациялану қисығы қандай түрде болады",
+    "question": "Қате жібермейтін өте нақты механизмі",
     "options": [
-      "А) Гипербола",
-      "В) Сигмоидті",
-      "С) S-тәрізді",
-      "D) K-тәрізді"
+      "A) редукция",
+      "B) регенерация",
+      "C) репликация",
+      "D) рекомбинация"
     ],
-    "correctAnswer": "А) Гипербола",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) репликация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 180,
-    "question": "Гемоглобин үшін оттектің диссоциациялану қисығы",
+    "question": "ДНҚ-ның өзін –өзі өндіру процесі",
     "options": [
-      "А) Гипербола",
-      "В) Сигмоидті",
-      "С) J-тәрізді",
-      "D) K-тәрізді"
+      "A) редукция",
+      "B) регенерация",
+      "C) репликация",
+      "D) рекомбинация"
     ],
-    "correctAnswer": "В) Сигмоидті",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) репликация",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 181,
-    "question": "Берілген ортамен тепе-теңдікте болатын атмосферадағы оттектің парциалды қысымы",
+    "question": "Азотты негіздер арасындағы сутектік байланыстарды үзеді",
     "options": [
-      "А) Оттек күші",
-      "В) Бор эффектісі",
-      "С) Кооперативті эффект",
-      "D) Гипербола"
+      "A) полимераза",
+      "B) хеликаза",
+      "C) лизоцим",
+      "D) липаза"
     ],
-    "correctAnswer": "А) Оттек күші",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) хеликаза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 182,
-    "question": "Нәруыздың конформациясы – кристалданғандағы пішінінің өзгеруі",
+    "question": "Репликация процесі қай кезеңде жүреді",
     "options": [
-      "А) Оттек күші",
-      "В) Бор эффектісі",
-      "С) Кооперативті эффект",
-      "D) Гипербола"
+      "A) профаза",
+      "B) метафаза",
+      "C) синтетикалық (S-кезең)",
+      "D) анафаза"
     ],
-    "correctAnswer": "С) Кооперативті эффект",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) синтетикалық (S-кезең)",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 183,
-    "question": "Қан мен ұлпа сұйықтығы арасында зат алмасуды жүзеге асырады",
+    "question": "ДНҚ молекуласында нуклеотидтер реттілігінің көмегімен нәруыздардың аминқышқылдарының реттілігін кодтау тәсілі",
     "options": [
-      "А) Артерия",
-      "В) Вена",
-      "С) Капилляр",
-      "D) Аорта"
+      "A) гендік инженерия",
+      "B) генетикалық код",
+      "C) гериатрия",
+      "D) генеалогия"
     ],
-    "correctAnswer": "С) Капилляр",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) генетикалық код",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 184,
-    "question": "Капилляр қантамырлары қабырғасының қалыңдығы",
+    "question": "Бір ескі және бір жаңа тізбек",
     "options": [
-      "А) 0,0005 мм",
-      "В) 0,05 мм",
-      "С) 0,5 мм",
-      "D) 0,005 мм"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) конвергенция"
     ],
-    "correctAnswer": "D) 0,005 мм",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) жартылай консервативті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 185,
-    "question": "Ересек адамның барлық капиллярларының ұзындығы",
+    "question": "Сақтала екі еселену",
     "options": [
-      "А) 10 км",
-      "В) 10 000 км",
-      "С) 100 000 км",
-      "D) 1000 км"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) бытыраңқы"
     ],
-    "correctAnswer": "С) 100 000 км",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) консервативті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 186,
-    "question": "Эукариот жасушаларының өлшемдері",
+    "question": "Дисперсивті модель",
     "options": [
-      "А) 145 мкм",
-      "В) 85–90 мкм",
-      "С) 40–50 мкм",
-      "D) 10–20 мкм"
+      "A) бытыраңқы екі еселену",
+      "B) сақтала екі еселену",
+      "C) жартылай сақтала екіеселену",
+      "D) консервативті"
     ],
-    "correctAnswer": "D) 10–20 мкм",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) бытыраңқы екі еселену",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 187,
-    "question": "Ер адамдардың 1 мм³ қанындағы эритроцит саны",
+    "question": "ДНҚ аналық шиыршығы екі еселенгенде көптеген қысқа бөлшектерге бөлінеді",
     "options": [
-      "А) 180–400 мың",
-      "В) 5 000 000 млн",
-      "С) 6–8 мың",
-      "D) 2–3 000 000"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) сақтала екі еселену"
     ],
-    "correctAnswer": "В) 5 000 000 млн",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) дисперсивті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 188,
-    "question": "Эритроцитте кездесетін ерекше нәруыз",
+    "question": "ДНҚ шиыршығы тарқатылмайды және жаңа қос тізбек үшін матрица қызметін атқарады",
     "options": [
-      "А) Гемоглобин",
-      "В) Миозин",
-      "С) Оссеин",
-      "D) Кератин"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) бытыраңқы екі еселену"
     ],
-    "correctAnswer": "А) Гемоглобин",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) консервативті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 189,
-    "question": "Адам эритроцитінің диаметрі",
+    "question": "Әр жаңа молекулада бір тізбек ескі, біреуі жаңа болады",
     "options": [
-      "А) 2–2,5 мкм",
-      "В) 85–90 мкм",
-      "С) 7–8 мкм",
-      "D) 145 мкм"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) бытыраңқы екі еселену"
     ],
-    "correctAnswer": "С) 7–8 мкм",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) жартылай консервативті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 190,
-    "question": "Қанда гемоглобин аз болуы салдарынан туындайтын ауру",
+    "question": "Бірінші ДНҚ жартылай консервативті гипотезасын ұсынған",
     "options": [
-      "А) Гемофилия",
-      "В) Анемия",
-      "С) Гиподинамия",
-      "D) Гипертония"
+      "A) Линней, Вавилов",
+      "B) Мечников, Эрлих",
+      "C) Уотсон, Крик",
+      "D) Дарвин, Ламарк"
     ],
-    "correctAnswer": "В) Анемия",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) Уотсон, Крик",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 191,
-    "question": "Эритроциттің беттік ауданы",
+    "question": "Репликация гипотезасы бойынша біреуі толық ескі, біреуі толық жаңа",
     "options": [
-      "А) 2–2,5 мкм²",
-      "В) 85–90 мкм²",
-      "С) 7–8 мкм²",
-      "D) 145 мкм²"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) бытыраңқы"
     ],
-    "correctAnswer": "D) 145 мкм²",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) консервативті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 192,
-    "question": "Әйел адамның 1 мм³ қанындағы эритроцит мөлшері",
+    "question": "ДНҚ тізбегі ескі және жаңа бөліктерден кезектесіп құралады",
     "options": [
-      "А) 6–8 мың",
-      "В) 6–8 000 000",
-      "С) 4 500 000 млн",
-      "D) 180–400 мың"
+      "A) дисперсивті",
+      "B) консервативті",
+      "C) жартылай консервативті",
+      "D) сақтала"
     ],
-    "correctAnswer": "С) 4 500 000 млн",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) дисперсивті",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 193,
-    "question": "Эритроциттің қалыңдығы",
+    "question": "Рибонуклеин қышқылы",
     "options": [
-      "А) 2–2,5 мкм",
-      "В) 85–90 мкм",
-      "С) 7–8 мкм",
-      "D) 145 мкм"
+      "A) ДНҚ",
+      "B) дезоксирибоза",
+      "C) РНҚ",
+      "D) пентоза"
     ],
-    "correctAnswer": "А) 2–2,5 мкм",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) РНҚ",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 194,
-    "question": "Қандағы эритроцит мөлшерінің өзгеру себебі",
+    "question": "РНҚ қанша түрі бар?",
     "options": [
-      "А) Бір орында отырғанда",
-      "В) Су көп ішкенде",
-      "С) Биікке көтерілгенде",
-      "D) Дене жүктемесі болмағанда"
+      "A) 2",
+      "B) 4",
+      "C) 3",
+      "D) 1"
     ],
-    "correctAnswer": "С) Биікке көтерілгенде",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) 3",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 195,
-    "question": "Қай аймақта тіршілік ететін адамдарда сүйек кемігінің өсуіне байланысты эритроцит саны артады",
+    "question": "РНҚ қанша тізбектен тұрады?",
     "options": [
-      "А) Салқын аймақта",
-      "В) Жазықта",
-      "С) Биік таулы аймақта",
-      "D) Шөлді аймақта"
+      "A) 2",
+      "B) 1",
+      "C) 3",
+      "D) 4"
     ],
-    "correctAnswer": "С) Биік таулы аймақта",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) 1",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 196,
-    "question": "Терең тыныс алғанда өкпе альвеолаларының беттік ауданы",
+    "question": "т-РНҚ қанша нуклеотидтен құралады",
     "options": [
-      "А) 4,5–5 м²",
-      "В) 85–90 м²",
-      "С) 100–150 м²",
-      "D) 180–400 м²"
+      "A) 76 нуклеотид",
+      "B) 20 нуклеотид",
+      "C) 36 нуклеотид",
+      "D) 200 нуклеотид"
     ],
-    "correctAnswer": "С) 100–150 м²",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) 76 нуклеотид",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 197,
-    "question": "Қанның қызыл түсті жасушасы",
+    "question": "“Жоңышқа жапырағы” пішінді РНҚ",
     "options": [
-      "А) Эритроцит",
-      "В) Лейкоцит",
-      "С) Тромбоцит",
-      "D) Альбумин"
+      "A) т-РНҚ",
+      "B) р-РНҚ",
+      "C) м-РНҚ",
+      "D) а-РНҚ"
     ],
-    "correctAnswer": "А) Эритроцит",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "A) т-РНҚ",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 198,
-    "question": "Өкпе альвеолалары қандай қан тамырларымен шырмалған",
+    "question": "РНҚ құрамы",
     "options": [
-      "А) Артерия",
-      "В) Вена",
-      "С) Капилляр",
-      "D) Аорта"
+      "A) пентоза, хеликаза",
+      "B) дезоксирибоза, крахмал",
+      "C) ксилоза, фосфор қышқылы",
+      "D) азотты негіздер, рибоза, фосфор қышқылы"
     ],
-    "correctAnswer": "С) Капилляр",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "D) азотты негіздер, рибоза, фосфор қышқылы",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 199,
-    "question": "Эритроциттердің көлемі мен беттік ауданын анықтау маңызды",
+    "question": "Тек РНҚ-да кездесетін азоттық негіз",
     "options": [
-      "А) Офтальмолог үшін",
-      "В) Травматолог үшін",
-      "С) Физиолог үшін",
-      "D) Эндокринолог үшін"
+      "A) цитозин",
+      "B) урацил",
+      "C) тимин",
+      "D) аденин"
     ],
-    "correctAnswer": "С) Физиолог үшін",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "B) урацил",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 200,
-    "question": "Адам қанындағы барлық эритроциттердің жалпы беттік ауданы",
+    "question": "РНҚ қанты",
     "options": [
-      "А) 1500–2000 м²",
-      "В) 5000 мг",
-      "С) 1000 мг",
-      "D) 3000 м²"
+      "A) дезоксирибоза",
+      "B) глюкоза",
+      "C) рибоза",
+      "D) целлюлоза"
     ],
-    "correctAnswer": "D) 3000 м²",
-    "correctAnswers": null,
-    "isMultipleChoice": false
+    "correctAnswer": "C) рибоза",
+    "isMultipleChoice": false,
+    "correctAnswers": null
   },
   {
     "id": 201,
@@ -10387,5 +10387,655 @@
     "correctAnswer": "C) Құс тұмсық",
     "isMultipleChoice": false,
     "correctAnswers": null
+  },
+  {
+    "id": 1101,
+    "question": "Ферменттер белсенділігіне әсер етуші заттар",
+    "options": [
+      "А) Эффекторлар",
+      "В) Гормондар",
+      "С) Кардиолипидтер",
+      "D) Димерлер"
+    ],
+    "correctAnswer": "А) Эффекторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1102,
+    "question": "Катализдік процесті тежейтін қосылыстар",
+    "options": [
+      "А) Гормондар",
+      "В) Активаторлар",
+      "С) Дәрумендер",
+      "D) Ингибиторлар"
+    ],
+    "correctAnswer": "D) Ингибиторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1103,
+    "question": "Катализдік процесті жылдамдататын заттар",
+    "options": [
+      "А) Гормондар",
+      "В) Активаторлар",
+      "С) Дәрумендер",
+      "D) Ингибиторлар"
+    ],
+    "correctAnswer": "В) Активаторлар",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1104,
+    "question": "Ересек адамның 100 мл қанындағы гемоглобин мөлшері",
+    "options": [
+      "А) 7–8 г",
+      "В) 30–40 г",
+      "С) 13–16 г",
+      "D) 100–120 г"
+    ],
+    "correctAnswer": "С) 13–16 г",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1105,
+    "question": "Қаңқалық бұлшықет пен жүрек бұлшықетін оттекпен байланыстыратын нәруыз",
+    "options": [
+      "А) Глобин",
+      "В) Гем",
+      "С) Гемоглобин",
+      "D) Миоглобин"
+    ],
+    "correctAnswer": "D) Миоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1106,
+    "question": "9-аптадағы ұрық қанында кездесетін гемоглобин типі",
+    "options": [
+      "A) HbF",
+      "B) HbA",
+      "C) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "C) HbP",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1107,
+    "question": "Аллостериялық нәруыз",
+    "options": [
+      "А) Миоглобин",
+      "В) Йодопсин",
+      "С) Родопсин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1108,
+    "question": "Миоглобиннің конформациясы",
+    "options": [
+      "А) Бірінші реттік",
+      "В) Екінші реттік",
+      "С) Үшінші реттік",
+      "D) Төртінші реттік"
+    ],
+    "correctAnswer": "С) Үшінші реттік",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1109,
+    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені – гемнің қосылысы",
+    "options": [
+      "А) Миоглобин",
+      "В) Гемоглобин",
+      "С) Оксигемоглобин",
+      "D) Дезоксимиоглобин"
+    ],
+    "correctAnswer": "В) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1110,
+    "question": "Ұрықтың құрсақта дамуының алғашқы 7-12 аптасында кезеңінде кездесетін гемоглобин типі",
+    "options": [
+      "A) HbF",
+      "B) HbA",
+      "C) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "C) HbP",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1111,
+    "question": "Гемоглобиннің белсенді немесе простетикалық тобы",
+    "options": [
+      "А) Глобин",
+      "В) Миоглобин",
+      "С) Оксигемоглобин",
+      "D) Гем"
+    ],
+    "correctAnswer": "D) Гем",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1112,
+    "question": "Гемнің нәруызды тасымалдаушы бөлігі",
+    "options": [
+      "А) Глобин",
+      "В) Миоглобин",
+      "С) Оксигемоглобин",
+      "D) Конформация"
+    ],
+    "correctAnswer": "А) Глобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1113,
+    "question": "100 см³ қандағы гемоглобин мөлшері",
+    "options": [
+      "А) 20,6 г",
+      "В) 16,7 г",
+      "С) 25–30 г",
+      "D) 10–11 г"
+    ],
+    "correctAnswer": "В) 16,7 г",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1114,
+    "question": "Ересек адам қанындағы гемоглобин типі",
+    "options": [
+      "А) HbF",
+      "В) HbA",
+      "С) HbP",
+      "D) HbO"
+    ],
+    "correctAnswer": "В) HbA",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1115,
+    "question": "Ересек адамның гемоглобинінің молекулалық массасы",
+    "options": [
+      "А) 10000–120000",
+      "В) 66000–68000",
+      "С) 25000–30000",
+      "D) 15000–40000"
+    ],
+    "correctAnswer": "В) 66000–68000",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1116,
+    "question": "Адам миоглобині организмдегі оттектің қанша пайызын байланыстыра алады",
+    "options": [
+      "A) 30%",
+      "B) 60%",
+      "C) 14%",
+      "D) 65–80%"
+    ],
+    "correctAnswer": "C) 14%",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1117,
+    "question": "Гем құрамына кіреді",
+    "options": [
+      "А) 1 винил, 2 пропион қышқылы, 6 метил",
+      "В) 2 метил, 1 винил, 1 пропион қышқылы",
+      "С) 4 метил, 2 винил, 2 пропион қышқылы",
+      "D) 3 метил, 1 винил, 1 пропион қышқылы"
+    ],
+    "correctAnswer": "С) 4 метил, 2 винил, 2 пропион қышқылы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1118,
+    "question": "Құрамында оксигемоглобин бар артерия қанының түсі",
+    "options": [
+      "А) Қою қанық түс",
+      "В) Қанық қызыл түс",
+      "С) Қою қызыл",
+      "D) Ашық алқызыл түс"
+    ],
+    "correctAnswer": "D) Ашық алқызыл түс",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1119,
+    "question": "Миоглобиннің нәруызды бөлігі",
+    "options": [
+      "А) Глобин",
+      "В) Оксигемоглобин",
+      "С) Апомиоглобин",
+      "D) Гем"
+    ],
+    "correctAnswer": "С) Апомиоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1120,
+    "question": "Гемоглобиннің конформациясы",
+    "options": [
+      "А) Бірінші реттік",
+      "В) Екінші реттік",
+      "С) Үшінші реттік",
+      "D) Төртінші реттік"
+    ],
+    "correctAnswer": "D) Төртінші реттік",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1121,
+    "question": "Қанға қызыл түс беретін элемент",
+    "options": [
+      "A) Ca",
+      "B) Mg",
+      "C) Fe",
+      "D) K"
+    ],
+    "correctAnswer": "C) Fe",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1122,
+    "question": "Миоглобин қызметі",
+    "options": [
+      "А) Тыныс алу мүшелерінен ұлпаларға оттек тасымалдау",
+      "В) Гемоглобиннің простетикалық тобы",
+      "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
+      "D) Гемнің нәруыз тасымалдаушысы"
+    ],
+    "correctAnswer": "С) Бұлшықетте уақытша оттек жетіспеушілігін жабу үшін оттек қорын жинақтау",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1123,
+    "question": "Миоглобин қанша аминқышқылынан тұрады",
+    "options": [
+      "А) 153 аминқышқылы",
+      "В) 146 аминқышқылы",
+      "С) 141 аминқышқылы",
+      "D) 120 аминқышқылы"
+    ],
+    "correctAnswer": "А) 153 аминқышқылы",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1124,
+    "question": "Оттекті беріп жіберген оксигемоглобин қалай аталады",
+    "options": [
+      "А) Конформация",
+      "В) Тотықсызданған редукцияланған гемоглобин",
+      "С) Глобин",
+      "D) Миоглобин"
+    ],
+    "correctAnswer": "В) Тотықсызданған редукцияланған гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1125,
+    "question": "Тотықсызданған гемоглобині көп веналық қанның түсі",
+    "options": [
+      "А) Алқызыл",
+      "В) Ашық",
+      "С) Қою қызыл",
+      "D) Ашық алқызыл"
+    ],
+    "correctAnswer": "С) Қою қызыл",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1126,
+    "question": "Аллостериялық нәруыз",
+    "options": [
+      "А) Эластин",
+      "В) Кератин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1127,
+    "question": "Суретте қандай нәруыз құрылысы берілген",
+    "options": [
+      "А) Коллаген",
+      "В) Миоглобин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1128,
+    "question": "Глобин нәруызы мен оттек тасымалдаушы қызметін атқаратын темір кешені - гемнің қосылысы",
+    "options": [
+      "А) Коллаген",
+      "В) Миоглобин",
+      "С) Фиброин",
+      "D) Гемоглобин"
+    ],
+    "correctAnswer": "D) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1129,
+    "question": "Миоглобин үшін оттектің диссоциациялану қисығы қандай түрде болады",
+    "options": [
+      "А) Гипербола",
+      "В) Сигмоидті",
+      "С) S-тәрізді",
+      "D) K-тәрізді"
+    ],
+    "correctAnswer": "А) Гипербола",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1130,
+    "question": "Гемоглобин үшін оттектің диссоциациялану қисығы",
+    "options": [
+      "А) Гипербола",
+      "В) Сигмоидті",
+      "С) J-тәрізді",
+      "D) K-тәрізді"
+    ],
+    "correctAnswer": "В) Сигмоидті",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1131,
+    "question": "Берілген ортамен тепе-теңдікте болатын атмосферадағы оттектің парциалды қысымы",
+    "options": [
+      "А) Оттек күші",
+      "В) Бор эффектісі",
+      "С) Кооперативті эффект",
+      "D) Гипербола"
+    ],
+    "correctAnswer": "А) Оттек күші",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1132,
+    "question": "Нәруыздың конформациясы – кристалданғандағы пішінінің өзгеруі",
+    "options": [
+      "А) Оттек күші",
+      "В) Бор эффектісі",
+      "С) Кооперативті эффект",
+      "D) Гипербола"
+    ],
+    "correctAnswer": "С) Кооперативті эффект",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1133,
+    "question": "Қан мен ұлпа сұйықтығы арасында зат алмасуды жүзеге асырады",
+    "options": [
+      "А) Артерия",
+      "В) Вена",
+      "С) Капилляр",
+      "D) Аорта"
+    ],
+    "correctAnswer": "С) Капилляр",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1134,
+    "question": "Капилляр қантамырлары қабырғасының қалыңдығы",
+    "options": [
+      "А) 0,0005 мм",
+      "В) 0,05 мм",
+      "С) 0,5 мм",
+      "D) 0,005 мм"
+    ],
+    "correctAnswer": "D) 0,005 мм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1135,
+    "question": "Ересек адамның барлық капиллярларының ұзындығы",
+    "options": [
+      "А) 10 км",
+      "В) 10 000 км",
+      "С) 100 000 км",
+      "D) 1000 км"
+    ],
+    "correctAnswer": "С) 100 000 км",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1136,
+    "question": "Эукариот жасушаларының өлшемдері",
+    "options": [
+      "А) 145 мкм",
+      "В) 85–90 мкм",
+      "С) 40–50 мкм",
+      "D) 10–20 мкм"
+    ],
+    "correctAnswer": "D) 10–20 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1137,
+    "question": "Ер адамдардың 1 мм³ қанындағы эритроцит саны",
+    "options": [
+      "А) 180–400 мың",
+      "В) 5 000 000 млн",
+      "С) 6–8 мың",
+      "D) 2–3 000 000"
+    ],
+    "correctAnswer": "В) 5 000 000 млн",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1138,
+    "question": "Эритроцитте кездесетін ерекше нәруыз",
+    "options": [
+      "А) Гемоглобин",
+      "В) Миозин",
+      "С) Оссеин",
+      "D) Кератин"
+    ],
+    "correctAnswer": "А) Гемоглобин",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1139,
+    "question": "Адам эритроцитінің диаметрі",
+    "options": [
+      "А) 2–2,5 мкм",
+      "В) 85–90 мкм",
+      "С) 7–8 мкм",
+      "D) 145 мкм"
+    ],
+    "correctAnswer": "С) 7–8 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1140,
+    "question": "Қанда гемоглобин аз болуы салдарынан туындайтын ауру",
+    "options": [
+      "А) Гемофилия",
+      "В) Анемия",
+      "С) Гиподинамия",
+      "D) Гипертония"
+    ],
+    "correctAnswer": "В) Анемия",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1141,
+    "question": "Эритроциттің беттік ауданы",
+    "options": [
+      "А) 2–2,5 мкм²",
+      "В) 85–90 мкм²",
+      "С) 7–8 мкм²",
+      "D) 145 мкм²"
+    ],
+    "correctAnswer": "D) 145 мкм²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1142,
+    "question": "Әйел адамның 1 мм³ қанындағы эритроцит мөлшері",
+    "options": [
+      "А) 6–8 мың",
+      "В) 6–8 000 000",
+      "С) 4 500 000 млн",
+      "D) 180–400 мың"
+    ],
+    "correctAnswer": "С) 4 500 000 млн",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1143,
+    "question": "Эритроциттің қалыңдығы",
+    "options": [
+      "А) 2–2,5 мкм",
+      "В) 85–90 мкм",
+      "С) 7–8 мкм",
+      "D) 145 мкм"
+    ],
+    "correctAnswer": "А) 2–2,5 мкм",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1144,
+    "question": "Қандағы эритроцит мөлшерінің өзгеру себебі",
+    "options": [
+      "А) Бір орында отырғанда",
+      "В) Су көп ішкенде",
+      "С) Биікке көтерілгенде",
+      "D) Дене жүктемесі болмағанда"
+    ],
+    "correctAnswer": "С) Биікке көтерілгенде",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1145,
+    "question": "Қай аймақта тіршілік ететін адамдарда сүйек кемігінің өсуіне байланысты эритроцит саны артады",
+    "options": [
+      "А) Салқын аймақта",
+      "В) Жазықта",
+      "С) Биік таулы аймақта",
+      "D) Шөлді аймақта"
+    ],
+    "correctAnswer": "С) Биік таулы аймақта",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1146,
+    "question": "Терең тыныс алғанда өкпе альвеолаларының беттік ауданы",
+    "options": [
+      "А) 4,5–5 м²",
+      "В) 85–90 м²",
+      "С) 100–150 м²",
+      "D) 180–400 м²"
+    ],
+    "correctAnswer": "С) 100–150 м²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1147,
+    "question": "Қанның қызыл түсті жасушасы",
+    "options": [
+      "А) Эритроцит",
+      "В) Лейкоцит",
+      "С) Тромбоцит",
+      "D) Альбумин"
+    ],
+    "correctAnswer": "А) Эритроцит",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1148,
+    "question": "Өкпе альвеолалары қандай қан тамырларымен шырмалған",
+    "options": [
+      "А) Артерия",
+      "В) Вена",
+      "С) Капилляр",
+      "D) Аорта"
+    ],
+    "correctAnswer": "С) Капилляр",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1149,
+    "question": "Эритроциттердің көлемі мен беттік ауданын анықтау маңызды",
+    "options": [
+      "А) Офтальмолог үшін",
+      "В) Травматолог үшін",
+      "С) Физиолог үшін",
+      "D) Эндокринолог үшін"
+    ],
+    "correctAnswer": "С) Физиолог үшін",
+    "correctAnswers": null,
+    "isMultipleChoice": false
+  },
+  {
+    "id": 1150,
+    "question": "Адам қанындағы барлық эритроциттердің жалпы беттік ауданы",
+    "options": [
+      "А) 1500–2000 м²",
+      "В) 5000 мг",
+      "С) 1000 мг",
+      "D) 3000 м²"
+    ],
+    "correctAnswer": "D) 3000 м²",
+    "correctAnswers": null,
+    "isMultipleChoice": false
   }
 ]
