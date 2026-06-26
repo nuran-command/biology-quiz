@@ -1,194 +1,127 @@
+import React from 'react';
+import { 
+  Dna, 
+  Leaf, 
+  Beaker, 
+  RotateCw, 
+  GitBranch, 
+  Droplet, 
+  Flame, 
+  Hourglass, 
+  Hospital, 
+  BookOpen, 
+  ArrowLeftRight 
+} from 'lucide-react';
+
 type Props = {
   name: string;
   className?: string;
 };
 
 export const SvgIcon = ({ name, className = "w-8 h-8" }: Props) => {
+  let IconComponent: React.ComponentType<any> | null = null;
+  let iconColorClass = "";
+  let badgeColorClass = "";
+  let customSvg: React.ReactNode = null;
+
   switch (name) {
     case 'dna':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#dna-grad)" strokeWidth="2.5" strokeLinecap="round">
-          <defs>
-            <linearGradient id="dna-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#818CF8" />
-              <stop offset="100%" stopColor="#C084FC" />
-            </linearGradient>
-          </defs>
-          <path d="M4.5 10.5c3-6 7-6 10 0s7 6 10 0" />
-          <path d="M4.5 13.5c3 6 7 6 10 0s7-6 10 0" />
-          <path d="M6 9v6M10 7v10M14 7v10M18 9v6" />
-        </svg>
-      );
+      IconComponent = Dna;
+      iconColorClass = "text-indigo-600";
+      badgeColorClass = "bg-indigo-400/20";
+      break;
     case 'nutrition':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#nutrition-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="nutrition-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#34D399" />
-              <stop offset="100%" stopColor="#059669" />
-            </linearGradient>
-          </defs>
-          <path d="M2 22c1.25-6.75 6-12 12-12h8V2c-6 0-11.25 4.75-12 12" />
-          <path d="M12 14c0 3.31-2.69 6-6 6" />
-          <path d="M18 10c0 2.21-1.79 4-4 4" />
-        </svg>
-      );
+      IconComponent = Leaf;
+      iconColorClass = "text-emerald-600";
+      badgeColorClass = "bg-emerald-400/20";
+      break;
     case 'respiration':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#respiration-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="respiration-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#F87171" />
-              <stop offset="100%" stopColor="#DC2626" />
-            </linearGradient>
-          </defs>
-          <path d="M12 3v13" />
-          <path d="M12 7c-2-2-5-3-8-1a5 5 0 0 0-1 7c2 3 5 4 8 1" />
-          <path d="M12 7c2-2 5-3 8-1a5 5 0 0 1 1 7c-2 3-5 4-8 1" />
-          <path d="M9 16c-1.5 2-4.5 2-6 .5S2 12 4 10.5" />
-          <path d="M15 16c1.5 2 4.5 2 6 .5S22 12 20 10.5" />
+      iconColorClass = "text-rose-600";
+      badgeColorClass = "bg-rose-400/20";
+      customSvg = (
+        <svg viewBox="0 0 16 16" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+          <path d="M8.5 1.5a.5.5 0 1 0-1 0v5.243L7 7.1V4.72C7 3.77 6.23 3 5.28 3c-.524 0-1.023.27-1.443.592-.431.332-.847.773-1.216 1.229-.736.908-1.347 1.946-1.58 2.48-.176.405-.393 1.16-.556 2.011-.165.857-.283 1.857-.241 2.759.04.867.233 1.79.838 2.33.67.6 1.622.556 2.741-.004l1.795-.897A2.5 2.5 0 0 0 7 11.264V10.5a.5.5 0 0 0-1 0v.764a1.5 1.5 0 0 1-.83 1.342l-1.794.897c-.978.489-1.415.343-1.628.152-.28-.25-.467-.801-.505-1.63-.037-.795.068-1.71.224-2.525.157-.82.357-1.491.491-1.8.19-.438.75-1.4 1.44-2.25.342-.422.703-.799 1.049-1.065.358-.276.639-.385.833-.385a.72.72 0 0 1 .72.72v3.094l-1.79 1.28a.5.5 0 0 0 .58.813L8 7.614l3.21 2.293a.5.5 0 1 0 .58-.814L10 7.814V4.72a.72.72 0 0 1 .72-.72c.194 0 .475.11.833.385.346.266.706.643 1.05 1.066.688.85 1.248 1.811 1.439 2.249.134.309.334.98.491 1.8.156.814.26 1.73.224 2.525-.038.829-.224 1.38-.505 1.63-.213.19-.65.337-1.628-.152l-1.795-.897A1.5 1.5 0 0 1 10 11.264V10.5a.5.5 0 0 0-1 0v.764a2.5 2.5 0 0 0 1.382 2.236l1.795.897c1.12.56 2.07.603 2.741.004.605-.54.798-1.463.838-2.33.042-.902-.076-1.902-.24-2.759-.164-.852-.38-1.606-.558-2.012-.232-.533-.843-1.571-1.579-2.479-.37-.456-.785-.897-1.216-1.229C11.743 3.27 11.244 3 10.72 3 9.77 3 9 3.77 9 4.72V7.1l-.5-.357z"/>
         </svg>
       );
+      break;
     case 'excretion':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#excretion-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="excretion-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#6366F1" />
-              <stop offset="100%" stopColor="#4F46E5" />
-            </linearGradient>
-          </defs>
-          <path d="M6 3h12" />
-          <path d="M9 3v6L4 18a2 2 0 0 0 2 3h12a2 2 0 0 0 2-3L15 9V3" />
-          <path d="M9 14h6" />
-          <circle cx="10" cy="11" r="0.8" fill="currentColor" opacity="0.6" />
-          <circle cx="13" cy="15" r="1" fill="currentColor" opacity="0.6" />
-        </svg>
-      );
+      IconComponent = Beaker;
+      iconColorClass = "text-indigo-600";
+      badgeColorClass = "bg-indigo-400/20";
+      break;
     case 'cell_cycle':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#cell-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="cell-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#06B6D4" />
-              <stop offset="100%" stopColor="#0D9488" />
-            </linearGradient>
-          </defs>
-          <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l.73-.73" />
-          <circle cx="12" cy="12" r="3" />
-        </svg>
-      );
+      IconComponent = RotateCw;
+      iconColorClass = "text-cyan-600";
+      badgeColorClass = "bg-cyan-400/20";
+      break;
     case 'genetics':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#genetics-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="genetics-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#F59E0B" />
-              <stop offset="100%" stopColor="#D97706" />
-            </linearGradient>
-          </defs>
-          <path d="M12 2a5 5 0 0 0-5 5c0 4 5 11 5 11s5-7 5-11a5 5 0 0 0-5-5z" />
-          <circle cx="12" cy="7" r="1.5" />
-          <path d="M12 22v-4" />
-        </svg>
-      );
+      IconComponent = GitBranch;
+      iconColorClass = "text-amber-600";
+      badgeColorClass = "bg-amber-400/20";
+      break;
     case 'water':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#water-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="water-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#60A5FA" />
-              <stop offset="100%" stopColor="#2563EB" />
-            </linearGradient>
-          </defs>
-          <path d="M12 22a7 7 0 0 0 7-7c0-4.3-7-13-7-13S5 10.7 5 15a7 7 0 0 0 7 7z" />
-        </svg>
-      );
+      IconComponent = Droplet;
+      iconColorClass = "text-blue-600";
+      badgeColorClass = "bg-blue-400/20";
+      break;
     case 'lipid':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#lipid-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="lipid-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#10B981" />
-              <stop offset="100%" stopColor="#84CC16" />
-            </linearGradient>
-          </defs>
-          <path d="M12 2C8.5 2 5.5 5 5.5 9c0 4.5 3 13 6.5 13s6.5-8.5 6.5-13c0-4-3-7-6.5-7z" />
-          <circle cx="12" cy="14" r="3" />
-        </svg>
-      );
-    case 'aging':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#aging-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="aging-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#F97316" />
-              <stop offset="100%" stopColor="#EF4444" />
-            </linearGradient>
-          </defs>
-          <path d="M5 2h14M5 22h14M19 2v4a7 7 0 0 1-7 7 7 7 0 0 1-7-7V2M19 22v-4a7 7 0 0 0-7-7 7 7 0 0 0-7 7v4" />
-          <path d="M12 17v4M10 19h4" />
-        </svg>
-      );
-    case 'hospital':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#hospital-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="hospital-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#EF4444" />
-              <stop offset="100%" stopColor="#EC4899" />
-            </linearGradient>
-          </defs>
-          <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2z" />
-          <path d="M12 7v10M7 12h10" />
-        </svg>
-      );
-    case 'book':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#book-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="book-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#3B82F6" />
-              <stop offset="100%" stopColor="#6366F1" />
-            </linearGradient>
-          </defs>
-          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-          <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-        </svg>
-      );
+      IconComponent = Flame;
+      iconColorClass = "text-lime-600";
+      badgeColorClass = "bg-lime-400/20";
+      break;
     case 'transport':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#transport-grad)" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="transport-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#34D399" />
-              <stop offset="100%" stopColor="#3B82F6" />
-            </linearGradient>
-          </defs>
-          <path d="M17 3l4 4-4 4" />
-          <path d="M3 7h18" />
-          <path d="M7 21l-4-4 4-4" />
-          <path d="M21 17H3" />
-        </svg>
-      );
+      IconComponent = ArrowLeftRight;
+      iconColorClass = "text-teal-600";
+      badgeColorClass = "bg-teal-400/20";
+      break;
+    case 'aging':
+      IconComponent = Hourglass;
+      iconColorClass = "text-orange-600";
+      badgeColorClass = "bg-orange-400/20";
+      break;
+    case 'hospital':
+      IconComponent = Hospital;
+      iconColorClass = "text-pink-600";
+      badgeColorClass = "bg-pink-400/20";
+      break;
+    case 'book':
+      IconComponent = BookOpen;
+      iconColorClass = "text-slate-600";
+      badgeColorClass = "bg-slate-400/20";
+      break;
     case 'virus':
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="url(#virus-grad)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <defs>
-            <linearGradient id="virus-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#F87171" />
-              <stop offset="100%" stopColor="#F59E0B" />
-            </linearGradient>
-          </defs>
+      iconColorClass = "text-rose-600";
+      badgeColorClass = "bg-rose-400/20";
+      customSvg = (
+        <svg viewBox="0 0 24 24" className="w-full h-full" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
-          <circle cx="12" cy="12" r="6" />
+          <circle cx="12" cy="12" r="5" />
         </svg>
       );
+      break;
     default:
-      return (
-        <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2">
+      break;
+  }
+
+  return (
+    <div className={`relative flex items-center justify-center ${className}`}>
+      {/* Duotone Accent Circle */}
+      {badgeColorClass && (
+        <span className={`absolute -top-0.5 -left-0.5 w-[75%] h-[75%] rounded-full ${badgeColorClass} blur-[0.5px]`} />
+      )}
+      
+      {/* Front Vector Line Icon */}
+      {IconComponent ? (
+        <IconComponent className={`relative z-10 w-full h-full ${iconColorClass}`} strokeWidth={2.2} />
+      ) : customSvg ? (
+        <div className={`relative z-10 w-full h-full ${iconColorClass}`}>
+          {customSvg}
+        </div>
+      ) : (
+        <svg viewBox="0 0 24 24" className={`relative z-10 w-full h-full text-slate-400`} fill="none" stroke="currentColor" strokeWidth="2">
           <circle cx="12" cy="12" r="10" />
         </svg>
-      );
-  }
+      )}
+    </div>
+  );
 };

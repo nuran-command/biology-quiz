@@ -1,0 +1,11 @@
+- [x] Parse the new 90 excretion questions from raw text
+- [x] Re-split the questions database into clean textbook chapter JSON files (`part1`, `part3`, `part4`, `part5`, `part6`, `part7`, `part8`)
+- [x] Delete all old prefixed files (`mb_part*.json` and `nt_part*.json`)
+- [x] Redesign Category Selection screen with a premium 6-card grid for the chapters
+- [x] Reset subpart question ranges to display user-friendly numbers (e.g. 1-50, 51-100) instead of raw IDs
+- [x] Implement a custom `SvgIcon` component with linear gradients and colorful layouts
+- [x] Replace all unicode emojis/stickers on the start screen with the new custom SVG icons
+- [x] Link and integrate Alice and Marck Script Google Fonts globally
+- [x] Set title's "Интерактивті Тесттер" portion to use cursive Marck Script font style
+- [x] Run production build to verify compiler correctness
+- [x] Staged, committed, and pushed changes to GitHub
